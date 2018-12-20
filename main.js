@@ -59,7 +59,7 @@ const megaTemplateObj = {
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#015294',
             logoUrl: 'https://www.unum.com',
-            logoSrc: 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-logo-white-pad-right.png?raw=true',
+            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-logo-white-pad-right.png?raw=true',
             logoAltText: '[Unum]',
             logoAltTextColor: 'white',
             ctaTextColor: 'white',
@@ -69,7 +69,7 @@ const megaTemplateObj = {
         defaultColonialDataObj:{
             backgroundColor: '#19557F',
             logoUrl: 'https://www.coloniallife.com',
-            logoSrc: 'https://github.com/unumux/birch-alt/blob/master/images/components/colonial-logo-white-10r.png?raw=true',
+            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/colonial-logo-white-10r.png?raw=true',
             logoAltText: '[Colonial Life]',
             logoAltTextColor: 'white',
             ctaTextColor: 'white',
@@ -99,7 +99,7 @@ const megaTemplateObj = {
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#015294',
             logoUrl: 'https://www.unum.com',
-            logoSrc: 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-logo-white-pad-right.png?raw=true',
+            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-logo-white-pad-right.png?raw=true',
             logoAltText: '[Unum]',
             logoAltTextColor: 'white',
             headerbarColor: 'white',
@@ -109,7 +109,7 @@ const megaTemplateObj = {
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#19557F',
             logoUrl: 'https://www.coloniallife.com',
-            logoSrc: 'https://github.com/unumux/birch-alt/blob/master/images/components/colonial-logo-white-10r.png?raw=true',
+            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/colonial-logo-white-10r.png?raw=true',
             logoAltText: '[Colonial Life]',
             logoAltTextColor: 'white',
             headerbarColor: 'white',
@@ -144,7 +144,7 @@ const megaTemplateObj = {
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#015294',
             logoUrl: 'https://www.unum.com',
-            logoSrc: 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-logo-white-pad-right.png?raw=true',
+            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-logo-white-pad-right.png?raw=true',
             logoAltText: '[Unum]',
             logoAltTextColor: 'white',
             headerbarColor: 'white',
@@ -157,7 +157,7 @@ const megaTemplateObj = {
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#19557F',
             logoUrl: 'https://www.coloniallife.com',
-            logoSrc: 'https://github.com/unumux/birch-alt/blob/master/images/components/colonial-logo-white-10r.png?raw=true',
+            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/colonial-logo-white-10r.png?raw=true',
             logoAltText: '[Colonial Life]',
             logoAltTextColor: 'white',
             headerbarColor: 'white',
@@ -193,7 +193,7 @@ const megaTemplateObj = {
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#015294',
             logoUrl: 'https://www.unum.com',
-            logoSrc: 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-logo-white-pad-right.png?raw=true',
+            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-logo-white-pad-right.png?raw=true',
             logoAltText: '[Unum]',
             logoAltTextColor: 'white',
             headerbarColor: 'white',
@@ -205,7 +205,7 @@ const megaTemplateObj = {
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#19557F',
             logoUrl: 'https://www.coloniallife.com',
-            logoSrc: 'https://github.com/unumux/birch-alt/blob/master/images/components/colonial-logo-white-10r.png?raw=true',
+            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/colonial-logo-white-10r.png?raw=true',
             logoAltText: '[Colonial Life]',
             logoAltTextColor: 'white',
             headerbarColor: 'white',
@@ -240,7 +240,7 @@ const megaTemplateObj = {
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#19557F',
             logoUrl: 'https://www.colonial-paulrevere.com',
-            logoSrc: 'https://github.com/unumux/birch-alt/blob/master/src/assets/img/paul-revere-logo-white-10r.png?raw=true',
+            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/src/assets/img/paul-revere-logo-white-10r.png?raw=true',
             logoAltText: '[Colonial Voluntary Benefits]',
             logoAltTextColor: 'white',
             ctaTextColor: 'white',
@@ -250,7 +250,7 @@ const megaTemplateObj = {
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#19557F',
             logoUrl: 'https://www.colonial-paulrevere.com',
-            logoSrc: 'https://github.com/unumux/birch-alt/blob/master/src/assets/img/paul-revere-logo-white-10r.png?raw=true',
+            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/src/assets/img/paul-revere-logo-white-10r.png?raw=true',
             logoAltText: '[Colonial Voluntary Benefits]',
             logoAltTextColor: 'white',
             ctaTextColor: 'white',
@@ -467,7 +467,7 @@ const megaTemplateObj = {
             backgroundColor: '#015294',
             h1TextColor: 'white',
             h1Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
-            iconUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-50.jpg?raw=true',
+            iconUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-50.jpg?raw=true',
             iconAltText: '',
             iconAltTextColor: 'white'
         },
@@ -475,7 +475,7 @@ const megaTemplateObj = {
             backgroundColor: '#19557F',
             h1TextColor: 'white',
             h1Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
-            iconUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-50.jpg?raw=true',
+            iconUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-50.jpg?raw=true',
             iconAltText: '',
             iconAltTextColor: 'white'
         }
@@ -494,12 +494,12 @@ const megaTemplateObj = {
         category: 'banners',
         tags: ['1col', 'alignedCenter'],
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-600.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-600.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E'
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-600.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-600.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E'
         }
@@ -529,7 +529,7 @@ const megaTemplateObj = {
         tags: ['2col', 'alignedCenter'],
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7', //015294
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             backgroundColor2: '#f7f7f7', //015294
@@ -538,7 +538,7 @@ const megaTemplateObj = {
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7', //145481
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             backgroundColor2: '#f7f7f7', //145481
@@ -575,7 +575,7 @@ const megaTemplateObj = {
         tags: ['2col', 'alignedCenter'],
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7', //015294
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             backgroundColor2: '#f7f7f7', //015294
@@ -588,7 +588,7 @@ const megaTemplateObj = {
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7', //145481
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             backgroundColor2: '#f7f7f7', //145481
@@ -629,7 +629,7 @@ const megaTemplateObj = {
         tags: ['2col', 'alignedLeft'],
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7', //015294
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             backgroundColor2: '#f7f7f7', //015294
@@ -642,7 +642,7 @@ const megaTemplateObj = {
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7', //145481
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             backgroundColor2: '#145481', //145481
@@ -683,10 +683,10 @@ const megaTemplateObj = {
         tags: ['2col', 'alignedCenter'],
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7', //015294
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
-            iconUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-50.jpg?raw=true',
+            iconUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-50.jpg?raw=true',
             iconAltText: '',
             iconAltTextColor: '#015294', //white
             backgroundColor2: '#f7f7f7', //015294
@@ -695,10 +695,10 @@ const megaTemplateObj = {
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7', //145481
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
-            iconUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-50.jpg?raw=true',
+            iconUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-50.jpg?raw=true',
             iconAltText: '',
             iconAltTextColor: '#145481', //white
             backgroundColor2: '#f7f7f7', //145481
@@ -735,7 +735,7 @@ const megaTemplateObj = {
         category: 'banners',
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-193x300.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-193x300.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             backgroundColor2: '#f7f7f7',
@@ -744,7 +744,7 @@ const megaTemplateObj = {
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-193x300.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-193x300.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             backgroundColor2: '#f7f7f7',
@@ -785,7 +785,7 @@ const megaTemplateObj = {
         category: 'banners',
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-193x300.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-193x300.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             backgroundColor2: '#f7f7f7',
@@ -798,7 +798,7 @@ const megaTemplateObj = {
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-193x300.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-193x300.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             backgroundColor2: '#f7f7f7',
@@ -844,7 +844,7 @@ const megaTemplateObj = {
         category: 'banners',
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-193x300.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-193x300.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             backgroundColor2: '#f7f7f7',
@@ -857,7 +857,7 @@ const megaTemplateObj = {
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-193x300.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-193x300.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             backgroundColor2: '#f7f7f7',
@@ -902,10 +902,10 @@ const megaTemplateObj = {
         category: 'banners',
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
-            iconUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-50.jpg?raw=true',
+            iconUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-50.jpg?raw=true',
             iconAltText: '',
             iconAltTextColor: '2E2E2E',
             backgroundColor2: '#f7f7f7',
@@ -914,10 +914,10 @@ const megaTemplateObj = {
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-300x200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
-            iconUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-50.jpg?raw=true',
+            iconUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-50.jpg?raw=true',
             iconAltText: '',
             iconAltTextColor: '2E2E2E',
             backgroundColor2: '#f7f7f7',
@@ -1235,7 +1235,7 @@ const megaTemplateObj = {
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            iconUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-50.jpg?raw=true',
+            iconUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-50.jpg?raw=true',
             iconAltText: '',
             iconAltTextColor: '#2E2E2E',
             h1TextColor: '#015294',
@@ -1251,7 +1251,7 @@ const megaTemplateObj = {
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            iconUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-50.jpg?raw=true',
+            iconUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-50.jpg?raw=true',
             iconAltText: '',
             iconAltTextColor: '#2E2E2E',
             h1TextColor: '#19557F',
@@ -1293,7 +1293,7 @@ const megaTemplateObj = {
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-100.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-100.jpg?raw=true',
             imgAltText: 'please do not forget me',
             imgAltTextColor: '#2E2E2E',
             h1TextColor: '#015294',
@@ -1309,7 +1309,7 @@ const megaTemplateObj = {
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-100.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-100.jpg?raw=true',
             imgAltText: 'please do not forget me',
             imgAltTextColor: '#2E2E2E',
             h1TextColor: '#19557F',
@@ -1392,9 +1392,9 @@ const megaTemplateObj = {
             h2TextColor: '#2E2E2E',
             h2Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
             listItemsAsString2: 'Item 1|Item 2|Item 3',
-            bulletImage: 'https://github.com/unumux/birch-alt/blob/master/images/components/cl-checkmark.png?raw=true',
-            //bulletImage2: 'https://github.com/unumux/birch-alt/blob/master/images/components/cl-checkmark.png?raw=true',
-            //bulletImage3: 'https://github.com/unumux/birch-alt/blob/master/images/components/cl-checkmark.png?raw=true',
+            bulletImage: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
+            //bulletImage2: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
+            //bulletImage3: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
             bulletTextColor: "#2E2E2E",
             ctaBackgroundColor: '#015294',
             ctaUrl: 'https://www.unum.com',
@@ -1408,9 +1408,9 @@ const megaTemplateObj = {
             h2TextColor: '#2E2E2E',
             h2Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
             listItemsAsString2: 'Item 1|Item 2|Item 3',
-            bulletImage: 'https://github.com/unumux/birch-alt/blob/master/images/components/cl-checkmark.png?raw=true',
-            //bulletImage2: 'https://github.com/unumux/birch-alt/blob/master/images/components/cl-checkmark.png?raw=true',
-            //bulletImage3: 'https://github.com/unumux/birch-alt/blob/master/images/components/cl-checkmark.png?raw=true',
+            bulletImage: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
+            //bulletImage2: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
+            //bulletImage3: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
             bulletTextColor: "#2E2E2E",
             ctaBackgroundColor: '#19557F',
             ctaUrl: 'https://www.coloniallife.com',
@@ -1440,7 +1440,7 @@ const megaTemplateObj = {
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-480x200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-480x200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -1452,7 +1452,7 @@ const megaTemplateObj = {
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-480x200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-480x200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -1484,7 +1484,7 @@ const megaTemplateObj = {
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-480x200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-480x200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -1500,7 +1500,7 @@ const megaTemplateObj = {
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-480x200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-480x200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -1538,7 +1538,7 @@ const megaTemplateObj = {
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-480x200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-480x200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -1554,7 +1554,7 @@ const megaTemplateObj = {
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-480x200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-480x200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -1594,7 +1594,7 @@ const megaTemplateObj = {
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -1606,7 +1606,7 @@ const megaTemplateObj = {
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -1642,7 +1642,7 @@ const megaTemplateObj = {
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -1654,7 +1654,7 @@ const megaTemplateObj = {
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -1694,7 +1694,7 @@ const megaTemplateObj = {
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -1710,7 +1710,7 @@ const megaTemplateObj = {
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -1753,10 +1753,10 @@ const megaTemplateObj = {
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
-            iconUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-50.jpg?raw=true',
+            iconUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-50.jpg?raw=true',
             iconAltText: '',
             iconAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -1766,10 +1766,10 @@ const megaTemplateObj = {
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
-            iconUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-50.jpg?raw=true',
+            iconUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-50.jpg?raw=true',
             iconAltText: '',
             iconAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -1809,10 +1809,10 @@ const megaTemplateObj = {
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
-            iconUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-50.jpg?raw=true',
+            iconUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-50.jpg?raw=true',
             iconAltText: '',
             iconAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -1826,10 +1826,10 @@ const megaTemplateObj = {
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
-            iconUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-50.jpg?raw=true',
+            iconUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-50.jpg?raw=true',
             iconAltText: '',
             iconAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -1870,10 +1870,10 @@ const megaTemplateObj = {
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
-            iconUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-50.jpg?raw=true',
+            iconUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-50.jpg?raw=true',
             iconAltText: '',
             iconAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -1885,10 +1885,10 @@ const megaTemplateObj = {
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
-            iconUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-50.jpg?raw=true',
+            iconUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-50.jpg?raw=true',
             iconAltText: '',
             iconAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -1982,7 +1982,7 @@ const megaTemplateObj = {
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -1994,7 +1994,7 @@ const megaTemplateObj = {
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -2045,14 +2045,14 @@ const megaTemplateObj = {
         tags: ['2col', 'alignedCenter'],
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
-            imgUrl1: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl1: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText1: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
             h2Text1: 'Mauris non tempor quam, et lacinia sapien:',
             pTextColor: '#2E2E2E',
             pText1: 'Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget lobero posuere vulputate.',
-            imgUrl2: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl2: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText2: 'ALT tags are important',
             //imgAltText2Color: '#2E2E2E',
             //h2TextColor2: '#2E2E2E',
@@ -2062,14 +2062,14 @@ const megaTemplateObj = {
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
-            imgUrl1: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl1: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText1: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
             h2Text1: 'Mauris non tempor quam, et lacinia sapien:',
             pTextColor: '#2E2E2E',
             pText1: 'Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget lobero posuere vulputate.',
-            imgUrl2: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl2: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText2: 'ALT tags are important',
             //imgAltText2Color: '#2E2E2E',
             //h2TextColor2: '#2E2E2E',
@@ -2104,7 +2104,7 @@ const megaTemplateObj = {
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -2120,7 +2120,7 @@ const megaTemplateObj = {
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
-            imgUrl: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -2173,7 +2173,7 @@ const megaTemplateObj = {
         tags: ['2col', 'alignedLeft'],
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
-            imgUrl1: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl1: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText1: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -2184,7 +2184,7 @@ const megaTemplateObj = {
             ctaUrl1: 'https://www.unum.com',
             ctaTextColor1: 'white',
             ctaText1: 'Call-to-action&nbsp;&rsaquo;',
-            imgUrl2: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl2: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText2: 'ALT tags are important',
             //imgAltText2Color: '#2E2E2E',
             //h2TextColor2: '#2E2E2E',
@@ -2198,7 +2198,7 @@ const megaTemplateObj = {
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
-            imgUrl1: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl1: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText1: 'ALT tags are important',
             imgAltTextColor: '#2E2E2E',
             h2TextColor: '#2E2E2E',
@@ -2209,7 +2209,7 @@ const megaTemplateObj = {
             ctaUrl1: 'https://www.coloniallife.com',
             ctaTextColor1: 'white',
             ctaText1: 'Call-to-action&nbsp;&rsaquo;',
-            imgUrl2: 'https://github.com/unumux/birch-alt/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+            imgUrl2: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText2: 'ALT tags are important',
             //imgAltText2Color: '#2E2E2E',
             //h2TextColor2: '#2E2E2E',
@@ -2414,11 +2414,11 @@ const megaTemplateObj = {
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
         
                 <table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
-                    <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://twitter.com/unumnews" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-alt/blob/master/images/components/unum-twitter-icon.png?raw=true" alt="twitter" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
+                    <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://twitter.com/unumnews" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-twitter-icon.png?raw=true" alt="twitter" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
                     <td width="20" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">&nbsp;</td>
-                    <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.facebook.com/unumbenefits/" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-alt/blob/master/images/components/iunum-facebook-icon.png?raw=true" alt="facebook" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
+                    <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.facebook.com/unumbenefits/" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-builder-2/blob/master/images/components/iunum-facebook-icon.png?raw=true" alt="facebook" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
                     <td width="20" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">&nbsp;</td>
-                    <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.linkedin.com/company/unum" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-alt/blob/master/images/components/unum-linkedin-icon.png?raw=true" alt="linkedin" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
+                    <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.linkedin.com/company/unum" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-linkedin-icon.png?raw=true" alt="linkedin" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
                 </tr></tbody></table>
         
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="20px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 20px; font-weight: normal; line-height: 20px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
@@ -2541,11 +2541,11 @@ const megaTemplateObj = {
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
         
                 <table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
-                    <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://twitter.com/ColonialLife" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-alt/blob/master/images/components/cl-twitter-icon.png?raw=true" alt="twitter" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
+                    <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://twitter.com/ColonialLife" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-twitter-icon.png?raw=true" alt="twitter" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
                     <td width="20" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">&nbsp;</td>
-                    <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.facebook.com/coloniallifebenefits/" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-alt/blob/master/images/components/cl-facebook-icon.png?raw=true" alt="facebook" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
+                    <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.facebook.com/coloniallifebenefits/" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-facebook-icon.png?raw=true" alt="facebook" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
                     <td width="20" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">&nbsp;</td>
-                    <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.linkedin.com/company/colonial-life" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-alt/blob/master/images/components/cl-LinkedIn-icon.png?raw=true" alt="linkedin" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
+                    <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.linkedin.com/company/colonial-life" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-LinkedIn-icon.png?raw=true" alt="linkedin" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
                 </tr></tbody></table>
             
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="20px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 20px; font-weight: normal; line-height: 20px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
@@ -2658,11 +2658,11 @@ const megaTemplateObj = {
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
         
                 <table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
-                    <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://twitter.com/ColonialLife" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-alt/blob/master/images/components/cl-twitter-icon.png?raw=true" alt="twitter" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
+                    <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://twitter.com/ColonialLife" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-twitter-icon.png?raw=true" alt="twitter" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
                     <td width="20" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">&nbsp;</td>
-                    <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.facebook.com/coloniallifebenefits/" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-alt/blob/master/images/components/cl-facebook-icon.png?raw=true" alt="facebook" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
+                    <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.facebook.com/coloniallifebenefits/" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-facebook-icon.png?raw=true" alt="facebook" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
                     <td width="20" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">&nbsp;</td>
-                    <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.linkedin.com/company/colonial-life" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-alt/blob/master/images/components/cl-LinkedIn-icon.png?raw=true" alt="linkedin" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
+                    <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.linkedin.com/company/colonial-life" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-LinkedIn-icon.png?raw=true" alt="linkedin" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
                 </tr></tbody></table>
             
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="20px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 20px; font-weight: normal; line-height: 20px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
@@ -3930,28 +3930,28 @@ const handlers = {
         let presetValue = document.querySelector('#t100_presetDD').value
         if (presetValue == 'unum_logo-white_bg-color'){
             document.querySelector('#t100_backgroundColor').value = '#015294'
-            document.querySelector('#t100_logoSrc').value = 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-logo-white-pad-right.png?raw=true'
+            document.querySelector('#t100_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-logo-white-pad-right.png?raw=true'
             document.querySelector('#t100_logoAltText').value = "[Unum]"
             document.querySelector('#t100_logoAltTextColor').value = "white"
             document.querySelector('#t100_ctaTextColor').value = "white"
         }
         if (presetValue == 'colonial_logo-white_bg-color'){
             document.querySelector('#t100_backgroundColor').value = '#19557F'
-            document.querySelector('#t100_logoSrc').value = 'https://github.com/unumux/birch-alt/blob/master/images/components/colonial-logo-white-10r.png?raw=true'
+            document.querySelector('#t100_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/images/components/colonial-logo-white-10r.png?raw=true'
             document.querySelector('#t100_logoAltText').value = "[Colonial Life]"
             document.querySelector('#t100_logoAltTextColor').value = "white"
             document.querySelector('#t100_ctaTextColor').value = "white"
         }
         if (presetValue == 'unum_logo-color_bg-white'){
             document.querySelector('#t100_backgroundColor').value = 'white'
-            document.querySelector('#t100_logoSrc').value = 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-logo-pad-right.png?raw=true'
+            document.querySelector('#t100_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-logo-pad-right.png?raw=true'
             document.querySelector('#t100_logoAltText').value = "[Unum]"
             document.querySelector('#t100_logoAltTextColor').value = "#015294"
             document.querySelector('#t100_ctaTextColor').value = "#015294"
         }
         if (presetValue == 'colonial_logo-color_bg-white'){
             document.querySelector('#t100_backgroundColor').value = 'white'
-            document.querySelector('#t100_logoSrc').value = 'https://github.com/unumux/birch-alt/blob/master/images/components/colonial-logo-10r.png?raw=true'
+            document.querySelector('#t100_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/images/components/colonial-logo-10r.png?raw=true'
             document.querySelector('#t100_logoAltText').value = "[Colonial Life]"
             document.querySelector('#t100_logoAltTextColor').value = "#19557F"
             document.querySelector('#t100_ctaTextColor').value = "#19557F"
@@ -3977,7 +3977,7 @@ const handlers = {
         let presetValue = document.querySelector('#t101_presetDD').value
         if (presetValue == 'unum_logo-white_bg-color'){
             document.querySelector('#t101_backgroundColor').value = '#015294'
-            document.querySelector('#t101_logoSrc').value = 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-logo-white-pad-right.png?raw=true'
+            document.querySelector('#t101_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-logo-white-pad-right.png?raw=true'
             document.querySelector('#t101_logoAltText').value = "[Unum]"
             document.querySelector('#t101_logoAltTextColor').value = "white"
             document.querySelector('#t101_headerbarColor').value = "white"
@@ -3985,7 +3985,7 @@ const handlers = {
         }
         if (presetValue == 'colonial_logo-white_bg-color'){
             document.querySelector('#t101_backgroundColor').value = '#19557F'
-            document.querySelector('#t101_logoSrc').value = 'https://github.com/unumux/birch-alt/blob/master/images/components/colonial-logo-white-10r.png?raw=true'
+            document.querySelector('#t101_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/images/components/colonial-logo-white-10r.png?raw=true'
             document.querySelector('#t101_logoAltText').value = "[Colonial Life]"
             document.querySelector('#t101_logoAltTextColor').value = "white"
             document.querySelector('#t101_headerbarColor').value = "white"
@@ -3993,7 +3993,7 @@ const handlers = {
         }
         if (presetValue == 'unum_logo-color_bg-white'){
             document.querySelector('#t101_backgroundColor').value = 'white'
-            document.querySelector('#t101_logoSrc').value = 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-logo-pad-right.png?raw=true'
+            document.querySelector('#t101_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-logo-pad-right.png?raw=true'
             document.querySelector('#t101_logoAltText').value = "[Unum]"
             document.querySelector('#t101_logoAltTextColor').value = "#015294"
             document.querySelector('#t101_headerbarColor').value = "#015294"
@@ -4001,7 +4001,7 @@ const handlers = {
         }
         if (presetValue == 'colonial_logo-color_bg-white'){
             document.querySelector('#t101_backgroundColor').value = 'white'
-            document.querySelector('#t101_logoSrc').value = 'https://github.com/unumux/birch-alt/blob/master/images/components/colonial-logo-10r.png?raw=true'
+            document.querySelector('#t101_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/images/components/colonial-logo-10r.png?raw=true'
             document.querySelector('#t101_logoAltText').value = "[Colonial Life]"
             document.querySelector('#t101_logoAltTextColor').value = "#19557F"
             document.querySelector('#t101_headerbarColor').value = "#19557F"
@@ -4027,7 +4027,7 @@ const handlers = {
         let presetValue = document.querySelector('#t102_presetDD').value
         if (presetValue == 'unum_logo-white_bg-color'){
             document.querySelector('#t102_backgroundColor').value = '#015294'
-            document.querySelector('#t102_logoSrc').value = 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-logo-white-pad-right.png?raw=true'
+            document.querySelector('#t102_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-logo-white-pad-right.png?raw=true'
             document.querySelector('#t102_logoAltText').value = "[Unum]"
             document.querySelector('#t102_logoAltTextColor').value = "white"
             document.querySelector('#t102_headerbarColor').value = "white"
@@ -4036,7 +4036,7 @@ const handlers = {
         }
         if (presetValue == 'colonial_logo-white_bg-color'){
             document.querySelector('#t102_backgroundColor').value = '#19557F'
-            document.querySelector('#t102_logoSrc').value = 'https://github.com/unumux/birch-alt/blob/master/images/components/colonial-logo-white-10r.png?raw=true'
+            document.querySelector('#t102_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/images/components/colonial-logo-white-10r.png?raw=true'
             document.querySelector('#t102_logoAltText').value = "[Colonial Life]"
             document.querySelector('#t102_logoAltTextColor').value = "white"
             document.querySelector('#t102_headerbarColor').value = "white"
@@ -4045,7 +4045,7 @@ const handlers = {
         }
         if (presetValue == 'unum_logo-color_bg-white'){
             document.querySelector('#t102_backgroundColor').value = 'white'
-            document.querySelector('#t102_logoSrc').value = 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-logo-pad-right.png?raw=true'
+            document.querySelector('#t102_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-logo-pad-right.png?raw=true'
             document.querySelector('#t102_logoAltText').value = "[Unum]"
             document.querySelector('#t102_logoAltTextColor').value = "#015294"
             document.querySelector('#t102_headerbarColor').value = "#015294"
@@ -4054,7 +4054,7 @@ const handlers = {
         }
         if (presetValue == 'colonial_logo-color_bg-white'){
             document.querySelector('#t102_backgroundColor').value = 'white'
-            document.querySelector('#t102_logoSrc').value = 'https://github.com/unumux/birch-alt/blob/master/images/components/colonial-logo-10r.png?raw=true'
+            document.querySelector('#t102_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/images/components/colonial-logo-10r.png?raw=true'
             document.querySelector('#t102_logoAltText').value = "[Colonial Life]"
             document.querySelector('#t102_logoAltTextColor').value = "#19557F"
             document.querySelector('#t102_headerbarColor').value = "#19557F"
@@ -4084,7 +4084,7 @@ const handlers = {
         let presetValue = document.querySelector('#t103_presetDD').value
         if (presetValue == 'unum_logo-white_bg-color'){
             document.querySelector('#t103_backgroundColor').value = '#015294'
-            document.querySelector('#t103_logoSrc').value = 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-logo-white-pad-right.png?raw=true'
+            document.querySelector('#t103_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-logo-white-pad-right.png?raw=true'
             document.querySelector('#t103_logoAltText').value = "[Unum]"
             document.querySelector('#t103_logoAltTextColor').value = "white"
             document.querySelector('#t103_headerbarColor').value = "white"
@@ -4093,7 +4093,7 @@ const handlers = {
         }
         if (presetValue == 'colonial_logo-white_bg-color'){
             document.querySelector('#t103_backgroundColor').value = '#19557F'
-            document.querySelector('#t103_logoSrc').value = 'https://github.com/unumux/birch-alt/blob/master/images/components/colonial-logo-white-10r.png?raw=true'
+            document.querySelector('#t103_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/images/components/colonial-logo-white-10r.png?raw=true'
             document.querySelector('#t103_logoAltText').value = "[Colonial Life]"
             document.querySelector('#t103_logoAltTextColor').value = "white"
             document.querySelector('#t103_headerbarColor').value = "white"
@@ -4102,7 +4102,7 @@ const handlers = {
         }
         if (presetValue == 'unum_logo-color_bg-white'){
             document.querySelector('#t103_backgroundColor').value = 'white'
-            document.querySelector('#t103_logoSrc').value = 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-logo-pad-right.png?raw=true'
+            document.querySelector('#t103_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-logo-pad-right.png?raw=true'
             document.querySelector('#t103_logoAltText').value = "[Unum]"
             document.querySelector('#t103_logoAltTextColor').value = "#015294"
             document.querySelector('#t103_headerbarColor').value = "#015294"
@@ -4111,7 +4111,7 @@ const handlers = {
         }
         if (presetValue == 'colonial_logo-color_bg-white'){
             document.querySelector('#t103_backgroundColor').value = 'white'
-            document.querySelector('#t103_logoSrc').value = 'https://github.com/unumux/birch-alt/blob/master/images/components/colonial-logo-10r.png?raw=true'
+            document.querySelector('#t103_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/images/components/colonial-logo-10r.png?raw=true'
             document.querySelector('#t103_logoAltText').value = "[Colonial Life]"
             document.querySelector('#t103_logoAltTextColor').value = "#19557F"
             document.querySelector('#t103_headerbarColor').value = "#19557F"
@@ -4140,14 +4140,14 @@ const handlers = {
         let presetValue = document.querySelector('#t104_presetDD').value
         if (presetValue == 'paulrevere_logo-color_bg-white'){  
             document.querySelector('#t104_backgroundColor').value = 'white'
-            document.querySelector('#t104_logoSrc').value = 'https://github.com/unumux/birch-alt/blob/master/src/assets/img/paul-revere-logo-color-10r.png?raw=true'
+            document.querySelector('#t104_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/src/assets/img/paul-revere-logo-color-10r.png?raw=true'
             document.querySelector('#t104_logoAltText').value = "[Colonial Voluntary Benefits]"
             document.querySelector('#t104_logoAltTextColor').value = "#19557F"
             document.querySelector('#t104_ctaTextColor').value = "#19557F"
         }
         if (presetValue == 'paulrevere_logo-white_bg-color'){ 
             document.querySelector('#t104_backgroundColor').value = '#19557F'
-            document.querySelector('#t104_logoSrc').value = 'https://github.com/unumux/birch-alt/blob/master/src/assets/img/paul-revere-logo-white-10r.png?raw=true'
+            document.querySelector('#t104_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/src/assets/img/paul-revere-logo-white-10r.png?raw=true'
             document.querySelector('#t104_logoAltText').value = "[Colonial Voluntary Benefits]"
             document.querySelector('#t104_logoAltTextColor').value = "white"
             document.querySelector('#t104_ctaTextColor').value = "white"
