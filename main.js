@@ -240,7 +240,7 @@ const megaTemplateObj = {
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#19557F',
             logoUrl: 'https://www.colonial-paulrevere.com',
-            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/src/assets/img/paul-revere-logo-white-10r.png?raw=true',
+            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/paul-revere-logo-white-10r.png?raw=true',
             logoAltText: '[Colonial Voluntary Benefits]',
             logoAltTextColor: 'white',
             ctaTextColor: 'white',
@@ -250,7 +250,7 @@ const megaTemplateObj = {
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#19557F',
             logoUrl: 'https://www.colonial-paulrevere.com',
-            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/src/assets/img/paul-revere-logo-white-10r.png?raw=true',
+            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/paul-revere-logo-white-10r.png?raw=true',
             logoAltText: '[Colonial Voluntary Benefits]',
             logoAltTextColor: 'white',
             ctaTextColor: 'white',
@@ -4147,7 +4147,7 @@ const handlers = {
         }
         if (presetValue == 'paulrevere_logo-white_bg-color'){ 
             document.querySelector('#t104_backgroundColor').value = '#19557F'
-            document.querySelector('#t104_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/src/assets/img/paul-revere-logo-white-10r.png?raw=true'
+            document.querySelector('#t104_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/images/components/paul-revere-logo-white-10r.png?raw=true'
             document.querySelector('#t104_logoAltText').value = "[Colonial Voluntary Benefits]"
             document.querySelector('#t104_logoAltTextColor').value = "white"
             document.querySelector('#t104_ctaTextColor').value = "white"
