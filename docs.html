@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Birch documentation</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+    .componentSection{
+        margin-bottom: 1rem;
+    }
+    .compButtonRow{
+        display: flex;
+    }
+    .compButton{
+        font-size: 2rem;
+    }
+
+    
+    @media (min-width: 1278px){
+        .compExamples{
+            display: flex;
+        }
+    }
+    
+    .high{
+        background-color:yellow;
+    }
+    pre{
+        overflow-x: scroll;
+    }
+    .flexrow{
+        display: flex;
+        padding: 5px;
+    }
+    div.flexrow:nth-child(even) {background: lightgoldenrodyellow}
+    .flexrow--header{
+        font-weight: bold;
+    }
+    .flexrowCol1{ flex: 1; margin-right: 1rem; max-width: 20px;}
+    .flexrowCol2{ flex: 2; margin-right: 1rem; min-width: 200px;}
+    .flexrowCol3{ flex: 4; margin-right: 1rem;}
+    .flexrowCol4{ flex: 4;}
+    .flexrowCol3, .flexrowCol4{
+        min-width: 200px;
+    }
+    .hideme{
+        display:none;
+    }
+    </style>
+</head>
+<body>
+
+    <section class="componentSection">
+        <div class="compButtonRow">
+            <button class="compButton" data-match="compAll100">100_headerbar-unumlogo-cta</button>
+            <button class="compCodeButton" data-match="compCode100">Code</button>
+            <button class="compValuesButton" data-match="compValue100">Values</button>
+        </div>
+        <div class="compDetailsAll" id="compAll100">
+            <section class="compDetails" id="compDetails100">
+                <div class="compExamples">
+                    <fieldset><legend>Unum Example</legend>
+                        <!-- 100_headerbar-unumlogo-cta -->
+                <table align="center" class="container" style="Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">
+                        <table class="wrapper birch-headerbar-wrapper birch-util-background-color-unum-blue" align="center" style="background-color: #015294; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 10px; padding-bottom: 15px; padding-top: 15px; text-align: left; vertical-align: top;">
+                            <table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
+                                <th class="birch-headerbar-column birch-headerbar-column-logo small-6 large-6 columns first" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 16px; padding-right: 8px; text-align: left; width: 284px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 0px; margin: 0; padding: 0; text-align: left;">
+                                    <img class="birch-headerbar-logo" src="https://github.com/unumux/birch-builder-newUI/blob/master/images/components/unum-logo-white.png?raw=true" alt="[Unum]" style="-ms-interpolation-mode: bicubic; clear: both; color: white; display: inline !important; max-width: 227px; min-width: 80px; outline: none; padding-bottom: 5px; text-decoration: none; width: auto;">
+                                </th></tr></table></th>
+                                <th class="birch-headerbar-column birch-headerbar-vertical-align-bottom small-6 large-6 columns last" valign="bottom" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 8px; padding-right: 16px; text-align: left; vertical-align: bottom; width: 284px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
+                                    <p class="text-right birch-util-no-margin" style="Margin: 0 !important; Margin-bottom: 10px; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 !important; margin-bottom: 10px; padding: 0; text-align: right;">
+                                        <a href="https://www.unum.com" class="birch-util-color-white birch-headerbar-cta" style="Margin: 0; color: white; color: white !important; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1 !important; margin: 0; padding: 0; text-align: left; text-decoration: none;">call-to-action&nbsp;&rsaquo;</a>
+                                    </p>
+                                </th></tr></table></th>
+                            </tr></tbody></table>
+                        </td></tr></table>
+                    </td></tr></tbody></table>
+                    <!-- /100_headerbar-unumlogo-cta -->
+                    </fieldset>
+            
+                    <fieldset><legend>Colonial Example</legend>
+                        <!-- 100_headerbar-unumlogo-cta -->
+                <table align="center" class="container" style="Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">
+                        <table class="wrapper birch-headerbar-wrapper birch-util-background-color-unum-blue" align="center" style="background-color: #19557F; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 10px; padding-bottom: 15px; padding-top: 15px; text-align: left; vertical-align: top;">
+                            <table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
+                                <th class="birch-headerbar-column birch-headerbar-column-logo small-6 large-6 columns first" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 16px; padding-right: 8px; text-align: left; width: 284px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 0px; margin: 0; padding: 0; text-align: left;">
+                                    <img class="birch-headerbar-logo" src="https://github.com/unumux/birch-builder-newUI/blob/master/images/components/colonial-logo-white-10r.png?raw=true" alt="[Colonial Life]" style="-ms-interpolation-mode: bicubic; clear: both; color: white; display: inline !important; max-width: 227px; min-width: 80px; outline: none; padding-bottom: 5px; text-decoration: none; width: auto;">
+                                </th></tr></table></th>
+                                <th class="birch-headerbar-column birch-headerbar-vertical-align-bottom small-6 large-6 columns last" valign="bottom" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 8px; padding-right: 16px; text-align: left; vertical-align: bottom; width: 284px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
+                                    <p class="text-right birch-util-no-margin" style="Margin: 0 !important; Margin-bottom: 10px; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 !important; margin-bottom: 10px; padding: 0; text-align: right;">
+                                        <a href="https://www.coloniallife.com" class="birch-util-color-white birch-headerbar-cta" style="Margin: 0; color: white; color: white !important; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1 !important; margin: 0; padding: 0; text-align: left; text-decoration: none;">call-to-action&nbsp;&rsaquo;</a>
+                                    </p>
+                                </th></tr></table></th>
+                            </tr></tbody></table>
+                        </td></tr></table>
+                    </td></tr></tbody></table>
+                    <!-- /100_headerbar-unumlogo-cta -->
+                    </fieldset>
+                </div>
+            </section>
+
+            <section class="compCodeSection hideme" id="compCode100">
+        <pre>&#x3C;!-- 100_headerbar-unumlogo-cta --&#x3E;
+        &#x3C;table align=&#x22;center&#x22; class=&#x22;container&#x22; style=&#x22;Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;&#x22;&#x3E;&#x3C;tbody&#x3E;&#x3C;tr style=&#x22;padding: 0; text-align: left; vertical-align: top;&#x22;&#x3E;&#x3C;td style=&#x22;Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;&#x22;&#x3E;
+            &#x3C;table class=&#x22;wrapper birch-headerbar-wrapper birch-util-background-color-unum-blue&#x22; align=&#x22;center&#x22; style=&#x22;background-color: <span class="high">{{backgroundColor}}</span>; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;&#x22;&#x3E;&#x3C;tr style=&#x22;padding: 0; text-align: left; vertical-align: top;&#x22;&#x3E;&#x3C;td class=&#x22;wrapper-inner&#x22; style=&#x22;Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 10px; padding-bottom: 15px; padding-top: 15px; text-align: left; vertical-align: top;&#x22;&#x3E;
+                &#x3C;table class=&#x22;row&#x22; style=&#x22;border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;&#x22;&#x3E;&#x3C;tbody&#x3E;&#x3C;tr style=&#x22;padding: 0; text-align: left; vertical-align: top;&#x22;&#x3E;
+                    &#x3C;th class=&#x22;birch-headerbar-column birch-headerbar-column-logo small-6 large-6 columns first&#x22; style=&#x22;Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 16px; padding-right: 8px; text-align: left; width: 284px;&#x22;&#x3E;&#x3C;table style=&#x22;border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;&#x22;&#x3E;&#x3C;tr style=&#x22;padding: 0; text-align: left; vertical-align: top;&#x22;&#x3E;&#x3C;th style=&#x22;Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 0px; margin: 0; padding: 0; text-align: left;&#x22;&#x3E;
+                        &#x3C;img class=&#x22;birch-headerbar-logo&#x22; src=&#x22;<span class="high">{{logoSrc}}</span>&#x22; alt=&#x22;<span class="high">{{logoAltText}}</span>&#x22; style=&#x22;-ms-interpolation-mode: bicubic; clear: both; color: <span class="high">{{logoAltTextColor}}</span>; display: inline !important; max-width: 227px; min-width: 80px; outline: none; padding-bottom: 5px; text-decoration: none; width: auto;&#x22;&#x3E;
+                    &#x3C;/th&#x3E;&#x3C;/tr&#x3E;&#x3C;/table&#x3E;&#x3C;/th&#x3E;
+                    &#x3C;th class=&#x22;birch-headerbar-column birch-headerbar-vertical-align-bottom small-6 large-6 columns last&#x22; valign=&#x22;bottom&#x22; style=&#x22;Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 8px; padding-right: 16px; text-align: left; vertical-align: bottom; width: 284px;&#x22;&#x3E;&#x3C;table style=&#x22;border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;&#x22;&#x3E;&#x3C;tr style=&#x22;padding: 0; text-align: left; vertical-align: top;&#x22;&#x3E;&#x3C;th style=&#x22;Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;&#x22;&#x3E;
+                        &#x3C;p class=&#x22;text-right birch-util-no-margin&#x22; style=&#x22;Margin: 0 !important; Margin-bottom: 10px; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 !important; margin-bottom: 10px; padding: 0; text-align: right;&#x22;&#x3E;
+                            &#x3C;a href=&#x22;<span class="high">{{ctaUrl}}</span>&#x22; class=&#x22;birch-util-color-white birch-headerbar-cta&#x22; style=&#x22;Margin: 0; color: <span class="high">{{ctaTextColor}}</span>; color: <span class="high">{{ctaTextColor}}</span> !important; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1 !important; margin: 0; padding: 0; text-align: left; text-decoration: none;&#x22;&#x3E;<span class="high">{{ctaText}}</span>&#x3C;/a&#x3E;
+                        &#x3C;/p&#x3E;
+                    &#x3C;/th&#x3E;&#x3C;/tr&#x3E;&#x3C;/table&#x3E;&#x3C;/th&#x3E;
+                &#x3C;/tr&#x3E;&#x3C;/tbody&#x3E;&#x3C;/table&#x3E;
+            &#x3C;/td&#x3E;&#x3C;/tr&#x3E;&#x3C;/table&#x3E;
+        &#x3C;/td&#x3E;&#x3C;/tr&#x3E;&#x3C;/tbody&#x3E;&#x3C;/table&#x3E;
+        &#x3C;!-- /100_headerbar-unumlogo-cta --&#x3E;</pre>
+            </section>
+
+            <section class="compValueSection hideme" id="compValue100">
+                <div class="flexrow flexrow--header">
+                    <div class="flexrowCol flexrowCol1">#</div>
+                    <div class="flexrowCol flexrowCol2">tag</div>
+                    <div class="flexrowCol flexrowCol3">Unum value</div>
+                    <div class="flexrowCol flexrowCol4">Colonial value</div>
+                </div>
+                <div class="flexrow">
+                    <div class="flexrowCol flexrowCol1">1x</div>
+                    <div class="flexrowCol flexrowCol2">{{backgroundColor}}</div>
+                    <div class="flexrowCol flexrowCol3">#015294</div>
+                    <div class="flexrowCol flexrowCol4">#19557F</div>
+                </div>
+                <div class="flexrow">
+                    <div class="flexrowCol flexrowCol1">1x</div>
+                    <div class="flexrowCol flexrowCol2">{{logoSrc}}</div>
+                    <div class="flexrowCol flexrowCol3">https://github.com/unumux/birch-builder-newUI/blob/master/images/components/unum-logo-white.png?raw=true</div>
+                    <div class="flexrowCol flexrowCol4">https://github.com/unumux/birch-builder-newUI/blob/master/images/components/colonial-logo-white-10r.png?raw=true</div>
+                </div>
+                <div class="flexrow">
+                    <div class="flexrowCol flexrowCol1">1x</div>
+                    <div class="flexrowCol flexrowCol2">{{logoAltText}}</div>
+                    <div class="flexrowCol flexrowCol3">[Unum]</div>
+                    <div class="flexrowCol flexrowCol4">[Colonial Life]</div>
+                </div>
+                <div class="flexrow">
+                    <div class="flexrowCol flexrowCol1">1x</div>
+                    <div class="flexrowCol flexrowCol2">{{logoAltTextColor}}</div>
+                    <div class="flexrowCol flexrowCol3">white</div>
+                    <div class="flexrowCol flexrowCol4">white</div>
+                </div>
+                <div class="flexrow">
+                    <div class="flexrowCol flexrowCol1">2x</div>
+                    <div class="flexrowCol flexrowCol2">{{ctaTextColor}}</div>
+                    <div class="flexrowCol flexrowCol3">white</div>
+                    <div class="flexrowCol flexrowCol4">white</div>
+                </div>
+                <div class="flexrow">
+                    <div class="flexrowCol flexrowCol1">1x</div>
+                    <div class="flexrowCol flexrowCol2">{{ctaUrl}}</div>
+                    <div class="flexrowCol flexrowCol3">https://www.unum.com</div>
+                    <div class="flexrowCol flexrowCol4">https://www.coloniallife.com</div>
+                </div>
+                <div class="flexrow">
+                    <div class="flexrowCol flexrowCol1">1x</div>
+                    <div class="flexrowCol flexrowCol2">{{ctaText}}</div>
+                    <div class="flexrowCol flexrowCol3">call-to-action&amp;nbsp;&amp;rsaquo;</div>
+                    <div class="flexrowCol flexrowCol4">call-to-action&amp;nbsp;&amp;rsaquo;</div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+
+    <section class="componentSection">
+        <div class="compButtonRow">
+            <button class="compButton" data-match="compAll154">154_header_banner_icon-h1</button>
+            <button class="compCodeButton" data-match="compCode154">Code</button>
+            <button class="compValuesButton" data-match="compValue154">Values</button>
+        </div>
+        <div class="compDetailsAll" id="compAll154">
+            <section class="compDetails" id="compDetails154">
+                <div class="compExamples">
+                    <fieldset><legend>Unum Example</legend>
+                        <!-- 154_header_banner_icon-h1 -->
+    <table align="center" class="container" style="Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">
+        <table class="wrapper birch-wrapper-padding birch-util-background-color-unum-blue birch-wrapper-align-vertical-middle" align="center" style="background-color: #015294; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top; vertical-align: middle; height: 200px; mso-height-rule: 200px;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 53px; padding-right: 53px; text-align: left; vertical-align: middle;">
+            <!-- need to manually set [vertical-align: middle; height: 200px; mso-height-rule: 200px;] to the 1st TR in the wrapper table -->
+            <table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
+                <th class="small-12 large-12 columns first last" valign="middle" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 16px; padding-right: 16px; text-align: left; width: 584px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
+                    <center data-parsed="" style="min-width: initial !important; width: 100%;">
+                        <img width="50" height="50" src="https://github.com/unumux/birch-builder-newUI/blob/master/images/components/icon-accident-unum-blue.png?raw=true" alt="" align="center" class="float-center" style="-ms-interpolation-mode: bicubic; Margin: 0 auto; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto; color: white;">
+                    </center>
+                    <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="16px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 16px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+                    <h1 class="text-center birch-text-styles-h1 birch-util-color-white" style="Margin: 0; Margin-bottom: 10px; color: white; font-family: Arial; font-size: 21px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 10px; padding: 0; text-align: center; word-wrap: normal;">Cras quis nulla commodo, aliquam lectus sed, blandit augue.</h1>
+                </th>
+    <th class="expander" style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th></tr></table></th>
+            </tr></tbody></table>
+        </td></tr></table>
+    </td></tr></tbody></table>
+    <!-- /154_header_banner_icon-h1 -->
+                    </fieldset>
+            
+                    <fieldset><legend>Colonial Example</legend>
+                        <!-- 154_header_banner_icon-h1 -->
+    <table align="center" class="container" style="Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">
+        <table class="wrapper birch-wrapper-padding birch-util-background-color-unum-blue birch-wrapper-align-vertical-middle" align="center" style="background-color: #19557F; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top; vertical-align: middle; height: 200px; mso-height-rule: 200px;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 53px; padding-right: 53px; text-align: left; vertical-align: middle;">
+            <!-- need to manually set [vertical-align: middle; height: 200px; mso-height-rule: 200px;] to the 1st TR in the wrapper table -->
+            <table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
+                <th class="small-12 large-12 columns first last" valign="middle" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 16px; padding-right: 16px; text-align: left; width: 584px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
+                    <center data-parsed="" style="min-width: initial !important; width: 100%;">
+                        <img width="50" height="50" src="https://github.com/unumux/birch-builder-newUI/blob/master/images/components/icon-accident-colonial-blue-lighter.png?raw=true" alt="" align="center" class="float-center" style="-ms-interpolation-mode: bicubic; Margin: 0 auto; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto; color: white;">
+                    </center>
+                    <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="16px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 16px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+                    <h1 class="text-center birch-text-styles-h1 birch-util-color-white" style="Margin: 0; Margin-bottom: 10px; color: white; font-family: Arial; font-size: 21px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 10px; padding: 0; text-align: center; word-wrap: normal;">Cras quis nulla commodo, aliquam lectus sed, blandit augue.</h1>
+                </th>
+    <th class="expander" style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th></tr></table></th>
+            </tr></tbody></table>
+        </td></tr></table>
+    </td></tr></tbody></table>
+    <!-- /154_header_banner_icon-h1 -->
+                    </fieldset>
+                </div>
+            </section>
+
+            <section class="compCodeSection hideme" id="compCode154">
+        <pre>&#x3C;!-- 154_header_banner_icon-h1 --&#x3E;
+&#x3C;table align=&#x22;center&#x22; class=&#x22;container&#x22; style=&#x22;Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;&#x22;&#x3E;&#x3C;tbody&#x3E;&#x3C;tr style=&#x22;padding: 0; text-align: left; vertical-align: top;&#x22;&#x3E;&#x3C;td style=&#x22;Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;&#x22;&#x3E;
+    &#x3C;table class=&#x22;wrapper birch-wrapper-padding birch-util-background-color-unum-blue birch-wrapper-align-vertical-middle&#x22; align=&#x22;center&#x22; style=&#x22;background-color: <span class="high">{{backgroundColor}}</span>; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;&#x22;&#x3E;&#x3C;tr style=&#x22;padding: 0; text-align: left; vertical-align: top; vertical-align: middle; height: 200px; mso-height-rule: 200px;&#x22;&#x3E;&#x3C;td class=&#x22;wrapper-inner&#x22; style=&#x22;Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 53px; padding-right: 53px; text-align: left; vertical-align: middle;&#x22;&#x3E;
+        &#x3C;!-- need to manually set [vertical-align: middle; height: 200px; mso-height-rule: 200px;] to the 1st TR in the wrapper table --&#x3E;
+        &#x3C;table class=&#x22;row&#x22; style=&#x22;border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;&#x22;&#x3E;&#x3C;tbody&#x3E;&#x3C;tr style=&#x22;padding: 0; text-align: left; vertical-align: top;&#x22;&#x3E;
+            &#x3C;th class=&#x22;small-12 large-12 columns first last&#x22; valign=&#x22;middle&#x22; style=&#x22;Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 16px; padding-right: 16px; text-align: left; width: 584px;&#x22;&#x3E;&#x3C;table style=&#x22;border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;&#x22;&#x3E;&#x3C;tr style=&#x22;padding: 0; text-align: left; vertical-align: top;&#x22;&#x3E;&#x3C;th style=&#x22;Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;&#x22;&#x3E;
+                &#x3C;center data-parsed=&#x22;&#x22; style=&#x22;min-width: initial !important; width: 100%;&#x22;&#x3E;
+                    &#x3C;img width=&#x22;50&#x22; height=&#x22;50&#x22; src=&#x22;<span class="high">{{iconUrl}}</span>alt=&#x22;<span class="high">{{iconAltText}}</span>align=&#x22;center&#x22; class=&#x22;float-center&#x22; style=&#x22;-ms-interpolation-mode: bicubic; Margin: 0 auto; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto; color: <span class="high">{{iconAltTextColor}}</span>&#x3E;
+                &#x3C;/center&#x3E;
+                &#x3C;table class=&#x22;spacer&#x22; style=&#x22;border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;&#x22;&#x3E;&#x3C;tbody&#x3E;&#x3C;tr style=&#x22;padding: 0; text-align: left; vertical-align: top;&#x22;&#x3E;&#x3C;td height=&#x22;16px&#x22; style=&#x22;Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 16px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;&#x22;&#x3E;&#x26;#xA0;&#x3C;/td&#x3E;&#x3C;/tr&#x3E;&#x3C;/tbody&#x3E;&#x3C;/table&#x3E; 
+                &#x3C;h1 class=&#x22;text-center birch-text-styles-h1 birch-util-color-white&#x22; style=&#x22;Margin: 0; Margin-bottom: 10px; color: <span class="high">{{textColor}}</span>family: Arial; font-size: 21px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 10px; padding: 0; text-align: center; word-wrap: normal;&#x22;&#x3E;<span class="high">{{h1Text}}</span>h1&#x3E;
+            &#x3C;/th&#x3E;
+&#x3C;th class=&#x22;expander&#x22; style=&#x22;Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;&#x22;&#x3E;&#x3C;/th&#x3E;&#x3C;/tr&#x3E;&#x3C;/table&#x3E;&#x3C;/th&#x3E;
+        &#x3C;/tr&#x3E;&#x3C;/tbody&#x3E;&#x3C;/table&#x3E;
+    &#x3C;/td&#x3E;&#x3C;/tr&#x3E;&#x3C;/table&#x3E;
+&#x3C;/td&#x3E;&#x3C;/tr&#x3E;&#x3C;/tbody&#x3E;&#x3C;/table&#x3E;
+&#x3C;!-- /154_header_banner_icon-h1 --&#x3E;</pre>
+            </section>
+
+            <section class="compValueSection hideme" id="compValue154">
+                <div class="flexrow flexrow--header">
+                    <div class="flexrowCol flexrowCol1">#</div>
+                    <div class="flexrowCol flexrowCol2">tag</div>
+                    <div class="flexrowCol flexrowCol3">Unum value</div>
+                    <div class="flexrowCol flexrowCol4">Colonial value</div>
+                </div>
+                <div class="flexrow">
+                    <div class="flexrowCol flexrowCol1">1x</div>
+                    <div class="flexrowCol flexrowCol2">{{backgroundColor}}</div>
+                    <div class="flexrowCol flexrowCol3">#015294</div>
+                    <div class="flexrowCol flexrowCol4">#19557F</div>
+                </div>
+                <div class="flexrow">
+                    <div class="flexrowCol flexrowCol1">1x</div>
+                    <div class="flexrowCol flexrowCol2">{{textColor}}</div>
+                    <div class="flexrowCol flexrowCol3">white</div>
+                    <div class="flexrowCol flexrowCol4">white</div>
+                </div>
+                <div class="flexrow">
+                    <div class="flexrowCol flexrowCol1">1x</div>
+                    <div class="flexrowCol flexrowCol2">{{h1Text}}</div>
+                    <div class="flexrowCol flexrowCol3">Cras quis nulla commodo, aliquam lectus sed, blandit augue.</div>
+                    <div class="flexrowCol flexrowCol4">Cras quis nulla commodo, aliquam lectus sed, blandit augue.</div>
+                </div>
+                <div class="flexrow">
+                    <div class="flexrowCol flexrowCol1">1x</div>
+                    <div class="flexrowCol flexrowCol2">{{iconUrl}}</div>
+                    <div class="flexrowCol flexrowCol3">https://github.com/unumux/birch-builder-newUI/blob/master/images/components/icon-accident-unum-blue.png?raw=true</div>
+                    <div class="flexrowCol flexrowCol4">https://github.com/unumux/birch-builder-newUI/blob/master/images/components/icon-accident-colonial-blue-lighter.png?raw=true</div>
+                </div>
+                <div class="flexrow">
+                    <div class="flexrowCol flexrowCol1">1x</div>
+                    <div class="flexrowCol flexrowCol2">{{iconAltText}}</div>
+                    <div class="flexrowCol flexrowCol3">''</div>
+                    <div class="flexrowCol flexrowCol4">''</div>
+                </div>
+                <div class="flexrow">
+                    <div class="flexrowCol flexrowCol1">1x</div>
+                    <div class="flexrowCol flexrowCol2">{{iconAltTextColor}}</div>
+                    <div class="flexrowCol flexrowCol3">white</div>
+                    <div class="flexrowCol flexrowCol4">white</div>
+                </div>
+            </section>
+        </div>
+    </section>
+    
+
+        
+
+
+    
+    <script src="vendor/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.compButton').click(function(){
+                $('#'+this.dataset.match).slideToggle();
+            })
+            $('.compCodeButton').click(function(){
+                $('#'+this.dataset.match).slideToggle();
+            })
+            $('.compValuesButton').click(function(){
+                $('#'+this.dataset.match).slideToggle();
+            })
+        });
+    </script>
+</body>
+</html>
