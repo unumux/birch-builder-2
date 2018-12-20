@@ -8,4 +8,4 @@
 
 ## Description
 
-This is an interface to use build an email using birch components.
+This is an interface to build an email using birch components.
