@@ -2971,6 +2971,8 @@ const main = {
         controlGroup.classList.remove('hideme')
 
         document.querySelector('#editCompNameLabel').innerHTML = matchingDataComp.template.templateDesc
+        document.querySelector('#shared_copyCodeBtn').classList.remove('hideme')
+
 
 
         // #region TEMPLATE REPEAT AREA
@@ -6497,6 +6499,12 @@ function loadEmail(theText){
         document.querySelector('#emailCompListArea').innerHTML = '' // clear it first
         editor.getSession().setValue('');
         editor.renderer.updateFull();
+        if (importObj.version != '2.0'){
+            alert ('Version 2.0 export file required.  This version does not import export files from 1.0.')
+        }
+        if (importObj.theme == ""){
+            importObj.theme = 'unum'
+        }
         startFromScratch(importObj.theme)
         document.querySelector('#t10_EmailThemeDD').value = importObj.theme 
         document.querySelector('#t10_emailSubjectLine').value = importObj.subjectline
