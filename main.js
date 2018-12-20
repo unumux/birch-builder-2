@@ -6501,6 +6501,7 @@ function loadEmail(theText){
         editor.renderer.updateFull();
         if (importObj.version != '2.0'){
             alert ('Version 2.0 export file required.  This version does not import export files from 1.0.')
+            return false;
         }
         if (importObj.theme == ""){
             importObj.theme = 'unum'
