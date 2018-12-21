@@ -2843,11 +2843,6 @@ megaTemplateArray.map( (item, i) => {
 
 // #endregion TEMPLATE REPEAT AREA
 
-// these represent the state of the filter buttons
-let filterGroupData1 = [false, false, true] // banner 1col 2col all
-let filterGroupData2 = [false, false, true] // banner center left all
-let filterGroupData3 = [false, false, true] // body 1col 2col all
-let filterGroupData4 = [false, false, true] // body center left all
 
 // these variables are populated during the themeChange() initialization
 // they are used by the filter buttons to avoid needing to recalculate during run-time
@@ -5457,228 +5452,91 @@ function themeChange(theme){
 } // themeChange()
 
 
-
-
 // filterfilter
-// filter handling!!
-function filterToggleAction(btn){
-    // update data
-    updateFilterData1(btn.dataset.group, btn.dataset.index, btn)
-}
-function updateFilterData1(group, num){
-    // within a group..
-    // which button was it?  (group/num)
-    // if that guy was already true, then do nothing (radio button style)
-    // if that guy was false, make it true and set the others in that group to false
-    let beforeClickValue = null
+// refactored filter button logic
+function filterAction(el){ // this first part sets 1) the visual part of the buttons and; 2) the data state in the html data attributes
+    //console.log('welcome to filterAction(el)...', el)
+    const imgPath = './images/filters/'
+    const thisFilterGroup = document.querySelectorAll('.'+el.dataset.filtergroup)
 
-    // apply radio logic
-    // group1
-    if (group == '1' && num == '0'){
-        beforeClickValue = filterGroupData1[0]
-        if (!beforeClickValue){ // if true, do nothing. if it was false, make it true and set the others in that group to false
-            filterGroupData1[0] = true
-            filterGroupData1[1] = false
-            filterGroupData1[2] = false
-            // set buttons to proper visual
-            activateFilter('#newFilterButton1on')
-            deactivateFilter('#newFilterButton2on')
-            deactivateFilter('#newFilterButton3on')
-        }
-    }
-    if (group == '1' && num == '1'){
-        beforeClickValue = filterGroupData1[1]
-        if (!beforeClickValue){ // if true, do nothing. if it was false, make it true and set the others in that group to false
-            filterGroupData1[0] = false
-            filterGroupData1[1] = true
-            filterGroupData1[2] = false
-            // set buttons to proper visual
-            deactivateFilter('#newFilterButton1on')
-            activateFilter('#newFilterButton2on')
-            deactivateFilter('#newFilterButton3on')
-        }
-    }
-    if (group == '1' && num == '2'){
-        beforeClickValue = filterGroupData1[2]
-        if (!beforeClickValue){ // if true, do nothing. if it was false, make it true and set the others in that group to false
-            filterGroupData1[0] = false
-            filterGroupData1[1] = false
-            filterGroupData1[2] = true
-            // set buttons to proper visual
-            deactivateFilter('#newFilterButton1on')
-            deactivateFilter('#newFilterButton2on')
-            activateFilter('#newFilterButton3on')
-        }
-    }
+    // do stuff only if the clicked button wasn't already active
+    if (el.dataset.active != 'active'){
+        thisFilterGroup.forEach((button, i) => {
+            // the clicked button was inactive before, so make it active and the rest in the group inactive
+            if (button == el){
+                button.dataset.active = 'active'
+            }
+            else{
+                button.dataset.active = 'inactive'
+            }
 
-    // group2
-    if (group == '2' && num == '0'){
-        beforeClickValue = filterGroupData2[0]
-        if (!beforeClickValue){ // if true, do nothing. if it was false, make it true and set the others in that group to false
-            filterGroupData2[0] = true
-            filterGroupData2[1] = false
-            filterGroupData2[2] = false
-            // set buttons to proper visual
-            activateFilter('#newFilterButton4on')
-            deactivateFilter('#newFilterButton5on')
-            deactivateFilter('#newFilterButton6on')
-        }
+            // now match the image to the active/inactive state
+            let btnImg = document.querySelector('#'+button.dataset.img)
+            
+            if (button.dataset.active == 'active'){
+                btnImg.src = imgPath + button.dataset.activeimage
+            }
+            else{
+                btnImg.src = imgPath + button.dataset.inactiveimage
+            }
+        });
+        applyNewFilter(el.dataset.filtergroup)
     }
-    if (group == '2' && num == '1'){
-        beforeClickValue = filterGroupData2[1]
-        if (!beforeClickValue){ // if true, do nothing. if it was false, make it true and set the others in that group to false
-            filterGroupData2[0] = false
-            filterGroupData2[1] = true
-            filterGroupData2[2] = false
-            // set buttons to proper visual
-            deactivateFilter('#newFilterButton4on')
-            activateFilter('#newFilterButton5on')
-            deactivateFilter('#newFilterButton6on')
-        }
-    }
-    if (group == '2' && num == '2'){
-        beforeClickValue = filterGroupData2[2]
-        if (!beforeClickValue){ // if true, do nothing. if it was false, make it true and set the others in that group to false
-            filterGroupData2[0] = false
-            filterGroupData2[1] = false
-            filterGroupData2[2] = true
-            // set buttons to proper visual
-            deactivateFilter('#newFilterButton4on')
-            deactivateFilter('#newFilterButton5on')
-            activateFilter('#newFilterButton6on')
-        }
-    }
-
-    // group3
-    if (group == '3' && num == '0'){
-        beforeClickValue = filterGroupData3[0]
-        if (!beforeClickValue){ // if true, do nothing. if it was false, make it true and set the others in that group to false
-            filterGroupData3[0] = true
-            filterGroupData3[1] = false
-            filterGroupData3[2] = false
-            // set buttons to proper visual
-            activateFilter('#newFilterButton7on')
-            deactivateFilter('#newFilterButton8on')
-            deactivateFilter('#newFilterButton9on')
-        }
-    }
-    if (group == '3' && num == '1'){
-        beforeClickValue = filterGroupData3[1]
-        if (!beforeClickValue){ // if true, do nothing. if it was false, make it true and set the others in that group to false
-            filterGroupData3[0] = false
-            filterGroupData3[1] = true
-            filterGroupData3[2] = false
-            // set buttons to proper visual
-            deactivateFilter('#newFilterButton7on')
-            activateFilter('#newFilterButton8on')
-            deactivateFilter('#newFilterButton9on')
-        }
-    }
-    if (group == '3' && num == '2'){
-        beforeClickValue = filterGroupData3[2]
-        if (!beforeClickValue){ // if true, do nothing. if it was false, make it true and set the others in that group to false
-            filterGroupData3[0] = false
-            filterGroupData3[1] = false
-            filterGroupData3[2] = true
-            // set buttons to proper visual
-            deactivateFilter('#newFilterButton7on')
-            deactivateFilter('#newFilterButton8on')
-            activateFilter('#newFilterButton9on')
-        }
-    }
-
-    // group4
-    if (group == '4' && num == '0'){
-        beforeClickValue = filterGroupData4[0]
-        if (!beforeClickValue){ // if true, do nothing. if it was false, make it true and set the others in that group to false
-            filterGroupData4[0] = true
-            filterGroupData4[1] = false
-            filterGroupData4[2] = false
-            // set buttons to proper visual
-            activateFilter('#newFilterButton10on')
-            deactivateFilter('#newFilterButton11on')
-            deactivateFilter('#newFilterButton12on')
-        }
-    }
-    if (group == '4' && num == '1'){
-        beforeClickValue = filterGroupData4[1]
-        if (!beforeClickValue){ // if true, do nothing. if it was false, make it true and set the others in that group to false
-            filterGroupData4[0] = false
-            filterGroupData4[1] = true
-            filterGroupData4[2] = false
-            // set buttons to proper visual
-            deactivateFilter('#newFilterButton10on')
-            activateFilter('#newFilterButton11on')
-            deactivateFilter('#newFilterButton12on')
-        }
-    }
-    if (group == '4' && num == '2'){
-        beforeClickValue = filterGroupData4[2]
-        if (!beforeClickValue){ // if true, do nothing. if it was false, make it true and set the others in that group to false
-            filterGroupData4[0] = false
-            filterGroupData4[1] = false
-            filterGroupData4[2] = true
-            // set buttons to proper visual
-            deactivateFilter('#newFilterButton10on')
-            deactivateFilter('#newFilterButton11on')
-            activateFilter('#newFilterButton12on')
-        }
-    }
-
-
-
-    applyIconFilters(group)
 }
 
-function activateFilter(domId){
-    let el = document.querySelector(domId)
-        el.classList.remove('hideme')
-    let elTwin = document.querySelector('#'+el.dataset.twin)
-        elTwin.classList.add('hideme')
-}
-function deactivateFilter(domId){
-    let el = document.querySelector(domId)
-        el.classList.add('hideme')
-    let elTwin = document.querySelector('#'+el.dataset.twin)
-        elTwin.classList.remove('hideme')
-}
-
-function applyIconFilters(group){
-    //console.log('welcome to applyIconFilters....group param =', group)
-    //console.log('filterGroupData1 = ', filterGroupData1)
-    //console.log('filterGroupData2 = ', filterGroupData2)
+function applyNewFilter(group){  // this second part of the filter logic hides/shows the components based on the new state
+    //console.log('welcome to applyNewFilter(group, btnGroupDataState)...', group, btnGroupDataState)
     let allCompPreviewsInSection = []
     let allCol1PreviewsInSection = []
     let allCol2PreviewsInSection = []
     let allAlignLeftPreviewsInSection = []
     let allAlignCenterPreviewsInSection = []
-    let columnGroupValuesArray = []
-    let alignGroupValuesArray = []
+    let btnDataStateGroupA = [false, false, false] // the col filter buttons on the left
+    let btnDataStateGroupB = [false, false, false] // the align filter buttons on the right
 
-    if (group == '1' || group == '2'){ // filterBanners
-        //console.log('this is part of group1 or group2')
+    if (group == 'filtergroup1' || group == 'filtergroup2'){ // filterBanners
         allCompPreviewsInSection = bannerArrayAll
         allCol1PreviewsInSection = bannerArrayCol1
         allCol2PreviewsInSection = bannerArrayCol2
         allAlignLeftPreviewsInSection = bannerArrayAlignLeft
         allAlignCenterPreviewsInSection = bannerArrayAlignCenter
-        filterShowingEl = document.querySelector('#filterCountShowingBanners')
-        filterTotalEl = document.querySelector('#filterCountTotalBanners')
         filterTotalCount = allCompPreviewsInSection.length
-        columnGroupValuesArray = filterGroupData1
-        alignGroupValuesArray = filterGroupData2
+
+        // build the btnDataStateGroupA and B
+        let groupA_els = document.querySelectorAll('.filtergroup1')
+        groupA_els.forEach((button, i) => {
+            if (button.dataset.active == 'active'){
+                btnDataStateGroupA[i] = true
+            }
+        });
+        let groupB_els = document.querySelectorAll('.filtergroup2')
+        groupB_els.forEach((button, i) => {
+            if (button.dataset.active == 'active'){
+                btnDataStateGroupB[i] = true
+            }
+        });
     }
-    if (group == '3' || group == '4'){ // filterBody
+    if (group == 'filtergroup3' || group == 'filtergroup4'){ // filterBody
         allCompPreviewsInSection = bodyArrayAll
         allCol1PreviewsInSection = bodyArrayCol1
         allCol2PreviewsInSection = bodyArrayCol2
         allAlignLeftPreviewsInSection = bodyArrayAlignLeft
         allAlignCenterPreviewsInSection = bodyArrayAlignCenter
-        filterShowingEl = document.querySelector('#filterCountShowingBody')
-        filterTotalEl = document.querySelector('#filterCountTotalBody')
         filterTotalCount = allCompPreviewsInSection.length
-        columnGroupValuesArray = filterGroupData3
-        alignGroupValuesArray = filterGroupData4
+
+        // build the btnDataStateGroupA and B
+        let groupA_els = document.querySelectorAll('.filtergroup3')
+        groupA_els.forEach((button, i) => {
+            if (button.dataset.active == 'active'){
+                btnDataStateGroupA[i] = true
+            }
+        });
+        let groupB_els = document.querySelectorAll('.filtergroup4')
+        groupB_els.forEach((button, i) => {
+            if (button.dataset.active == 'active'){
+                btnDataStateGroupB[i] = true
+            }
+        });
     }
 
     let workingArray = allCompPreviewsInSection.slice(0);  // makes a copy of an array instead of a reference to it
@@ -5704,133 +5562,23 @@ function applyIconFilters(group){
         return sourceArray
     }
 
-    //console.log('alignGroupValuesArray = ', alignGroupValuesArray)
-
-    if (columnGroupValuesArray[0]){ // 1-col == true so remove 2-col
+    if (btnDataStateGroupA[0]){ // 1-col == true so remove 2-col
         workingArray = filterDown(workingArray, allCol2PreviewsInSection)
     }
-    if (columnGroupValuesArray[1]){ // 2-col == true so remove 1-col
+    if (btnDataStateGroupA[1]){ // 2-col == true so remove 1-col
         workingArray = filterDown(workingArray, allCol1PreviewsInSection)
     }
 
-    if (alignGroupValuesArray[0]){ // align-center == true so remove left
+    if (btnDataStateGroupB[0]){ // align-center == true so remove left
         workingArray = filterDown(workingArray, allAlignLeftPreviewsInSection)
     }
-    if (alignGroupValuesArray[1]){ // align-left == true so remove center
+    if (btnDataStateGroupB[1]){ // align-left == true so remove center
         workingArray = filterDown(workingArray, allAlignCenterPreviewsInSection) 
     }
+}
+// end of refactored filter logic
 
-} // end applyIconFilters
 
-
-function filterButtonClickEvent2(e){
-    //console.log('welcome to filterButtonClickEvent()...')
-    let allCompPreviewsInSection = []
-    let allCol1PreviewsInSection = []
-    let allCol2PreviewsInSection = []
-    let allAlignLeftPreviewsInSection = []
-    let allAlignCenterPreviewsInSection = []
-    let filterShowingEl = null
-    let filterTotalEl = null
-    let filterTotalCount = 0
-    let radioGroup1 = []
-    let radioGroup2 = []
-
-    // filterCountShowingBanners">0</span>/<span id="filterCountTotalBanners
-
-    if ( this.classList.contains('filterBanners') ){
-        //buttonsModel = bannerFilterButtonsModel
-        allCompPreviewsInSection = bannerArrayAll
-        allCol1PreviewsInSection = bannerArrayCol1
-        allCol2PreviewsInSection = bannerArrayCol2
-        allAlignLeftPreviewsInSection = bannerArrayAlignLeft
-        allAlignCenterPreviewsInSection = bannerArrayAlignCenter
-        filterShowingEl = document.querySelector('#filterCountShowingBanners')
-        filterTotalEl = document.querySelector('#filterCountTotalBanners')
-        filterTotalCount = allCompPreviewsInSection.length
-        radioGroup1 = Array(...document.querySelectorAll('.filterBannersGroup1'))
-        radioGroup2 = Array(...document.querySelectorAll('.filterBannersGroup2'))
-        
-    }
-    if ( this.classList.contains('filterBody') ){
-        allCompPreviewsInSection = bodyArrayAll
-        allCol1PreviewsInSection = bodyArrayCol1
-        allCol2PreviewsInSection = bodyArrayCol2
-        allAlignLeftPreviewsInSection = bodyArrayAlignLeft
-        allAlignCenterPreviewsInSection = bodyArrayAlignCenter
-        filterShowingEl = document.querySelector('#filterCountShowingBody')
-        filterTotalEl = document.querySelector('#filterCountTotalBody')
-        filterTotalCount = allCompPreviewsInSection.length
-        radioGroup1 = Array(...document.querySelectorAll('.filterBodyGroup1'))
-        radioGroup2 = Array(...document.querySelectorAll('.filterBodyGroup2'))
-    }
-
-    // console.log('radioGroup1', radioGroup1, 'radioGroup2', radioGroup2)
-
-    // console.log('radioGroup1 check test')
-    // radioGroup1.map( function(item) {
-    //     console.log(item.checked);
-    // })
-    // console.log('radioGroup2 check test')
-    // radioGroup2.map( function(item) {
-    //     console.log(item.checked);
-    // })
-    
-
-    let workingArray = allCompPreviewsInSection.slice(0);  // makes a copy of an array instead of a reference to it
-
-    // start by showing all
-    workingArray.map( function(item) {
-        $(item).show();
-    })
-
-    function filterDown(sourceArray, toRemoveArray){
-        // http://2ality.com/2015/01/es6-set-operations.html
-        let a = new Set(toRemoveArray);
-        let b = new Set(sourceArray);
-        let intersection = new Set([...a].filter(x => b.has(x))); // all of a that are also in b
-        Array.from(intersection).map( function(item) {
-            $(item).hide();
-        })
-        // now make the sourceArray everything else
-        let q = new Set(sourceArray);
-        let r = new Set(Array.from(intersection));
-        let difference = new Set([...q].filter(x => !r.has(x))); // all of q that are not in r
-        sourceArray = Array.from(difference).slice(0);
-        return sourceArray
-    }
-
-    // starting with all of the components included, each filterDown removes entries tagged by that filter
-
-    // radioGroup1[0] = both 1-col and 2-col
-    // radioGroup1[1] = 1-col
-    // radioGroup1[2] = 2-col
-    
-    // radioGroup2[0] = both align-left and align-right
-    // radioGroup2[1] = align-left
-    // radioGroup2[2] = align-right
-
-    if (radioGroup1[1].checked){ // 1-col is checked so remove 2-col 
-        workingArray = filterDown(workingArray, allCol2PreviewsInSection)
-    }
-    if (radioGroup1[2].checked){ // 2-col is checked so remove 1-col
-        workingArray = filterDown(workingArray, allCol1PreviewsInSection)
-    }
-
-    if (radioGroup2[1].checked){ // align-left is checked so remove center
-        workingArray = filterDown(workingArray, allAlignCenterPreviewsInSection)
-    }
-    if (radioGroup2[2].checked){ // align-center is checked so remove left
-        workingArray = filterDown(workingArray, allAlignLeftPreviewsInSection) 
-    }
-
-    //console.log('workingArray:', workingArray)
-
-    // set filter showing/total counts
-    filterShowingEl.innerHTML = workingArray.length
-    filterTotalEl.innerHTML = filterTotalCount
-
-} // end filterButtonClickEvent2()
 
 
 
@@ -5987,58 +5735,8 @@ function getSelectedComp(){
         }
     }
 }
-/*function getSelectedCompEl(){
-    let allCompEls = document.querySelectorAll('.emailCompListItem')
-    for (let i = 0; i < allCompEls.length; ++i) {
-        //console.log('I found this compElement: ', allCompEls[i])
-        if (allCompEls[i].classList.contains('emailCompActive')){
-            return allCompEls[i]
-        }
-    }
-}
-function rgbToHex(col)
-{
-    if(col.charAt(0)=='r')
-    {
-        col=col.replace('rgb(','').replace(')','').split(',');
-        var r=parseInt(col[0], 10).toString(16);
-        var g=parseInt(col[1], 10).toString(16);
-        var b=parseInt(col[2], 10).toString(16);
-        r=r.length==1?'0'+r:r; g=g.length==1?'0'+g:g; b=b.length==1?'0'+b:b;
-        var colHex='#'+r+g+b;
-        return colHex;
-    }
-}
-function processColorFromDOM(proposedColor){
-    // The DOM returns rgb formatted colors for hex.  #ff0000 => rgb(255,0,0) 
-    if (proposedColor.indexOf('rgb(') !== -1){ // it got converted to rgb...
-        return rgbToHex(proposedColor) // convert that rbg to hex...
-    }
-    else{ // assume it's a text color like 'red'
-        return proposedColor
-    }
-}*/
-// function mySanitize(t){
-//     document.querySelector('#sanitizetemp').innerHTML = DOMPurify.sanitize(t)
-//     return document.querySelector('#sanitizetemp').innerText
-// }
-// replace stuff
-/*function replaceMegaColorWithEmailCode(targetString, oldText, newText){
-    // inside targetString, replace all matching substrings of oldText with newText 
-    // console.log('welcome to replaceMegaColorWithEmailCode')
-    // console.log('oldText', oldText)
-    // console.log('newText', newText)
-    let modifiedString = replaceAll(targetString, oldText, newText)
-    //console.log('the replaceMegaColorWithEmailCode modified string is', modifiedString)
-    return modifiedString
-}
-function replaceAll(str, find, replace) {
-    return str.replace(new RegExp(escapeRegExp(find), 'g'), replace);
-}
-function escapeRegExp(str) {
-    return str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
-}   */
-// /replace stuff
+
+
 function isOdd(num) { return num % 2;}
 function pickColor(el){
     let selectedColor = el.value

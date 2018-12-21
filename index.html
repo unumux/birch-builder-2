@@ -190,54 +190,43 @@
                         <div data-content>
 
 
+                            <!-- preload non-default images to avoid initial delay when using them -->
+                            <img class="hideme" src="./images/filters/filterv3-1columns-selected.svg" alt="">
+                            <img class="hideme" src="./images/filters/filterv3-2columns-selected.svg" alt="">
+                            <img class="hideme" src="./images/filters/filterv3-all-deselected.svg" alt="">
+                            <img class="hideme" src="./images/filters/align-center-selected.svg" alt="">
+                            <img class="hideme" src="./images/filters/filterv3-align-left-selected.svg" alt="">
+
                             <div class="filterFlexRow">
 
                                 <div class="newFilterButtonGroup">
                                     <div class="newFilterButtonGroupLabel">Grid</div>
-                                    <button class="newFilterButton" id="newFilterButton1off" onclick="filterToggleAction(this)" data-twin="newFilterButton1on" data-index="0" data-group="1">
-                                        <img src="./images/filters/filterv3-1columns-deselected.svg" alt="" title="1-column components">
-                                    </button>
-                                    <button class="newFilterButton hideme" id="newFilterButton1on" onclick="filterToggleAction(this)" data-twin="newFilterButton1off" data-index="0" data-group="1">
-                                        <img src="./images/filters/filterv3-1columns-selected.svg" alt="" title="1-column components">
+                                    <button class="newFilterButton filtergroup1" id="filterBannersBtn1col" onclick="filterAction(this)" data-img="filterBannersBtn1col_image" data-filtergroup="filtergroup1" data-active="inactive" data-activeimage="filterv3-1columns-selected.svg" data-inactiveimage="filterv3-1columns-deselected.svg">
+                                        <img id="filterBannersBtn1col_image" src="./images/filters/filterv3-1columns-deselected.svg" alt="" title="1-column components">
                                     </button>
                             
-                                    <button class="newFilterButton" id="newFilterButton2off" onclick="filterToggleAction(this)" data-twin="newFilterButton2on" data-index="1" data-group="1">
-                                        <img src="./images/filters/filterv3-2columns-deselected.svg" alt="" title="2-column components">
-                                    </button>
-                                    <button class="newFilterButton hideme" id="newFilterButton2on" onclick="filterToggleAction(this)" data-twin="newFilterButton2off" data-index="1" data-group="1">
-                                        <img src="./images/filters/filterv3-2columns-selected.svg" alt="" title="2-column components">
+                                    <button class="newFilterButton filtergroup1" id="filterBannersBtn2col" onclick="filterAction(this)" data-img="filterBannersBtn2col_image" data-filtergroup="filtergroup1" data-active="inactive" data-activeimage="filterv3-2columns-selected.svg" data-inactiveimage="filterv3-2columns-deselected.svg">
+                                        <img id="filterBannersBtn2col_image" src="./images/filters/filterv3-2columns-deselected.svg" alt="" title="2-column components">
                                     </button>
                             
-                                    <button class="newFilterButton hideme" id="newFilterButton3off" onclick="filterToggleAction(this)" data-twin="newFilterButton3on" data-index="2" data-group="1">
-                                        <img src="./images/filters/filterv3-all-deselected.svg" alt="">
-                                    </button>
-                                    <button class="newFilterButton" id="newFilterButton3on" onclick="filterToggleAction(this)" data-twin="newFilterButton3off" data-index="2" data-group="1">
-                                        <img src="./images/filters/filterv3-all-selected.svg" alt="">
+                                    <button class="newFilterButton filtergroup1" id="filterBannersBtnColAll" onclick="filterAction(this)" data-img="filterBannersBtnColAll_image" data-filtergroup="filtergroup1" data-active="active" data-activeimage="filterv3-all-selected.svg" data-inactiveimage="filterv3-all-deselected.svg">
+                                        <img id="filterBannersBtnColAll_image" src="./images/filters/filterv3-all-selected.svg" alt="">
                                     </button>
                                 </div>
                                 
                                 
                                 <div class="newFilterButtonGroup">
                                     <div class="newFilterButtonGroupLabel">Align</div>
-                                    <button class="newFilterButton" id="newFilterButton4off" onclick="filterToggleAction(this)" data-twin="newFilterButton4on" data-index="0" data-group="2">
-                                        <img src="./images/filters/align-center-deselected.svg" alt="" title="1-column components">
-                                    </button>
-                                    <button class="newFilterButton hideme" id="newFilterButton4on" onclick="filterToggleAction(this)" data-twin="newFilterButton4off" data-index="0" data-group="2">
-                                        <img src="./images/filters/align-center-selected.svg" alt="" title="1-column components">
+                                    <button class="newFilterButton filtergroup2" id="filterBannersBtnAlignCenter" onclick="filterAction(this)" data-img="filterBannersBtnAlignCenter_image" data-filtergroup="filtergroup2" data-active="inactive" data-activeimage="align-center-selected.svg" data-inactiveimage="align-center-deselected.svg">
+                                        <img id="filterBannersBtnAlignCenter_image" src="./images/filters/align-center-deselected.svg" alt="" title="1-column components">
                                     </button>
                             
-                                    <button class="newFilterButton" id="newFilterButton5off" onclick="filterToggleAction(this)" data-twin="newFilterButton5on" data-index="1" data-group="2">
-                                        <img src="./images/filters/filterv3-align-left-deselected.svg" alt="" title="2-column components">
-                                    </button>
-                                    <button class="newFilterButton hideme" id="newFilterButton5on" onclick="filterToggleAction(this)" data-twin="newFilterButton5off" data-index="1" data-group="2">
-                                        <img src="./images/filters/filterv3-align-left-selected.svg" alt="" title="2-column components">
+                                    <button class="newFilterButton filtergroup2" id="filterBannersBtnAlignLeft" onclick="filterAction(this)" data-img="filterBannersBtnAlignLeft_image" data-filtergroup="filtergroup2" data-active="inactive" data-activeimage="filterv3-align-left-selected.svg" data-inactiveimage="filterv3-align-left-deselected.svg">
+                                        <img id="filterBannersBtnAlignLeft_image" src="./images/filters/filterv3-align-left-deselected.svg" alt="" title="2-column components">
                                     </button>
                             
-                                    <button class="newFilterButton hideme" id="newFilterButton6off" onclick="filterToggleAction(this)" data-twin="newFilterButton6on" data-index="2" data-group="2">
-                                        <img src="./images/filters/filterv3-all-deselected.svg" alt="">
-                                    </button>
-                                    <button class="newFilterButton" id="newFilterButton6on" onclick="filterToggleAction(this)" data-twin="newFilterButton6off" data-index="2" data-group="2">
-                                        <img src="./images/filters/filterv3-all-selected.svg" alt="">
+                                    <button class="newFilterButton filtergroup2" id="filterBannersBtnAlignAll" onclick="filterAction(this)" data-img="filterBannersBtnAlignAll_image" data-filtergroup="filtergroup2"  data-active="active" data-activeimage="filterv3-all-selected.svg" data-inactiveimage="filterv3-all-deselected.svg">
+                                        <img id="filterBannersBtnAlignAll_image" src="./images/filters/filterv3-all-selected.svg" alt="">
                                     </button>
                                 </div>
                                 
@@ -266,50 +255,32 @@
 
                                 <div class="newFilterButtonGroup">
                                     <div class="newFilterButtonGroupLabel">Grid</div>
-                                    <button class="newFilterButton" id="newFilterButton7off" onclick="filterToggleAction(this)" data-twin="newFilterButton7on" data-index="0" data-group="3">
-                                        <img src="./images/filters/filterv3-1columns-deselected.svg" alt="" title="1-column components">
-                                    </button>
-                                    <button class="newFilterButton hideme" id="newFilterButton7on" onclick="filterToggleAction(this)" data-twin="newFilterButton7off" data-index="0" data-group="3">
-                                        <img src="./images/filters/filterv3-1columns-selected.svg" alt="" title="1-column components">
+                                    <button class="newFilterButton filtergroup3" id="filterBodyBtn1col" onclick="filterAction(this)" data-img="filterBodyBtn1col_image" data-filtergroup="filtergroup3" data-active="inactive" data-activeimage="filterv3-1columns-selected.svg" data-inactiveimage="filterv3-1columns-deselected.svg">
+                                        <img id="filterBodyBtn1col_image" src="./images/filters/filterv3-1columns-deselected.svg" alt="" title="1-column components">
                                     </button>
                             
-                                    <button class="newFilterButton" id="newFilterButton8off" onclick="filterToggleAction(this)" data-twin="newFilterButton8on" data-index="1" data-group="3">
-                                        <img src="./images/filters/filterv3-2columns-deselected.svg" alt="" title="2-column components">
-                                    </button>
-                                    <button class="newFilterButton hideme" id="newFilterButton8on" onclick="filterToggleAction(this)" data-twin="newFilterButton8off" data-index="1" data-group="3">
-                                        <img src="./images/filters/filterv3-2columns-selected.svg" alt="" title="2-column components">
+                                    <button class="newFilterButton filtergroup3" id="filterBodyBtn2col" onclick="filterAction(this)" data-img="filterBodyBtn2col_image" data-filtergroup="filtergroup3" data-active="inactive" data-activeimage="filterv3-2columns-selected.svg" data-inactiveimage="filterv3-2columns-deselected.svg">
+                                        <img id="filterBodyBtn2col_image" src="./images/filters/filterv3-2columns-deselected.svg" alt="" title="2-column components">
                                     </button>
                             
-                                    <button class="newFilterButton hideme" id="newFilterButton9off" onclick="filterToggleAction(this)" data-twin="newFilterButton9on" data-index="2" data-group="3">
-                                        <img src="./images/filters/filterv3-all-deselected.svg" alt="">
-                                    </button>
-                                    <button class="newFilterButton" id="newFilterButton9on" onclick="filterToggleAction(this)" data-twin="newFilterButton9off" data-index="2" data-group="3">
-                                        <img src="./images/filters/filterv3-all-selected.svg" alt="">
+                                    <button class="newFilterButton filtergroup3" id="filterBodyBtnColAll" onclick="filterAction(this)" data-img="filterBodyBtnColAll_image" data-filtergroup="filtergroup3" data-active="active" data-activeimage="filterv3-all-selected.svg" data-inactiveimage="filterv3-all-deselected.svg">
+                                        <img id="filterBodyBtnColAll_image" src="./images/filters/filterv3-all-selected.svg" alt="">
                                     </button>
                                 </div>
                                 
                                 
                                 <div class="newFilterButtonGroup">
                                     <div class="newFilterButtonGroupLabel">Align</div>
-                                    <button class="newFilterButton" id="newFilterButton10off" onclick="filterToggleAction(this)" data-twin="newFilterButton10on" data-index="0" data-group="4">
-                                        <img src="./images/filters/align-center-deselected.svg" alt="" title="1-column components">
-                                    </button>
-                                    <button class="newFilterButton hideme" id="newFilterButton10on" onclick="filterToggleAction(this)" data-twin="newFilterButton10off" data-index="0" data-group="4">
-                                        <img src="./images/filters/align-center-selected.svg" alt="" title="1-column components">
+                                    <button class="newFilterButton filtergroup4" id="filterBodyBtnAlignCenter" onclick="filterAction(this)" data-img="filterBodyBtnAlignCenter_image" data-filtergroup="filtergroup4" data-active="inactive" data-activeimage="align-center-selected.svg" data-inactiveimage="align-center-deselected.svg">
+                                        <img id="filterBodyBtnAlignCenter_image" src="./images/filters/align-center-deselected.svg" alt="" title="1-column components">
                                     </button>
                             
-                                    <button class="newFilterButton" id="newFilterButton11off" onclick="filterToggleAction(this)" data-twin="newFilterButton11on" data-index="1" data-group="4">
-                                        <img src="./images/filters/filterv3-align-left-deselected.svg" alt="" title="2-column components">
-                                    </button>
-                                    <button class="newFilterButton hideme" id="newFilterButton11on" onclick="filterToggleAction(this)" data-twin="newFilterButton11off" data-index="1" data-group="4">
-                                        <img src="./images/filters/filterv3-align-left-selected.svg" alt="" title="2-column components">
+                                    <button class="newFilterButton filtergroup4" id="filterBodyBtnAlignLeft" onclick="filterAction(this)" data-img="filterBodyBtnAlignLeft_image" data-filtergroup="filtergroup4" data-active="inactive" data-activeimage="filterv3-align-left-selected.svg" data-inactiveimage="filterv3-align-left-deselected.svg">
+                                        <img id="filterBodyBtnAlignLeft_image" src="./images/filters/filterv3-align-left-deselected.svg" alt="" title="2-column components">
                                     </button>
                             
-                                    <button class="newFilterButton hideme" id="newFilterButton12off" onclick="filterToggleAction(this)" data-twin="newFilterButton12on" data-index="2" data-group="4">
-                                        <img src="./images/filters/filterv3-all-deselected.svg" alt="">
-                                    </button>
-                                    <button class="newFilterButton" id="newFilterButton12on" onclick="filterToggleAction(this)" data-twin="newFilterButton12off" data-index="2" data-group="4">
-                                        <img src="./images/filters/filterv3-all-selected.svg" alt="">
+                                    <button class="newFilterButton filtergroup4" id="filterBodyBtnAlignAll" onclick="filterAction(this)" data-img="filterBodyBtnAlignAll_image" data-filtergroup="filtergroup4" data-active="active" data-activeimage="filterv3-all-selected.svg" data-inactiveimage="filterv3-all-deselected.svg">
+                                        <img id="filterBodyBtnAlignAll_image" src="./images/filters/filterv3-all-selected.svg" alt="">
                                     </button>
                                 </div>
                                 

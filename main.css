@@ -696,7 +696,7 @@ select {
 
 /* When mouse is detected, ALL focused elements have outline removed. */
 /* You could apply this selector only to buttons, if you wanted. */
-body.using-mouse .filterBtn:focus {
+body.using-mouse .newFilterButton:focus {
   outline: none; }
 
 body.using-mouse .intro-cta:hover, body.using-mouse .intro-cta:focus {
