@@ -1,5 +1,5 @@
 // #region TEMPLATE REPEAT AREA
-const version = "2.0"
+const version = "2.0.1"
 let importedEmailFile = null // to set the export filename if we imported a file
 
 // used to insert current year in footer templates with dt.getFullYear()
