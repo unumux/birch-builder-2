@@ -269,6 +269,10 @@ body {
   margin-bottom: 5px;
   font-weight: 600; }
 
+.flexlabel {
+  display: flex;
+  justify-content: space-between; }
+
 .compHtml {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
@@ -395,6 +399,8 @@ body {
   .inputGroup label > input {
     margin-top: 5px; }
   .inputGroup label > select {
+    margin-top: 5px; }
+  .inputGroup label > textarea {
     margin-top: 5px; }
 
 .editInput {

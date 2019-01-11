@@ -1332,12 +1332,9 @@ const megaTemplateObj = {
             <table class="wrapper birch-wrapper-padding birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 53px; padding-right: 53px; text-align: left; vertical-align: top;">
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
                 <h2 class="text-center birch-text-styles-h2 birch--h2TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h2TextColor_birch; font-family: Arial; font-size: 20px; font-style: normal; font-weight: bold; line-height: 21px; margin: 0; margin-bottom: 10px; padding: 0; text-align: center; word-wrap: normal;">birch_h2Text_birch</h2>
-                <ul>
-                    <li class="birch-text-styles-li birch--bulletTextColor" style="color: birch_bulletTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px;">Lorem ipsum dolor, sit amet.</li>
-                    <li class="birch-text-styles-li birch--bulletTextColor" style="color: birch_bulletTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse animi, similique libero commodi quos earum.</li>
-                    <li class="birch-text-styles-li birch--bulletTextColor" style="color: birch_bulletTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px;">Lorem ipsum dolor, sit amet.</li>
-                    <li class="birch-text-styles-li birch--bulletTextColor" style="color: birch_bulletTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px;">Lorem ipsum dolor, sit amet.</li>
-                </ul>
+                
+                birch_listItemsAsString_birch
+                
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
             </td></tr></table>
         </td></tr></tbody></table>
@@ -1349,9 +1346,10 @@ const megaTemplateObj = {
             spacerTop: '50',
             h2TextColor: '#2E2E2E',
             h2Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
-            bulletTextColor: "#2E2E2E",
+            bulletTextColor: '#2E2E2E',
+            
+            listItemsAsString: 'Lorem ipsum dolor, sit amet.|Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse animi, similique libero commodi quos earum.|Lorem ipsum dolor, sit amet.',
             ulStyle: '',
-            listItemsAsString: 'Item 1|Item 2|Item 3',
             //liColor: '#2E2E2E',
             spacerBottom: '50'     
         },
@@ -1360,8 +1358,8 @@ const megaTemplateObj = {
             spacerTop: '50',
             h2TextColor: '#2E2E2E',
             h2Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
-            bulletTextColor: "#2E2E2E",
-            listItemsAsString: 'Item 1|Item 2|Item 3',
+            bulletTextColor: '#2E2E2E',
+            listItemsAsString: 'Lorem ipsum dolor, sit amet.|Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse animi, similique libero commodi quos earum.|Lorem ipsum dolor, sit amet.',
             ulStyle: '; list-style-type:square;',
             //liColor: '#2E2E2E',
             spacerBottom: '50'
@@ -1377,7 +1375,7 @@ const megaTemplateObj = {
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
                 <h2 class="birch-text-styles-h2 birch--h2TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h2TextColor_birch; font-family: Arial; font-size: 20px; font-style: normal; font-weight: bold; line-height: 21px; margin: 0; margin-bottom: 20px; padding: 0; text-align: left; word-wrap: normal;">birch_h2Text_birch</h2>
 
-                birch_listItemsAsString2_birch
+                birch_bulletTextList_birch
 
                 <table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
@@ -1391,7 +1389,9 @@ const megaTemplateObj = {
             spacerTop: '50',
             h2TextColor: '#2E2E2E',
             h2Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
-            listItemsAsString2: 'Item 1|Item 2|Item 3',
+            bulletImageList: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true|https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true|https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
+            // bulletTextList: 'Item 1|Item 2|Item 3',
+            bulletTextList: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dapibus egestas.|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dapibus egestas.|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dapibus egestas.',
             bulletImage: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
             //bulletImage2: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
             //bulletImage3: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
@@ -1407,7 +1407,9 @@ const megaTemplateObj = {
             spacerTop: '50',
             h2TextColor: '#2E2E2E',
             h2Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
-            listItemsAsString2: 'Item 1|Item 2|Item 3',
+            bulletImageList: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true|https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true|https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
+            // bulletTextList: 'Item 1|Item 2|Item 3',
+            bulletTextList: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dapibus egestas.|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dapibus egestas.|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dapibus egestas.',
             bulletImage: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
             //bulletImage2: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
             //bulletImage3: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
@@ -3351,7 +3353,8 @@ const main = {
             document.querySelector('#t205_h2TextColor').value = matchingDataComp.templateValuesObj.h2TextColor
             document.querySelector('#t205_h2Text').value = matchingDataComp.templateValuesObj.h2Text
             document.querySelector('#t205_bulletTextColor').value = matchingDataComp.templateValuesObj.bulletTextColor
-            document.querySelector('#t205_listItemsAsString').value = matchingDataComp.templateValuesObj.listItemsAsString
+            // document.querySelector('#t205_listItemsAsString').value = matchingDataComp.templateValuesObj.listItemsAsString
+            document.querySelector('#t205_listItemsAsString').value = prepForTextArea(matchingDataComp.templateValuesObj.listItemsAsString)
             document.querySelector('#t205_ulStyle').value = matchingDataComp.templateValuesObj.ulStyle
             document.querySelector('#t205_spacerBottom').value = matchingDataComp.templateValuesObj.spacerBottom
             mergeCodeWithDataForEditShared()
@@ -3361,7 +3364,11 @@ const main = {
             document.querySelector('#t205e_backgroundColor').value = matchingDataComp.templateValuesObj.backgroundColor
             document.querySelector('#t205e_spacerTop').value = matchingDataComp.templateValuesObj.spacerTop
             document.querySelector('#t205e_h2TextColor').value = matchingDataComp.templateValuesObj.h2TextColor
-            document.querySelector('#t205e_listItemsAsString2').value = matchingDataComp.templateValuesObj.listItemsAsString2
+
+            document.querySelector('#t205e_bulletImageList').value = prepForTextArea(matchingDataComp.templateValuesObj.bulletImageList)
+            //document.querySelector('#t205e_bulletImageList').value = matchingDataComp.templateValuesObj.bulletImageList
+            document.querySelector('#t205e_bulletTextList').value = prepForTextArea(matchingDataComp.templateValuesObj.bulletTextList)
+
             document.querySelector('#t205e_h2Text').value = matchingDataComp.templateValuesObj.h2Text
             document.querySelector('#t205e_bulletTextColor').value = matchingDataComp.templateValuesObj.bulletTextColor
             document.querySelector('#t205e_bulletImage').value = matchingDataComp.templateValuesObj.bulletImage
@@ -4542,7 +4549,7 @@ const handlers = {
         selectedComp.templateValuesObj.h2TextColor = document.querySelector('#t205_h2TextColor').value
         selectedComp.templateValuesObj.h2Text = document.querySelector('#t205_h2Text').value
         selectedComp.templateValuesObj.bulletTextColor = document.querySelector('#t205_bulletTextColor').value
-        selectedComp.templateValuesObj.listItemsAsString = document.querySelector('#t205_listItemsAsString').value
+        selectedComp.templateValuesObj.listItemsAsString = document.querySelector('#t205_listItemsAsString').value.replace(/(\r\n\t|\n|\r\t)/gm, "") // remove extra line breaks
         selectedComp.templateValuesObj.ulStyle = document.querySelector('#t205_ulStyle').value
         //selectedComp.templateValuesObj.liColor = document.querySelector('#t205_liColor').value
         selectedComp.templateValuesObj.spacerBottom = document.querySelector('#t205_spacerBottom').value
@@ -4558,7 +4565,10 @@ const handlers = {
         selectedComp.templateValuesObj.h2TextColor = document.querySelector('#t205e_h2TextColor').value
         selectedComp.templateValuesObj.h2Text = document.querySelector('#t205e_h2Text').value
         selectedComp.templateValuesObj.bulletTextColor = document.querySelector('#t205e_bulletTextColor').value
-        selectedComp.templateValuesObj.listItemsAsString2 = document.querySelector('#t205e_listItemsAsString2').value
+
+        // someText.replace(/(\r\n\t|\n|\r\t)/gm, "");
+        selectedComp.templateValuesObj.bulletImageList = document.querySelector('#t205e_bulletImageList').value.replace(/(\r\n\t|\n|\r\t)/gm, "") // remove extra line breaks
+        selectedComp.templateValuesObj.bulletTextList = document.querySelector('#t205e_bulletTextList').value.replace(/(\r\n\t|\n|\r\t)/gm, "") // remove extra line breaks
         selectedComp.templateValuesObj.bulletImage1 = document.querySelector('#t205e_bulletImage').value
         selectedComp.templateValuesObj.bulletImage2 = document.querySelector('#t205e_bulletImage').value
         selectedComp.templateValuesObj.bulletImage3 = document.querySelector('#t205e_bulletImage').value
@@ -5224,12 +5234,12 @@ function themeChange(theme){
     compArray.push(megaTemplateObj.templateObj_153)
     compArray.push(megaTemplateObj.templateObj_154)
     compArray.push(megaTemplateObj.templateObj_155)
-    if (theme == 'unum'){
+    //if (theme == 'unum'){
         compArray.push(megaTemplateObj.templateObj_156)
         compArray.push(megaTemplateObj.templateObj_157)
         compArray.push(megaTemplateObj.templateObj_157b)
         compArray.push(megaTemplateObj.templateObj_158)
-    }
+    //}
     if (theme == 'colonial'){
         compArray.push(megaTemplateObj.templateObj_160)
         compArray.push(megaTemplateObj.templateObj_161)
@@ -5746,6 +5756,21 @@ function pickColor(el){
 }
 
 
+function prepForTextArea(s){
+    let prepArray = s.split('|')
+    let prepArrayLength = prepArray.length
+
+    let displayString = ''
+    prepArray.map( (item, i) => {
+        displayString += item
+        if (i < prepArrayLength-1){ // don't add on the last one
+            displayString += '|\n\n'
+        }
+    })
+    return displayString.trim()
+}
+
+
 
 function mergeDataIntoPlaceholders(templateHtml, dataObj){
     // mergeDataIntoPlaceholders(template, dataObj)
@@ -5753,9 +5778,9 @@ function mergeDataIntoPlaceholders(templateHtml, dataObj){
     // template is the baseCode from the template variable
     // dataObj is the defaultUnumDataObj of the same template which is an obj of each placeholder
 
-     //console.log('welcome to mergeDataIntoPlaceholders...')
-     //console.log('received templateHtml: ', templateHtml)
-     //console.log('received obj: ', dataObj)
+    //  console.log('welcome to mergeDataIntoPlaceholders...')
+    //  console.log('received templateHtml: ', templateHtml)
+    //  console.log('received obj: ', dataObj)
     let html = templateHtml
     //let dataObj = comp.defaultUnumDataObj
 
@@ -5764,6 +5789,8 @@ function mergeDataIntoPlaceholders(templateHtml, dataObj){
             // console.log(key + " -> " + dataObj[key]);
             // https://flaviocopes.com/how-to-replace-all-occurrences-string-javascript/
             const tokens = html.split(`birch_${key}_birch`)
+            //console.log('tokens = ', tokens);
+            
 
             // tokens.length = 1 (0 matches found)
             // tokens.length = 2 (1 matches found)
@@ -5782,11 +5809,14 @@ function mergeDataIntoPlaceholders(templateHtml, dataObj){
                             let liAsString = liArray.map( item => '<li class="birch-text-styles-li" style="font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px">'+item+'</li>').join('')
                             tokensWithInsertedValues.push(liAsString)
                         }
-                        else if (key === 'listItemsAsString2'){ 
+                        else if (key === 'bulletTextList'){ 
+                            let liImgDelimitedString = dataObj['bulletImageList']
+                            let liImgArray = liImgDelimitedString.split('|')
+                            
                             let liArray = dataObj[key].split('|')
                             let liAsString = liArray.map( (item, i) => `<table class="row collapse" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
-                    <th class="small-2 large-1 columns first" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 0; padding-right: 0; text-align: left; width: 58px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;"><img src="birch_bulletImage_birch" class="birch-min-width-25" alt="" style="-ms-interpolation-mode: bicubic; clear: both; display: block; max-width: 100%; min-width: 25px; outline: none; text-decoration: none; width: auto;"></th></tr></table></th><!--  continue here -->
-                    <th class="small-10 large-11 columns last" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 0; padding-right: 0; text-align: left; width: 558px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;"><p class="birch--bulletTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_bulletTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dapibus egestas.</p></th></tr></table></th>
+                    <th class="small-2 large-1 columns first" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 0; padding-right: 0; text-align: left; width: 58px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;"><img src="${liImgArray[i] != null ? liImgArray[i] : 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true'}" class="birch-min-width-25" alt="" style="-ms-interpolation-mode: bicubic; clear: both; display: block; max-width: 100%; min-width: 25px; outline: none; text-decoration: none; width: auto;"></th></tr></table></th><!--  continue here -->
+                    <th class="small-10 large-11 columns last" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 0; padding-right: 0; text-align: left; width: 558px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;"><p class="birch--bulletTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_bulletTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;">${liArray[i] != null ? liArray[i] : ''}</p></th></tr></table></th>
                 </tr></tbody></table>`).join('')
                             tokensWithInsertedValues.push(liAsString)
                         }

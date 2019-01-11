@@ -354,6 +354,10 @@ body{
     // border-bottom-left-radius: 0;
     // border-bottom-right-radius: 0;
 }
+.flexlabel{
+    display: flex;
+    justify-content: space-between;
+}
 .compHtml{
     // ie11 is a problem here.  :(
     -webkit-filter: grayscale(1); // for Safari 6-9
@@ -533,6 +537,9 @@ body{
         margin-top: 5px;
     }
     & label > select{
+        margin-top: 5px;
+    }
+    & label > textarea{
         margin-top: 5px;
     }
 }
