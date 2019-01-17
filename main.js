@@ -1,5 +1,5 @@
 // #region TEMPLATE REPEAT AREA
-const version = "2.0.1"
+const version = "2.0.2"
 let importedEmailFile = null // to set the export filename if we imported a file
 
 // used to insert current year in footer templates with dt.getFullYear()
@@ -6230,8 +6230,9 @@ function loadEmail(theText){
         document.querySelector('#emailCompListArea').innerHTML = '' // clear it first
         editor.getSession().setValue('');
         editor.renderer.updateFull();
-        if (importObj.version != '2.0'){
-            alert ('Version 2.0 export file required.  This version does not import export files from 1.0.')
+        // if (importObj.version != '2.0'){
+        if (importObj.version.substring(0,1) != '2'){
+            alert ('Version 2 export file required.  This version does not import export files from 1.0.')
             return false;
         }
         if (importObj.theme == ""){
