@@ -62,11 +62,12 @@
         <h2 class="aboutH2">About</h2>
 
         <p><strong>2.0.3 (current version)</strong>
-            <ul>
-                <li>Adds feature to dynamically add/remove CTAs.  Clear the ctaText to remove the CTA entirely.</li>
-                <li>The version also refactored the dynamic bullet code. 205 and 205e</li>
-                <li>released 1/18/2019</li>
-            </ul>
+        <ul>
+            <li>Adds feature to dynamically add/remove CTAs.  Clear the ctaText to remove the CTA entirely.</li>
+            <li>Adds dynamic cta controls to 100, 102, and 104.  (removes 103)</li>
+            <li>The version also refactored the dynamic bullet code. 205 and 205e</li>
+            <li>released 1/18/2019</li>
+        </ul>
 
         <p><strong>2.0.2</strong>
         <ul>
@@ -434,10 +435,10 @@
                     <!-- hidden by default (controlled by preset) -->
 
                     <div class="inputGroup">
-                        <label>ctaUrl:<input class="editInput" id="t100_ctaUrl" /></label>
+                        <label><div class="flexlabel"><div>ctaUrl:</div> <div>leave blank to make link plain text</div></div><input class="editInput" id="t100_ctaUrl" /></label>
                     </div>
                     <div class="inputGroup">
-                        <label>ctaText:<input class="editInput" id="t100_ctaText" /></label>
+                        <label><div class="flexlabel"><div>ctaText:</div> <div>leave blank to remove cta</div></div><input class="editInput" id="t100_ctaText" /></label>
                     </div>
                     <div class="inputGroup editApplyButtonContainer">
                         <button class="editBtn" id="t100_applyBtn" onclick="handlers.goSavet100()" type="button">Apply &rsaquo;</button>
@@ -570,10 +571,12 @@
                         <label>descText:<input class="editInput" id="t102_descText" /></label>
                     </div>
                     <div class="inputGroup">
-                        <label>ctaUrl:<input class="editInput" id="t102_ctaUrl" /></label>
+                            <label><div class="flexlabel"><div>ctaUrl:</div> <div>leave blank to make link plain text</div></div><input class="editInput" id="t102_ctaUrl" /></label>
+                        <!-- <label>ctaUrl:<input class="editInput" id="t102_ctaUrl" /></label> -->
                     </div>
                     <div class="inputGroup">
-                        <label>ctaText:<input class="editInput" id="t102_ctaText" /></label>
+                            <label><div class="flexlabel"><div>ctaText:</div> <div>leave blank to remove cta</div></div><input class="editInput" id="t102_ctaText" /></label>
+                        <!-- <label>ctaText:<input class="editInput" id="t102_ctaText" /></label> -->
                     </div>
                     <div class="inputGroup">
                         <button class="editBtn" id="t102_applyBtn" onclick="handlers.goSavet102()" type="button">Apply &rsaquo;</button>
@@ -700,10 +703,12 @@
                     <!-- hidden by default (controlled by preset) -->
 
                     <div class="inputGroup">
-                        <label>ctaUrl:<input class="editInput" id="t104_ctaUrl" /></label>
+                        <label><div class="flexlabel"><div>ctaUrl:</div> <div>leave blank to make link plain text</div></div><input class="editInput" id="t104_ctaUrl" /></label>
+                        <!-- <label>ctaUrl:<input class="editInput" id="t104_ctaUrl" /></label> -->
                     </div>
                     <div class="inputGroup">
-                        <label>ctaText:<input class="editInput" id="t104_ctaText" /></label>
+                        <label><div class="flexlabel"><div>ctaText:</div> <div>leave blank to remove cta</div></div><input class="editInput" id="t104_ctaText" /></label>
+                        <!-- <label>ctaText:<input class="editInput" id="t104_ctaText" /></label> -->
                     </div>
                     <div class="inputGroup">
                         <button class="editBtn" id="t104_applyBtn" onclick="handlers.goSavet104()" type="button">Apply &rsaquo;</button>

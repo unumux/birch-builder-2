@@ -47,8 +47,10 @@ const megaTemplateObj = {
                         <a href="birch_logoUrl_birch" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 0; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img class="birch-headerbar-logo birch--logoAltTextColor" src="birch_logoSrc_birch" alt="birch_logoAltText_birch" style="-ms-interpolation-mode: bicubic; border: none; clear: both; color: birch_logoAltTextColor_birch; display: inline !important; max-width: 227px; min-width: 80px; outline: none; padding-bottom: 4px; text-decoration: none; width: auto;"></a>
                     </th></tr></table></th>
                     <th class="birch-headerbar-column birch-headerbar-vertical-align-bottom small-6 large-6 columns last" valign="bottom" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 8px; padding-right: 16px; text-align: left; vertical-align: bottom; width: 284px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
-                        <p class="text-right birch-util-no-margin" style="Margin: 0 !important; Margin-bottom: 10px; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 !important; margin-bottom: 10px; padding: 0; text-align: right;">
-                            <a href="birch_ctaUrl_birch" class="birch--ctaTextColor" style="Margin: 0; color: birch_ctaTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">birch_ctaText_birch</a>
+                        <p class="text-right birch-util-no-margin" style="Margin: 0 !important; Margin-bottom: 10px; color: birch_ctaTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 !important; margin-bottom: 10px; padding: 0; text-align: right;">
+
+                            birch_ctaLinkCode_birch
+                            
                         </p>
                     </th></tr></table></th>
                 </tr></tbody></table>
@@ -62,6 +64,7 @@ const megaTemplateObj = {
             logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-logo-white-pad-right.png?raw=true',
             logoAltText: '[Unum]',
             logoAltTextColor: 'white',
+            ctaLinkCode: `<a href="birch_ctaUrl_birch" class="birch--ctaTextColor" style="Margin: 0; color: birch_ctaTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">birch_ctaText_birch</a>`,
             ctaTextColor: 'white',
             ctaUrl: 'https://www.unum.com',
             ctaText: 'call-to-action&nbsp;&rsaquo;'
@@ -72,9 +75,11 @@ const megaTemplateObj = {
             logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/colonial-logo-white-10r.png?raw=true',
             logoAltText: '[Colonial Life]',
             logoAltTextColor: 'white',
+            ctaLinkCode: `<a href="birch_ctaUrl_birch" class="birch--ctaTextColor" style="Margin: 0; color: birch_ctaTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">birch_ctaText_birch</a>`,
             ctaTextColor: 'white',
             ctaUrl: 'https://www.coloniallife.com',
-            ctaText: 'call-to-action&nbsp;&rsaquo;'
+            ctaText: 'call-to-action&nbsp;&rsaquo;',
+            
         }
     } // templateObj_100
     ,
@@ -103,7 +108,7 @@ const megaTemplateObj = {
             logoAltText: '[Unum]',
             logoAltTextColor: 'white',
             headerbarColor: 'white',
-            descText: 'Description',
+            descText: 'Description text that is much longer than the other ones.',
             descTextColor: 'white'
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
@@ -113,7 +118,7 @@ const megaTemplateObj = {
             logoAltText: '[Colonial Life]',
             logoAltTextColor: 'white',
             headerbarColor: 'white',
-            descText: 'Description',
+            descText: 'Description text that is much longer than the other ones.',
             descTextColor: 'white'
         }
     } // templateObj_101
@@ -132,8 +137,10 @@ const megaTemplateObj = {
                         <span class="birch--descTextColor" style="color: birch_descTextColor_birch;">birch_descText_birch</span>
                     </th></tr></table></th>
                     <th class="show-for-large birch-headerbar-column birch-headerbar-vertical-align-bottom small-12 large-4 columns last" valign="bottom" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 8px; padding-right: 16px; text-align: left; vertical-align: bottom; width: 184px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
-                        <p class="text-right show-for-large birch-util-no-margin" style="Margin: 0 !important; Margin-bottom: 10px; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 !important; margin-bottom: 10px; padding: 0; text-align: right;">
-                            <a href="birch_ctaUrl_birch" class="birch--ctaTextColor" style="Margin: 0; color: birch_ctaTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">birch_ctaText_birch</a>
+                        <p class="text-right show-for-large birch-util-no-margin" style="Margin: 0 !important; Margin-bottom: 10px; color: birch_ctaTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 !important; margin-bottom: 10px; padding: 0; text-align: right;">
+
+                            birch_ctaLinkCode_birch
+                            
                         </p>
                     </th></tr></table></th>
                 </tr></tbody></table>
@@ -150,6 +157,7 @@ const megaTemplateObj = {
             headerbarColor: 'white',
             descText: 'Description',
             descTextColor: 'white',
+            ctaLinkCode: `<a href="birch_ctaUrl_birch" class="birch--ctaTextColor" style="Margin: 0; color: birch_ctaTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">birch_ctaText_birch</a>`,
             ctaTextColor: 'white',
             ctaUrl: 'https://www.unum.com',
             ctaText: 'call-to-action&nbsp;&rsaquo;'
@@ -163,6 +171,7 @@ const megaTemplateObj = {
             headerbarColor: 'white',
             descText: 'Description',
             descTextColor: 'white',
+            ctaLinkCode: `<a href="birch_ctaUrl_birch" class="birch--ctaTextColor" style="Margin: 0; color: birch_ctaTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">birch_ctaText_birch</a>`,
             ctaTextColor: 'white',
             ctaUrl: 'https://www.coloniallife.com',
             ctaText: 'call-to-action&nbsp;&rsaquo;'
@@ -228,8 +237,10 @@ const megaTemplateObj = {
                         <a href="birch_logoUrl_birch" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 0; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img class="birch-headerbar-logo birch--logoAltTextColor" src="birch_logoSrc_birch" alt="birch_logoAltText_birch" style="-ms-interpolation-mode: bicubic; border: none; clear: both; color: birch_logoAltTextColor_birch; display: inline !important; max-width: 227px; min-width: 80px; outline: none; padding-bottom: 4px; text-decoration: none; width: auto;"></a>
                     </th></tr></table></th>
                     <th class="show-for-large birch-headerbar-column birch-headerbar-vertical-align-bottom small-6 large-6 columns last" valign="bottom" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 8px; padding-right: 16px; text-align: left; vertical-align: bottom; width: 284px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
-                        <p class="text-right birch-util-no-margin" style="Margin: 0 !important; Margin-bottom: 10px; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 !important; margin-bottom: 10px; padding: 0; text-align: right;">
-                            <a href="birch_ctaUrl_birch" class="birch--ctaTextColor" style="Margin: 0; color: birch_ctaTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">birch_ctaText_birch</a>
+                        <p class="text-right birch-util-no-margin" style="Margin: 0 !important; Margin-bottom: 10px; color: birch_ctaTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 !important; margin-bottom: 10px; padding: 0; text-align: right;">
+
+                            birch_ctaLinkCode_birch
+                            
                         </p>
                     </th></tr></table></th>
                 </tr></tbody></table>
@@ -243,6 +254,7 @@ const megaTemplateObj = {
             logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/paul-revere-logo-white-10r.png?raw=true',
             logoAltText: '[Colonial Voluntary Benefits]',
             logoAltTextColor: 'white',
+            ctaLinkCode: `<a href="birch_ctaUrl_birch" class="birch--ctaTextColor" style="Margin: 0; color: birch_ctaTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">birch_ctaText_birch</a>`,
             ctaTextColor: 'white',
             ctaUrl: 'https://www.colonial-paulrevere.com',
             ctaText: 'call-to-action&nbsp;&rsaquo;'
@@ -253,6 +265,7 @@ const megaTemplateObj = {
             logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/paul-revere-logo-white-10r.png?raw=true',
             logoAltText: '[Colonial Voluntary Benefits]',
             logoAltTextColor: 'white',
+            ctaLinkCode: `<a href="birch_ctaUrl_birch" class="birch--ctaTextColor" style="Margin: 0; color: birch_ctaTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">birch_ctaText_birch</a>`,
             ctaTextColor: 'white',
             ctaUrl: 'https://www.colonial-paulrevere.com',
             ctaText: 'call-to-action&nbsp;&rsaquo;'
@@ -3211,7 +3224,8 @@ const main = {
             document.querySelector('#t104_ctaTextColor').value = matchingDataComp.templateValuesObj.ctaTextColor
             document.querySelector('#t104_ctaUrl').value = matchingDataComp.templateValuesObj.ctaUrl
             document.querySelector('#t104_ctaText').value = matchingDataComp.templateValuesObj.ctaText
-            mergeCodeWithDataForEdit('#t104_mergedCode')
+            // mergeCodeWithDataForEdit('#t104_mergedCode')
+            mergeCodeWithDataForEditShared()
         }
 
         if (receivedTemplateId == 'templateObj_150'){
@@ -4312,7 +4326,7 @@ const handlers = {
         let presetValue = document.querySelector('#t104_presetDD').value
         if (presetValue == 'paulrevere_logo-color_bg-white'){  
             document.querySelector('#t104_backgroundColor').value = 'white'
-            document.querySelector('#t104_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/src/assets/img/paul-revere-logo-color-10r.png?raw=true'
+            document.querySelector('#t104_logoSrc').value = 'https://github.com/unumux/birch-builder-2/blob/master/images/components/paul-revere-logo-color-10r.png?raw=true'
             document.querySelector('#t104_logoAltText').value = "[Colonial Voluntary Benefits]"
             document.querySelector('#t104_logoAltTextColor').value = "#19557F"
             document.querySelector('#t104_ctaTextColor').value = "#19557F"
@@ -5391,7 +5405,7 @@ function themeChange(theme){
     compArray.push(megaTemplateObj.templateObj_100)
     compArray.push(megaTemplateObj.templateObj_101)
     compArray.push(megaTemplateObj.templateObj_102)
-    compArray.push(megaTemplateObj.templateObj_103)
+    //compArray.push(megaTemplateObj.templateObj_103) // made obsolete with dynamic cta controls
     if (theme == 'colonial'){
         compArray.push(megaTemplateObj.templateObj_104)
     }
@@ -5968,7 +5982,27 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
     // merge 1: merge normal data and also insert placeholders that live in the normal data
     for (const [fieldLabel, fieldData] of templateDataObjEntries) {
         //console.log(`fieldLabel:${fieldLabel} -  fieldData:${fieldData}`)
-        if (fieldLabel === 'listItemsAsString'){   // 205
+        // this works for any comp with 1) birch_ctaCode_birch in the template; and 2) ctaCode in it's dataObject
+
+        // 100, 102, 104 (makes 103 obsolete)
+        if (fieldLabel === 'ctaLinkCode'){   // REMEMBER this are fields on the data object!
+            if (templateDataObj.ctaText == ''){ // exclude the cta
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaLinkCode_birch`, '')
+            }
+            else if (templateDataObj.ctaUrl == ''){ // no link, just text
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaLinkCode_birch`, templateDataObj.ctaText)
+            }
+            else{ // include the full cta link
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaLinkCode_birch`, templateDataObj.ctaLinkCode)
+                // now merge the data into the cta placeholders
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaTextColor_birch`, templateDataObj.ctaTextColor)
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaUrl_birch`, templateDataObj.ctaUrl)
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaText_birch`, templateDataObj.ctaText)
+            }
+        }
+
+        // 205
+        if (fieldLabel === 'listItemsAsString'){  // REMEMBER this are fields on the data object!
             let fieldDataArray = fieldData.split('|')
             let dataCount = fieldDataArray.length
             let s = prepRepeatableFieldForMerge(fieldData, templateDataObj.listItemsAsStringCode)
@@ -5979,7 +6013,8 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
             templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_${fieldLabel}_birch`, s)
         }
 
-        if (fieldLabel === 'bulletTextList'){   // 205e
+        // 205e
+        if (fieldLabel === 'bulletTextList'){   // REMEMBER this are fields on the data object!
             let fieldDataArray = fieldData.split('|')
             let dataCount = fieldDataArray.length
             let s = prepRepeatableFieldForMerge(fieldData, templateDataObj.bulletCode)
