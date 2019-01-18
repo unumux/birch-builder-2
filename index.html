@@ -61,7 +61,14 @@
         <!-- <button class="closeMenuButton" type="button" onclick="document.querySelector('#navBtnAbout').click()"><i class="far fa-times-circle"></i></button> -->
         <h2 class="aboutH2">About</h2>
 
-        <p><strong>2.0.2 (current version)</strong>
+        <p><strong>2.0.3 (current version)</strong>
+            <ul>
+                <li>Adds feature to dynamically add/remove CTAs.  Clear the ctaText to remove the CTA entirely.</li>
+                <li>The version also refactored the dynamic bullet code. 205 and 205e</li>
+                <li>released 1/18/2019</li>
+            </ul>
+
+        <p><strong>2.0.2</strong>
         <ul>
             <li>import bug fixed.</li>
             <li>released 1/17/2019</li>
@@ -1887,7 +1894,8 @@
                         </label>
                     </div>
                     <div class="inputGroup">
-                        <label>h1Text:<input class="editInput" id="t204_h1Text" /></label>
+                        <!-- <label>h1Text:<input class="editInput" id="t204_h1Text" /></label> -->
+                        <label><div class="flexlabel"><div>h1Text:</div> <div>use | between each</div></div><textarea rows="6" class="editInput" id="t204_h1Text"></textarea></label>
                     </div>
                     <div class="inputGroup">
                         <label>pTextColor:

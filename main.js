@@ -1,5 +1,5 @@
 // #region TEMPLATE REPEAT AREA
-const version = "2.0.2"
+const version = "2.0.3"
 let importedEmailFile = null // to set the export filename if we imported a file
 
 // used to insert current year in footer templates with dt.getFullYear()
@@ -329,9 +329,9 @@ const megaTemplateObj = {
                 <table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
                     <th class="small-12 large-12 columns first last" valign="middle" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 16px; padding-right: 16px; text-align: left; width: 584px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
                         <h1 class="text-center birch-text-styles-h1 birch--h1TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h1TextColor_birch; font-family: Arial; font-size: 21px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 10px; padding: 0; text-align: center; word-wrap: normal;">birch_h1Text_birch</h1>
-                        <center data-parsed="" style="min-width: initial !important; width: 100%;">
-                            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
-                        </center>
+
+                        birch_ctaCode_birch
+                        
                     </th>
         <th class="expander" style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th></tr></table></th>
                 </tr></tbody></table>
@@ -347,7 +347,10 @@ const megaTemplateObj = {
             ctaBackgroundColor: 'white',
             ctaUrl: 'https://www.unum.com',
             ctaTextColor: '#015294',
-            ctaText: 'Call-to-action&nbsp;&rsaquo;'
+            ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#19557F',
@@ -356,7 +359,11 @@ const megaTemplateObj = {
             ctaBackgroundColor: 'white',
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: '#19557F',
-            ctaText: 'Call-to-action&nbsp;&rsaquo;'
+            ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`
+
         }
     } // templateObj_151
     ,
@@ -406,9 +413,9 @@ const megaTemplateObj = {
                     <th class="small-12 large-12 columns first last" valign="middle" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 16px; padding-right: 16px; text-align: left; width: 584px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
                         <h1 class="text-center birch-text-styles-h1 birch--h1TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h1TextColor_birch; font-family: Arial; font-size: 21px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 10px; padding: 0; text-align: center; word-wrap: normal;">birch_h1Text_birch</h1>
                         <p class="text-center birch-text-styles-p birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;">birch_pText_birch</p>
-                        <center data-parsed="" style="min-width: initial !important; width: 100%;">
-                            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
-                        </center>
+
+                        birch_ctaCode_birch
+                        
                     </th>
         <th class="expander" style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th></tr></table></th>
                 </tr></tbody></table>
@@ -426,7 +433,10 @@ const megaTemplateObj = {
             ctaBackgroundColor: 'white',
             ctaUrl: 'https://www.unum.com',
             ctaTextColor: '#015294',
-            ctaText: 'Call-to-action&nbsp;&rsaquo;'
+            ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#19557F',
@@ -437,7 +447,10 @@ const megaTemplateObj = {
             ctaBackgroundColor: 'white',
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: '#19557F',
-            ctaText: 'Call-to-action&nbsp;&rsaquo;'
+            ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`,
         }
     } // templateObj_153
     ,
@@ -562,9 +575,10 @@ const megaTemplateObj = {
                         <table class="wrapper birch-wrapper-padding-2column-banner-column2 birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 27px; padding-right: 27px; text-align: left; vertical-align: top;">
                             <h1 class="text-center birch-text-styles-h1 birch--h1TextColor birch-util-mobile-padding-top-50" style="Margin: 0; Margin-bottom: 10px; color: birch_h1TextColor_birch; font-family: Arial; font-size: 21px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 0 !important; padding: 0; text-align: center; word-wrap: normal;">birch_h1Text_birch</h1>
                             <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="10px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 10px; font-weight: normal; line-height: 10px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
-                            <center class="birch-util-mobile-padding-bottom-50" data-parsed="" style="min-width: initial !important; width: 100%;">
-                                <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
-                            </center>
+
+                            birch_ctaCode_birch
+
+
                         </td></tr></table>
                     </th></tr></table></th>
                 </tr></tbody></table>
@@ -584,7 +598,10 @@ const megaTemplateObj = {
             ctaBackgroundColor: '#015294', //white
             ctaUrl: 'https://www.unum.com',
             ctaTextColor: 'white', //015294
-            ctaText: 'Call-to-action&nbsp;&rsaquo;'
+            ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center class="birch-util-mobile-padding-bottom-50" data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7', //145481
@@ -597,7 +614,10 @@ const megaTemplateObj = {
             ctaBackgroundColor: '#145481', //white
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white', //19557F
-            ctaText: 'Call-to-action&nbsp;&rsaquo;'
+            ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center class="birch-util-mobile-padding-bottom-50" data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`
         }
     } // templateObj_157
     ,
@@ -615,9 +635,12 @@ const megaTemplateObj = {
                     <th class="small-12 large-6 columns last" valign="middle" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 0; padding-right: 0; text-align: left; width: 308px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;"><!-- this prevents padding under the image on the left -->
                         <table class="wrapper birch-wrapper-padding-2column-banner-column2 birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 27px; padding-right: 27px; text-align: left; vertical-align: top;">
                             <h1 class="birch-text-styles-h1 birch--h1TextColor birch-util-mobile-padding-top-50" style="Margin: 0; Margin-bottom: 10px; color: birch_h1TextColor_birch; font-family: Arial; font-size: 21px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 0 !important; padding: 0; text-align: left; word-wrap: normal;">birch_h1Text_birch</h1>
+
                             <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="10px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 10px; font-weight: normal; line-height: 10px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
                             <div class="birch-util-mobile-padding-bottom-50">
-                                <table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+
+                                birch_ctaCode_birch
+                                
                             </div>
                         </td></tr></table>
                     </th></tr></table></th>
@@ -638,7 +661,8 @@ const megaTemplateObj = {
             ctaBackgroundColor: '#015294', //white
             ctaUrl: 'https://www.unum.com',
             ctaTextColor: 'white', //015294
-            ctaText: 'Call-to-action&nbsp;&rsaquo;'
+            ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>`
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7', //145481
@@ -651,7 +675,8 @@ const megaTemplateObj = {
             ctaBackgroundColor: '#145481', //white
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white', //19557F
-            ctaText: 'Call-to-action&nbsp;&rsaquo;'
+            ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>`
         }
     } // templateObj_157b
     ,
@@ -767,10 +792,11 @@ const megaTemplateObj = {
                     <th class="small-12 large-6 columns last" valign="middle" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 0; padding-right: 0; text-align: left; width: 308px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
                         <table class="wrapper birch-wrapper-padding-2column-banner-column2 birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 27px; padding-right: 27px; text-align: left; vertical-align: top;">
                             <h1 class="text-center birch-text-styles-h1 birch--h1TextColor birch-util-mobile-padding-top-50 birch-util-mobile-padding-bottom-50" style="Margin: 0; Margin-bottom: 10px; color: birch_h1TextColor_birch; font-family: Arial; font-size: 21px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 0 !important; padding: 0; text-align: center; word-wrap: normal;">birch_h1Text_birch</h1>
+
                             <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="10px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 10px; font-weight: normal; line-height: 10px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
-                            <center class="birch-util-mobile-padding-bottom-50" data-parsed="" style="min-width: initial !important; width: 100%;">
-                                <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
-                            </center>
+
+                            birch_ctaCode_birch
+
                         </td></tr></table>
                     </th></tr></table></th>
                 </tr></tbody></table>
@@ -794,7 +820,10 @@ const megaTemplateObj = {
             ctaBackgroundColor: '#19557F',
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white',
-            ctaText: 'Call-to-action&nbsp;&rsaquo;'
+            ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center class="birch-util-mobile-padding-bottom-50" data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
@@ -807,7 +836,10 @@ const megaTemplateObj = {
             ctaBackgroundColor: '#19557F',
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white',
-            ctaText: 'Call-to-action&nbsp;&rsaquo;'
+            ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center class="birch-util-mobile-padding-bottom-50" data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`
         }
     } // templateObj_161
     ,
@@ -826,10 +858,11 @@ const megaTemplateObj = {
                         <table class="wrapper birch-wrapper-padding-2column-banner-column2 birch--backgroundColor birch-wrapper-align-vertical-middle birch--wrapper193" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="height: 193px; mso-height-rule: 193px; padding: 0; text-align: left; vertical-align: middle;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 27px; padding-right: 27px; text-align: left; vertical-align: middle;">
                             <!-- need to manually set [vertical-align: middle; height: 200px; mso-height-rule: 200px;] to the 1st TR in the wrapper table -->
                             <h1 class="birch-text-styles-h1 birch--h1TextColor birch-util-mobile-padding-top-50 birch-util-mobile-padding-bottom-50" style="Margin: 0; Margin-bottom: 10px; color: birch_h1TextColor_birch; font-family: Arial; font-size: 21px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 0 !important; padding: 0; text-align: left; word-wrap: normal;">birch_h1Text_birch</h1>
+
                             <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="10px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 10px; font-weight: normal; line-height: 10px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
-                            <div class="birch-util-mobile-padding-bottom-50">
-                                <table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
-                            </div>
+
+                            birch_ctaCode_birch
+                            
                         </td></tr></table>
                     </th></tr></table></th>
                 </tr></tbody></table>
@@ -853,7 +886,10 @@ const megaTemplateObj = {
             ctaBackgroundColor: '#19557F',
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white',
-            ctaText: 'Call-to-action&nbsp;&rsaquo;'
+            ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<div class="birch-util-mobile-padding-bottom-50">
+            <table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </div>`
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
@@ -866,7 +902,10 @@ const megaTemplateObj = {
             ctaBackgroundColor: '#19557F',
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white',
-            ctaText: 'Call-to-action&nbsp;&rsaquo;'
+            ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<div class="birch-util-mobile-padding-bottom-50">
+            <table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </div>`
         }
     } // templateObj_161b
     ,
@@ -955,9 +994,9 @@ const megaTemplateObj = {
             <table class="wrapper birch-wrapper-padding birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 53px; padding-right: 53px; text-align: left; vertical-align: top;">
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
                 <h1 class="text-center birch-text-styles-h1-large birch--h1TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h1TextColor_birch; font-family: Arial; font-size: 24px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 10px; padding: 0; text-align: center; word-wrap: normal;">birch_h1Text_birch</h1>
-                <center data-parsed="" style="min-width: initial !important; width: 100%;">
-                    <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
-                </center>
+
+                birch_ctaCode_birch
+
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
             </td></tr></table>
         </td></tr></tbody></table>
@@ -973,6 +1012,9 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.unum.com',
             ctaTextColor: '#fefefe',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`,
             spacerBottom: '50'     
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
@@ -984,6 +1026,9 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`,
             spacerBottom: '50'
         }
     } // templateObj_200
@@ -996,10 +1041,11 @@ const megaTemplateObj = {
             <table class="wrapper birch-wrapper-padding birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 53px; padding-right: 53px; text-align: left; vertical-align: top;">
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
                 <h1 class="text-center birch-text-styles-h1-large birch--h1TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h1TextColor_birch; font-family: Arial; font-size: 24px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 10px; padding: 0; text-align: center; word-wrap: normal;">birch_h1Text_birch</h1>
+
                 <p class="text-center birch-text-styles-p birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;">birch_pText_birch</p>
-                <center data-parsed="" style="min-width: initial !important; width: 100%;">
-                    <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
-                </center>
+
+                birch_ctaCode_birch
+
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
             </td></tr></table>
         </td></tr></tbody></table>
@@ -1017,6 +1063,9 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.unum.com',
             ctaTextColor: '#fefefe',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`,
             spacerBottom: '50'     
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
@@ -1031,6 +1080,9 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`,
             spacerBottom: '50'
         }
     } // templateObj_201
@@ -1078,13 +1130,17 @@ const megaTemplateObj = {
         <table align="center" class="container" style="Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">
             <table class="wrapper birch-wrapper-padding birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 53px; padding-right: 53px; text-align: left; vertical-align: top;">
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
                 <h2 class="text-center birch-text-styles-h2 birch--h2TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h2TextColor_birch; font-family: Arial; font-size: 20px; font-style: normal; font-weight: bold; line-height: 21px; margin: 0; margin-bottom: 10px; padding: 0; text-align: center; word-wrap: normal;">birch_h2Text_birch</h2>
+
                 <p class="text-center birch-text-styles-p birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;">birch_pText_birch</p>
-                <center data-parsed="" style="min-width: initial !important; width: 100%;">
-                    <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
-                </center>
+
+                birch_ctaCode_birch
+
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="10px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 10px; font-weight: normal; line-height: 10px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
                 <p class="text-center birch-text-styles-p" style="Margin: 0; Margin-bottom: 10px; color: #2E2E2E; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;"><a href="birch_linkUrl_birch" class="birch-text-styles-link birch--linkColor" style="Margin: 0; color: birch_linkColor_birch; font-family: Arial; font-size: 16px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; padding: 0; text-align: center; text-decoration: underline;">birch_linkText_birch</a></p>
+
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
             </td></tr></table>
         </td></tr></tbody></table>
@@ -1102,6 +1158,9 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.unum.com',
             ctaTextColor: '#fefefe',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
+                    <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+                </center>`,
             linkUrl: 'http://www.example.com',
             linkColor: '#015294',
             linkText: 'Mauris non tempor quam, et lacinia sapien',
@@ -1118,6 +1177,9 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`,
             linkUrl: 'http://www.example.com',
             linkColor: '#19557F',
             linkText: 'Mauris non tempor quam, et lacinia sapien',
@@ -1132,8 +1194,11 @@ const megaTemplateObj = {
         <table align="center" class="container" style="Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">
             <table class="wrapper birch-wrapper-padding birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 53px; padding-right: 53px; text-align: left; vertical-align: top;">
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
                 <h1 class="birch-text-styles-h1-large birch--h1TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h1TextColor_birch; font-family: Arial; font-size: 24px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 10px; padding: 0; text-align: left; word-wrap: normal;">birch_h1Text_birch</h1>
-                <table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+
+                birch_ctaCode_birch
+
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
             </td></tr></table>
         </td></tr></tbody></table>
@@ -1149,6 +1214,7 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.unum.com',
             ctaTextColor: '#fefefe',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>`,
             spacerBottom: '50'     
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
@@ -1160,6 +1226,7 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>`,
             spacerBottom: '50'
         }
     } // templateObj_203
@@ -1171,13 +1238,20 @@ const megaTemplateObj = {
         <table align="center" class="container" style="Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">
             <table class="wrapper birch-wrapper-padding birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 53px; padding-right: 53px; text-align: left; vertical-align: top;">
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
-                <h1 class="birch-text-styles-h1-large birch--h1TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h1TextColor_birch; font-family: Arial; font-size: 24px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 10px; padding: 0; text-align: left; word-wrap: normal;">birch_h1Text_birch</h1>
+                
+                birch_h1code_birch
+
                 <p class="birch-text-styles-p birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;">birch_pText_birch</p>
-                <table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+                
+                birch_ctaCode_birch
+
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
             </td></tr></table>
         </td></tr></tbody></table>
         <!-- /c204 -->`,
+        
+        pcode:`<p class="birch-text-styles-p birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;">birch_pText_birch</p>`,
+        
         category: 'body',
         tags: ['1col', 'alignedLeft'],
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
@@ -1185,12 +1259,14 @@ const megaTemplateObj = {
             spacerTop: '50',
             h1TextColor: '#015294',
             h1Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
+            h1code:`<h1 class="birch-text-styles-h1-large birch--h1TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h1TextColor_birch; font-family: Arial; font-size: 24px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 10px; padding: 0; text-align: left; word-wrap: normal;">birch_h1Text_birch</h1>`,
             pTextColor: '#2E2E2E',
             pText: 'Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget lobero posuere vulputate.',
             ctaBackgroundColor: '#015294',
             ctaUrl: 'https://www.unum.com',
             ctaTextColor: '#fefefe',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>`,
             spacerBottom: '50'     
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
@@ -1198,12 +1274,14 @@ const megaTemplateObj = {
             spacerTop: '50',
             h1TextColor: '#19557F',
             h1Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
+            h1code:`<h1 class="birch-text-styles-h1-large birch--h1TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h1TextColor_birch; font-family: Arial; font-size: 24px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 10px; padding: 0; text-align: left; word-wrap: normal;">birch_h1Text_birch</h1>`,
             pTextColor: '#2E2E2E',
             pText: 'Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget lobero posuere vulputate.',
             ctaBackgroundColor: '#1A8573',
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>`,
             spacerBottom: '50'
         }
     } // templateObj_204
@@ -1214,15 +1292,23 @@ const megaTemplateObj = {
         baseCode: `<!-- c204e -->
         <table align="center" class="container" style="Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">
             <table class="wrapper birch-wrapper-padding birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 53px; padding-right: 53px; text-align: left; vertical-align: top;">
+
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
                 <table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
                     <th class="last small-12 large-2 columns first" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; text-align: left; width: 84px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
+
                         <center data-parsed="" style="min-width: initial !important; width: 100%;"><img src="birch_iconUrl_birch" alt="birch_iconAltText_birch" width="50" height="50" style="-ms-interpolation-mode: bicubic; Margin: 0 auto; clear: both; color: birch_iconAltTextColor_birch; display: block; float: none; height: 50px; margin: 0 auto; max-width: 100%; min-width: 50px; outline: none; text-align: center; text-decoration: none; width: 50px;" class="birch-min-width-50 birch--iconAltTextColor float-center" align="center"></center>
+
                     </th></tr></table></th>
                     <th class="small-12 large-10 columns last" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0; padding-left: 8px; padding-right: 16px; text-align: left; width: 484px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
+
                         <h1 class="birch-text-styles-h1-large birch--h1TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h1TextColor_birch; font-family: Arial; font-size: 24px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 10px; padding: 0; text-align: left; word-wrap: normal;">birch_h1Text_birch</h1>
+
                         <p class="birch-text-styles-p birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;">birch_pText_birch</p>
-                        <table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+
+                        birch_ctaCode_birch
+
                     </th></tr></table></th>
                 </tr></tbody></table>
                 
@@ -1246,6 +1332,7 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.unum.com',
             ctaTextColor: '#fefefe',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>`,
             spacerBottom: '50'     
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
@@ -1262,6 +1349,7 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>`,
             spacerBottom: '50'
         }
     } // templateObj_204e
@@ -1272,15 +1360,23 @@ const megaTemplateObj = {
         baseCode: `<!-- c204i -->
         <table align="center" class="container" style="Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">
             <table class="wrapper birch-wrapper-padding birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 53px; padding-right: 53px; text-align: left; vertical-align: top;">
+
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
                 <table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
                     <th class="last small-12 large-3 columns first" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; text-align: left; width: 134px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
+
                         <center data-parsed="" style="min-width: initial !important; width: 100%;"><img src="birch_imgUrl_birch" alt="birch_imgAltText_birch" width="100" height="100" style="-ms-interpolation-mode: bicubic; Margin: 0 auto; clear: both; color: birch_imgAltTextColor_birch; display: block; float: none; height: 100px; margin: 0 auto; max-width: 100%; min-width: 100px; outline: none; text-align: center; text-decoration: none; width: 100px;" class="birch-min-width-100 birch--imgAltTextColor float-center" align="center"></center>
+
                     </th></tr></table></th>
                     <th class="small-12 large-7 columns last" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0; padding-left: 8px; padding-right: 16px; text-align: left; width: 334px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
+
                         <h1 class="birch-text-styles-h1-large birch--h1TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h1TextColor_birch; font-family: Arial; font-size: 24px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 10px; padding: 0; text-align: left; word-wrap: normal;">birch_h1Text_birch</h1>
+
                         <p class="birch-text-styles-p birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;">birch_pText_birch</p>
-                        <table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+
+                        birch_ctaCode_birch
+
                     </th></tr></table></th>
                 </tr></tbody></table>
                 
@@ -1304,6 +1400,7 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.unum.com',
             ctaTextColor: '#fefefe',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>`,
             spacerBottom: '50'     
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
@@ -1320,6 +1417,7 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>`,
             spacerBottom: '50'
         }
     } // templateObj_204i
@@ -1333,8 +1431,10 @@ const megaTemplateObj = {
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
                 <h2 class="text-center birch-text-styles-h2 birch--h2TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h2TextColor_birch; font-family: Arial; font-size: 20px; font-style: normal; font-weight: bold; line-height: 21px; margin: 0; margin-bottom: 10px; padding: 0; text-align: center; word-wrap: normal;">birch_h2Text_birch</h2>
                 
+                <ul>
                 birch_listItemsAsString_birch
-                
+                </ul>
+
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
             </td></tr></table>
         </td></tr></tbody></table>
@@ -1348,8 +1448,9 @@ const megaTemplateObj = {
             h2Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
             bulletTextColor: '#2E2E2E',
             
-            listItemsAsString: 'Lorem ipsum dolor, sit amet.|Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse animi, similique libero commodi quos earum.|Lorem ipsum dolor, sit amet.',
+            listItemsAsString: '[a]Lorem ipsum dolor, sit amet.|[b]Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse animi, similique libero commodi quos earum.|[c]Lorem ipsum dolor, sit amet.',
             ulStyle: '',
+            listItemsAsStringCode: `<li class="birch-text-styles-li" style="font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px">birch_listItemsAsStringItem_birch</li>`,
             //liColor: '#2E2E2E',
             spacerBottom: '50'     
         },
@@ -1359,8 +1460,9 @@ const megaTemplateObj = {
             h2TextColor: '#2E2E2E',
             h2Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
             bulletTextColor: '#2E2E2E',
-            listItemsAsString: 'Lorem ipsum dolor, sit amet.|Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse animi, similique libero commodi quos earum.|Lorem ipsum dolor, sit amet.',
+            listItemsAsString: '[a]Lorem ipsum dolor, sit amet.|[b]Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse animi, similique libero commodi quos earum.|[c]Lorem ipsum dolor, sit amet.',
             ulStyle: '; list-style-type:square;',
+            listItemsAsStringCode: `<li class="birch-text-styles-li" style="font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px">birch_listItemsAsStringItem_birch</li>`,
             //liColor: '#2E2E2E',
             spacerBottom: '50'
         }
@@ -1377,7 +1479,8 @@ const megaTemplateObj = {
 
                 birch_bulletTextList_birch
 
-                <table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+                birch_ctaCode_birch
+                
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
             </td></tr></table>
         </td></tr></tbody></table>
@@ -1395,11 +1498,16 @@ const megaTemplateObj = {
             bulletImage: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
             //bulletImage2: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
             //bulletImage3: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
+            bulletCode: `<table class="row collapse" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
+            <th class="small-2 large-1 columns first" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 0; padding-right: 0; text-align: left; width: 58px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;"><img src="birch_repeatingImgUrl_birch" class="birch-min-width-25" alt="" style="-ms-interpolation-mode: bicubic; clear: both; display: block; max-width: 100%; min-width: 25px; outline: none; text-decoration: none; width: auto;"></th></tr></table></th><!--  continue here -->
+            <th class="small-10 large-11 columns last" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 0; padding-right: 0; text-align: left; width: 558px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;"><p class="birch--bulletTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_bulletTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;">birch_repeatingImgText_birch</p></th></tr></table></th>
+        </tr></tbody></table>`,
             bulletTextColor: "#2E2E2E",
             ctaBackgroundColor: '#015294',
             ctaUrl: 'https://www.unum.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>`,
             spacerBottom: '50'     
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
@@ -1413,11 +1521,16 @@ const megaTemplateObj = {
             bulletImage: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
             //bulletImage2: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
             //bulletImage3: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true',
+            bulletCode: `<table class="row collapse" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
+            <th class="small-2 large-1 columns first" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 0; padding-right: 0; text-align: left; width: 58px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;"><img src="birch_repeatingImgUrl_birch" class="birch-min-width-25" alt="" style="-ms-interpolation-mode: bicubic; clear: both; display: block; max-width: 100%; min-width: 25px; outline: none; text-decoration: none; width: auto;"></th></tr></table></th><!--  continue here -->
+            <th class="small-10 large-11 columns last" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 0; padding-right: 0; text-align: left; width: 558px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;"><p class="birch--bulletTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_bulletTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;">birch_repeatingImgText_birch</p></th></tr></table></th>
+        </tr></tbody></table>`,
             bulletTextColor: "#2E2E2E",
             ctaBackgroundColor: '#19557F',
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>`,
             spacerBottom: '50'
         }
     } // templateObj_205e
@@ -1472,11 +1585,17 @@ const megaTemplateObj = {
         <table align="center" class="container" style="Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">
             <table class="wrapper birch-wrapper-padding birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 53px; padding-right: 53px; text-align: left; vertical-align: top;">
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
                 <img class="birch-util-full-width birch-min-width-480 birch--imgAltTextColor" width="480" height="200" src="birch_imgUrl_birch" alt="birch_imgAltText_birch" style="-ms-interpolation-mode: bicubic; clear: both; color: birch_imgAltTextColor_birch; display: block; max-width: 100%; min-width: 480px; outline: none; text-decoration: none; width: 100%;">
+
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="16px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 16px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
                 <h2 class="birch-text-styles-h2 birch--h2TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h2TextColor_birch; font-family: Arial; font-size: 20px; font-style: normal; font-weight: bold; line-height: 21px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left; word-wrap: normal;">birch_h2Text_birch</h2>
+
                 <p class="birch-text-styles-p birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;">birch_pText_birch</p>
-                <table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+
+                birch_ctaCode_birch
+
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
             </td></tr></table>
         </td></tr></tbody></table>
@@ -1497,6 +1616,7 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.unum.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>`,
             spacerBottom: '50'     
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
@@ -1513,6 +1633,7 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>`,
             spacerBottom: '50'
         }
     } // templateObj_207
@@ -1524,13 +1645,17 @@ const megaTemplateObj = {
         <table align="center" class="container" style="Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">
             <table class="wrapper birch-wrapper-padding birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 53px; padding-right: 53px; text-align: left; vertical-align: top;">
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
                 <img class="birch-util-full-width birch-min-width-480 birch--imgAltTextColor" width="480" height="200" src="birch_imgUrl_birch" alt="birch_imgAltText_birch" style="-ms-interpolation-mode: bicubic; clear: both; color: birch_imgAltTextColor_birch; display: block; max-width: 100%; min-width: 480px; outline: none; text-decoration: none; width: 100%;">
+
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="16px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 16px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
                 <h2 class="text-center birch-text-styles-h2 birch--h2TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h2TextColor_birch; font-family: Arial; font-size: 20px; font-style: normal; font-weight: bold; line-height: 21px; margin: 0; margin-bottom: 10px; padding: 0; text-align: center; word-wrap: normal;">birch_h2Text_birch</h2>
+
                 <p class="text-center birch-text-styles-p birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;">birch_pText_birch</p>
-                <center data-parsed="" style="min-width: initial !important; width: 100%;">
-                    <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
-                </center>
+
+                birch_ctaCode_birch
+
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
             </td></tr></table>
         </td></tr></tbody></table>
@@ -1551,6 +1676,9 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.unum.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`,
             spacerBottom: '50'     
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
@@ -1567,6 +1695,9 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`,
             spacerBottom: '50'
         }
     } // templateObj_207b
@@ -1680,11 +1811,13 @@ const megaTemplateObj = {
         
                     <th class="small-12 large-6 columns last" valign="middle" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 0; padding-right: 0; text-align: left; width: 308px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
                         <table class="spacer birch-small-only" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="16px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 16px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
                         <h2 class="text-center birch-text-styles-h2 birch-grid-small-padding-top birch--h2TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h2TextColor_birch; font-family: Arial; font-size: 20px; font-style: normal; font-weight: bold; line-height: 21px; margin: 0; margin-bottom: 10px; padding: 0; text-align: center; word-wrap: normal;">birch_h2Text_birch</h2>
+
                         <p class="text-center birch-text-styles-p birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;">birch_pText_birch</p>
-                        <center data-parsed="" style="min-width: initial !important; width: 100%;">
-                            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
-                        </center>
+
+                        birch_ctaCode_birch
+
                         <table class="spacer birch-small-only" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="16px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 16px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
                     </th></tr></table></th>
                 </tr></tbody></table>
@@ -1707,6 +1840,9 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.unum.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`,
             spacerBottom: '50'     
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
@@ -1723,6 +1859,9 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`,
             spacerBottom: '50'
         }
     } // templateObj_209
@@ -1795,11 +1934,13 @@ const megaTemplateObj = {
                         <center data-parsed="" style="min-width: initial !important; width: 100%;">
                             <img class="birch-min-width-50 birch--iconAltTextColor float-center" width="50" height="50" src="birch_iconUrl_birch" alt="birch_iconAltText_birch" align="center" style="-ms-interpolation-mode: bicubic; Margin: 0 auto; clear: both; color: birch_iconAltTextColor_birch; display: block; float: none; margin: 0 auto; max-width: 100%; min-width: 50px; outline: none; text-align: center; text-decoration: none; width: auto;">
                         </center>
+
                         <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="16px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 16px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
                         <h2 class="text-center birch-text-styles-h2 birch--h2TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h2TextColor_birch; font-family: Arial; font-size: 20px; font-style: normal; font-weight: bold; line-height: 21px; margin: 0; margin-bottom: 10px; padding: 0; text-align: center; word-wrap: normal;">birch_h2Text_birch</h2>
-                        <center data-parsed="" style="min-width: initial !important; width: 100%;">
-                            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
-                        </center>
+
+                        birch_ctaCode_birch
+
                         <table class="spacer birch-small-only" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="16px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 16px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
                     </th></tr></table></th>
                 </tr></tbody></table>
@@ -1823,6 +1964,9 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.unum.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`,
             spacerBottom: '50'     
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
@@ -1840,6 +1984,9 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`,
             spacerBottom: '50'
         }
     } // templateObj_211
@@ -2094,8 +2241,11 @@ const megaTemplateObj = {
         
                     <th class="birch-grid-column2-left-half-padding small-12 large-6 columns last" valign="middle" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 0; padding-right: 0; padding-top: 0; text-align: left; width: 308px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
                         <h2 class="birch-text-styles-h2 birch--h2TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h2TextColor_birch; font-family: Arial; font-size: 20px; font-style: normal; font-weight: bold; line-height: 21px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left; word-wrap: normal;">birch_h2Text_birch</h2>
+
                         <p class="birch-text-styles-p birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;">birch_pText_birch</p>
-                        <table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+
+                        birch_ctaCode_birch
+
                     </th></tr></table></th>
                 </tr></tbody></table>
             </td></tr></table>
@@ -2117,6 +2267,7 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.unum.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>`,
             spacerBottom: '50'    
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
@@ -2133,6 +2284,7 @@ const megaTemplateObj = {
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<table class="button small-expanded radius birch--ctaButton" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>`,
             spacerBottom: '50' 
         }
     } // templateObj_216
@@ -2147,11 +2299,17 @@ const megaTemplateObj = {
                     <th class="small-12 large-6 columns first" valign="middle" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 0 !important; padding-right: 0 !important; text-align: left; width: 284px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
                         <table class="wrapper birch-wrapper-padding-2column-first birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 50px; padding-right: 25px; text-align: left; vertical-align: top;">
                             <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
                             <img class="birch-util-mobile-center birch-min-width-200 birch--imgAltTextColor" width="200" height="200" src="birch_imgUrl1_birch" alt="birch_imgAltText1_birch" style="-ms-interpolation-mode: bicubic; clear: both; color: birch_imgAltTextColor_birch; display: block; max-width: 100%; min-width: 200px; outline: none; text-decoration: none; width: auto;">
-                            <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="16px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 16px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
+                            <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="16px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 16px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>
+
                             <h2 class="birch-text-styles-h2 birch-grid-small-padding-top birch--h2TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h2TextColor_birch; font-family: Arial; font-size: 20px; font-style: normal; font-weight: bold; line-height: 21px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left; word-wrap: normal;">birch_h2Text1_birch</h2>
+
                             <p class="birch-text-styles-p birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;">birch_pText1_birch</p>
-                            <table class="button small-expanded radius birch--ctaButton1" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor1_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl1_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor1_birch; border-radius: 3px; color: birch_ctaTextColor1_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText1_birch</a></td></tr></table></td></tr></table>
+
+                            birch_ctaCode1_birch
+
                             <table class="spacer show-for-large" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="40px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 40px; font-weight: normal; line-height: 40px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
                         </td></tr></table>
                     </th></tr></table></th>
@@ -2159,11 +2317,17 @@ const megaTemplateObj = {
                     <th class="small-12 large-6 columns last" valign="middle" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 0 !important; padding-right: 0 !important; text-align: left; width: 284px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
                         <table class="wrapper birch-wrapper-padding-2column-second birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 25px; padding-right: 50px; text-align: left; vertical-align: top;">
                             <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
                             <img class="birch-util-mobile-center birch-min-width-200 birch--imgAltTextColor" width="200" height="200" src="birch_imgUrl2_birch" alt="birch_imgAltText2_birch" style="-ms-interpolation-mode: bicubic; clear: both; color: birch_imgAltTextColor_birch; display: block; max-width: 100%; min-width: 200px; outline: none; text-decoration: none; width: auto;">
+
                             <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="16px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 16px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
                             <h2 class="birch-text-styles-h2 birch-grid-small-padding-top birch--h2TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h2TextColor_birch; font-family: Arial; font-size: 20px; font-style: normal; font-weight: bold; line-height: 21px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left; word-wrap: normal;">birch_h2Text2_birch</h2>
+
                             <p class="birch-text-styles-p birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;">birch_pText2_birch</p>
-                            <table class="button small-expanded radius birch--ctaButton2" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor2_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl2_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor2_birch; border-radius: 3px; color: birch_ctaTextColor2_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText2_birch</a></td></tr></table></td></tr></table>
+
+                            birch_ctaCode2_birch
+
                             <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="40px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 40px; font-weight: normal; line-height: 40px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
                         </td></tr></table>
                     </th></tr></table></th>
@@ -2186,6 +2350,7 @@ const megaTemplateObj = {
             ctaUrl1: 'https://www.unum.com',
             ctaTextColor1: 'white',
             ctaText1: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode1: `<table class="button small-expanded radius birch--ctaButton1" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor1_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl1_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor1_birch; border-radius: 3px; color: birch_ctaTextColor1_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText1_birch</a></td></tr></table></td></tr></table>`,
             imgUrl2: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText2: 'ALT tags are important',
             //imgAltText2Color: '#2E2E2E',
@@ -2196,7 +2361,8 @@ const megaTemplateObj = {
             ctaBackgroundColor2: '#015294',
             ctaUrl2: 'https://www.unum.com',
             ctaTextColor2: 'white',
-            ctaText2: 'Call-to-action&nbsp;&rsaquo;'
+            ctaText2: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode2: `<table class="button small-expanded radius birch--ctaButton2" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor2_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl2_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor2_birch; border-radius: 3px; color: birch_ctaTextColor2_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText2_birch</a></td></tr></table></td></tr></table>`
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
@@ -2211,6 +2377,7 @@ const megaTemplateObj = {
             ctaUrl1: 'https://www.coloniallife.com',
             ctaTextColor1: 'white',
             ctaText1: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode1: `<table class="button small-expanded radius birch--ctaButton1" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor1_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl1_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor1_birch; border-radius: 3px; color: birch_ctaTextColor1_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText1_birch</a></td></tr></table></td></tr></table>`,
             imgUrl2: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
             imgAltText2: 'ALT tags are important',
             //imgAltText2Color: '#2E2E2E',
@@ -2221,7 +2388,8 @@ const megaTemplateObj = {
             ctaBackgroundColor2: '#1A8573',
             ctaUrl2: 'https://www.coloniallife.com',
             ctaTextColor2: 'white',
-            ctaText2: 'Call-to-action&nbsp;&rsaquo;'
+            ctaText2: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode2: `<table class="button small-expanded radius birch--ctaButton2" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor2_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl2_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor2_birch; border-radius: 3px; color: birch_ctaTextColor2_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText2_birch</a></td></tr></table></td></tr></table>`
         }
     } // templateObj_217
     ,
@@ -5771,8 +5939,127 @@ function prepForTextArea(s){
 }
 
 
+function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
+    // the input data is not needed because it's assumed to already be saved into the templateDataObj
+    // to merge correctly, the fields in the dataObj need to match the names of the placeholder middle. birch_thispart_birch
+    //console.log('Welcome to mergeDataIntoPlaceholdersNEW(templateBaseCode, templateDataObj)...')
+    //console.log('Received templateBaseCode = ', templateBaseCode);
+    //console.log('Received templateDataObj = ', templateDataObj);
 
-function mergeDataIntoPlaceholders(templateHtml, dataObj){
+    // plan:  loop through the templateDataObj to find placeholder names
+    //        for each matching placholder in templateBaseCode, swap in real data
+    let templateBaseCodeMerged = templateBaseCode
+    const templateDataObjEntries = Object.entries(templateDataObj)
+
+    function prepRepeatableFieldForMerge(fieldData, codeSnippetToRepeat){
+        let s = ''
+        let fieldDataArray = fieldData.split('|')
+        let dataCount = fieldDataArray.length
+        // build a string with as many are needed from the data input
+        for (let i=0; i<dataCount; i++){
+            s+=codeSnippetToRepeat
+            if (i<dataCount-1){
+                s+='\n'
+            }
+        }
+        return s
+    }
+
+    // merge 1: merge normal data and also insert placeholders that live in the normal data
+    for (const [fieldLabel, fieldData] of templateDataObjEntries) {
+        //console.log(`fieldLabel:${fieldLabel} -  fieldData:${fieldData}`)
+        if (fieldLabel === 'listItemsAsString'){   // 205
+            let fieldDataArray = fieldData.split('|')
+            let dataCount = fieldDataArray.length
+            let s = prepRepeatableFieldForMerge(fieldData, templateDataObj.listItemsAsStringCode)
+            // loop again to merge into each repeated field
+            for (let i=0; i<dataCount; i++){
+                s=s.replace(`birch_listItemsAsStringItem_birch`, fieldDataArray[i])
+            }
+            templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_${fieldLabel}_birch`, s)
+        }
+
+        if (fieldLabel === 'bulletTextList'){   // 205e
+            let fieldDataArray = fieldData.split('|')
+            let dataCount = fieldDataArray.length
+            let s = prepRepeatableFieldForMerge(fieldData, templateDataObj.bulletCode)
+            let bulletImgDataArray = templateDataObj.bulletImageList.split('|')
+            // loop again to merge into each repeated field
+            for (let i=0; i<dataCount; i++){
+                s=s.replace(`birch_repeatingImgUrl_birch`, bulletImgDataArray[i])
+                s=s.replace(`birch_repeatingImgText_birch`, fieldDataArray[i])
+            }
+            templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_${fieldLabel}_birch`, s)
+        }
+
+        // this works for any comp with 1) birch_ctaCode_birch in the template; and 2) ctaCode in it's dataObject
+        if (fieldLabel === 'ctaCode'){   // REMEMBER this are fields on the data object!
+            if (templateDataObj.ctaText == ''){ // exclude the cta
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaCode_birch`, '')
+            }
+            else{ // include the cta
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaCode_birch`, templateDataObj.ctaCode)
+                // now merge the data into the cta placeholders
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaBackgroundColor_birch`, templateDataObj.ctaBackgroundColor)
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaTextColor_birch`, templateDataObj.ctaTextColor)
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaUrl_birch`, templateDataObj.ctaUrl)
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaText_birch`, templateDataObj.ctaText)
+            }
+        }
+
+        // special situation for 217 which has two ctas
+        if (fieldLabel === 'ctaCode1'){   // REMEMBER this are fields on the data object!
+            if (templateDataObj.ctaText1 == ''){ // exclude the cta
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaCode1_birch`, '')
+            }
+            else{ // include the cta
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaCode1_birch`, templateDataObj.ctaCode1)
+                // now merge the data into the cta placeholders
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaBackgroundColor1_birch`, templateDataObj.ctaBackgroundColor1)
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaTextColor1_birch`, templateDataObj.ctaTextColor1)
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaUrl1_birch`, templateDataObj.ctaUrl1)
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaText1_birch`, templateDataObj.ctaText1)
+            }
+            if (templateDataObj.ctaText2 == ''){ // exclude the cta
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaCode2_birch`, '')
+            }
+            else{ // include the cta
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaCode2_birch`, templateDataObj.ctaCode2)
+                // now merge the data into the cta placeholders
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaBackgroundColor2_birch`, templateDataObj.ctaBackgroundColor2)
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaTextColor2_birch`, templateDataObj.ctaTextColor2)
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaUrl2_birch`, templateDataObj.ctaUrl2)
+                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaText2_birch`, templateDataObj.ctaText2)
+            }
+        }
+
+        else{ // do a normal merge (ones without repeatable fields)
+            templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_${fieldLabel}_birch`, fieldData)
+        }
+    }
+    //console.log('\n\nPost merge1 templateBaseCodeMerged:', templateBaseCodeMerged);
+
+    // merge 2: merge again to populate placeholders that arrived from the data of merge1
+    for (const [fieldLabel, fieldData] of templateDataObjEntries) {
+        //console.log(`fieldLabel:${fieldLabel} -  fieldData:${fieldData}`)
+        templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_${fieldLabel}_birch`, fieldData)
+    }
+    //console.log('\n\nPost merge2 templateBaseCodeMerged:', templateBaseCodeMerged);
+
+
+
+    return templateBaseCodeMerged
+    
+
+}
+
+
+
+function mergeDataIntoPlaceholdersX(templateHtml, dataObj){
+
+    // call our new test function
+    mergeDataIntoPlaceholdersNEW(templateHtml, dataObj)
+
     // mergeDataIntoPlaceholders(template, dataObj)
     // comp.baseCode, comp.defaultUnumDataObj
     // template is the baseCode from the template variable
@@ -5804,10 +6091,15 @@ function mergeDataIntoPlaceholders(templateHtml, dataObj){
                 let tokensWithInsertedValues = []
                 for (let x=0; x<loopDuration; x++){
                     if (isOdd(x)){
+                        //console.log('the key is ', key)
                         if (key === 'listItemsAsString'){   
                             let liArray = dataObj[key].split('|')
                             let liAsString = liArray.map( item => '<li class="birch-text-styles-li" style="font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px">'+item+'</li>').join('')
                             tokensWithInsertedValues.push(liAsString)
+                        }
+                        else if (key === 'birch_dynamicH1code204_birch'){
+                            console.log('i see birch_dynamicH1code204_birch!!!');
+                            
                         }
                         else if (key === 'bulletTextList'){ 
                             let liImgDelimitedString = dataObj['bulletImageList']
