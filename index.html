@@ -61,7 +61,15 @@
         <!-- <button class="closeMenuButton" type="button" onclick="document.querySelector('#navBtnAbout').click()"><i class="far fa-times-circle"></i></button> -->
         <h2 class="aboutH2">About</h2>
 
-        <p><strong>2.0.3 (current version)</strong>
+        <p><strong>2.0.4 (current version)</strong>
+        <ul>
+            <li>Adds dymanic 154d. Allows you to add or removed all of the parts. (may replace many similar components)  This component also doesn't have the fixed 200px height&mdash;which might be a design requirement that is no longer desired.</li>
+            <li>Adds dymanic 154e.  It's a left-aligned version of 154d (only without the icon)</li>
+            <li>Adds dymanic 300d. Almost everything in this footer is optional and/or editable.</li>
+            <li>released 1/23/2019</li>
+        </ul>
+
+        <p><strong>2.0.3</strong>
         <ul>
             <li>Adds feature to dynamically add/remove CTAs.  Clear the ctaText to remove the CTA entirely.</li>
             <li>Adds dynamic cta controls to 100, 102, and 104.  (removes 103)</li>
@@ -204,12 +212,12 @@
                     <div class="accordion" data-accordion>
                         <div data-control class="accord-header accord-togglebar" id="accord-banners">
                             Banners 
-                                    <div>
-                                        <div style="display:none;">
-                                            <span id="filterCountShowingBanners">0</span> of <span id="filterCountTotalBanners">0</span>
-                                        </div>
-                                        <div>150-<span id="accord-banners-last-id">158</span></div>
+                                <div>
+                                    <div style="display:none;">
+                                        <span id="filterCountShowingBanners">0</span> of <span id="filterCountTotalBanners">0</span>
                                     </div>
+                                    <div>150-<span id="accord-banners-last-id">158</span></div>
+                                </div>
                         </div>
                         <div data-content>
 
@@ -939,13 +947,27 @@
                         </label>
                     </div>
                     <div class="inputGroup">
-                        <label>HeadlineText:<input class="editInput" id="t154_h1Text" /></label>
+                        <label><div class="flexlabel"><div>HeadlineText:</div> <div>leave blank to remove</div></div><textarea rows="3" class="editInput" id="t154_h1Text"></textarea></label>
+                        <!-- <label>HeadlineText:<input class="editInput" id="t154_h1Text" /></label> -->
+
                     </div>
                     <div class="inputGroup">
                         <label>h1TextColor:
                             <div class="colorboxFlex">
                                 <input class="editInput" id="t154_h1TextColor" />
                                 <button type="button" id="t154_h1TextColorCP" class="cpTooltip" value="t154_h1TextColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label><div class="flexlabel"><div>pText:</div> <div>leave blank to remove</div></div><textarea rows="6" class="editInput" id="t154_pText"></textarea></label>
+                        <!-- <label>pText:<input class="editInput" id="t154_pText" /></label> -->
+                    </div>
+                    <div class="inputGroup">
+                        <label>pTextColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t154_pTextColor" />
+                                <button type="button" id="t154_pTextColorCP" class="cpTooltip" value="t154_pTextColor"></button>
                             </div>
                         </label>
                     </div>
@@ -968,6 +990,155 @@
                     </div>
                 </div>
                 <!-- /t154 -->
+
+                <!-- t154d -->
+                <div class="t154d_controls templateControlGroup hideme" id="templateObj_154d_controls">
+                    <div class="inputGroup">
+                        <label>backgroundColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t154d_backgroundColor" />
+                                <button type="button" id="t154d_backgroundColorCP" class="cpTooltip" value="t154d_backgroundColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>spacerTop:<input class="editInput" id="t154d_spacerTop" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>iconUrl:<input class="editInput" id="t154d_iconUrl" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>iconAltText:<input class="editInput" id="t154d_iconAltText" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>iconAltTextColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t154d_iconAltTextColor" />
+                                <button type="button" id="t154d_iconAltTextColorCP" class="cpTooltip" value="t154d_iconAltTextColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>spacerAfterIcon:<input class="editInput" id="t154d_spacerAfterIcon" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label><div class="flexlabel"><div>HeadlineText:</div> <div>leave blank to remove</div></div><textarea rows="3" class="editInput" id="t154d_h1Text"></textarea></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>h1TextColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t154d_h1TextColor" />
+                                <button type="button" id="t154d_h1TextColorCP" class="cpTooltip" value="t154d_h1TextColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label><div class="flexlabel"><div>pText:</div> <div>leave blank to remove</div></div><textarea rows="6" class="editInput" id="t154d_pText"></textarea></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>pTextColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t154d_pTextColor" />
+                                <button type="button" id="t154d_pTextColorCP" class="cpTooltip" value="t154d_pTextColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>ctaBackgroundColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t154d_ctaBackgroundColor" />
+                                <button type="button" id="t154d_ctaBackgroundColorCP" class="cpTooltip" value="t154d_ctaBackgroundColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>ctaUrl:<input class="editInput" id="t154d_ctaUrl" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>ctaTextColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t154d_ctaTextColor" />
+                                <button type="button" id="t154d_ctaTextColorCP" class="cpTooltip" value="t154d_ctaTextColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label><div class="flexlabel"><div>ctaText:</div> <div>leave blank to remove cta</div></div><input class="editInput" id="t154d_ctaText" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>spacerBottom:<input class="editInput" id="t154d_spacerBottom" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <button class="editBtn" id="t154d_applyBtn" onclick="handlers.goSavet154d()" type="button">Apply &rsaquo;</button>
+                    </div>
+                </div>
+                <!-- /t154d -->
+
+                <!-- t154e -->
+                <div class="t154e_controls templateControlGroup hideme" id="templateObj_154e_controls">
+                    <div class="inputGroup">
+                        <label>backgroundColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t154e_backgroundColor" />
+                                <button type="button" id="t154e_backgroundColorCP" class="cpTooltip" value="t154e_backgroundColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>spacerTop:<input class="editInput" id="t154e_spacerTop" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label><div class="flexlabel"><div>HeadlineText:</div> <div>leave blank to remove</div></div><textarea rows="3" class="editInput" id="t154e_h1Text"></textarea></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>h1TextColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t154e_h1TextColor" />
+                                <button type="button" id="t154e_h1TextColorCP" class="cpTooltip" value="t154e_h1TextColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label><div class="flexlabel"><div>pText:</div> <div>leave blank to remove</div></div><textarea rows="6" class="editInput" id="t154e_pText"></textarea></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>pTextColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t154e_pTextColor" />
+                                <button type="button" id="t154e_pTextColorCP" class="cpTooltip" value="t154e_pTextColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>ctaBackgroundColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t154e_ctaBackgroundColor" />
+                                <button type="button" id="t154e_ctaBackgroundColorCP" class="cpTooltip" value="t154e_ctaBackgroundColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>ctaUrl:<input class="editInput" id="t154e_ctaUrl" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>ctaTextColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t154e_ctaTextColor" />
+                                <button type="button" id="t154e_ctaTextColorCP" class="cpTooltip" value="t154e_ctaTextColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label><div class="flexlabel"><div>ctaText:</div> <div>leave blank to remove cta</div></div><input class="editInput" id="t154e_ctaText" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>spacerBottom:<input class="editInput" id="t154e_spacerBottom" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <button class="editBtn" id="t154e_applyBtn" onclick="handlers.goSavet154e()" type="button">Apply &rsaquo;</button>
+                    </div>
+                </div>
+                <!-- /t154e -->
 
                 <!-- t155 -->
                 <div class="t155_controls templateControlGroup hideme" id="templateObj_155_controls">
@@ -1120,7 +1291,6 @@
                     </div>
                     <div class="inputGroup">
                         <label><div class="flexlabel"><div>ctaText:</div> <div>leave blank to remove cta</div></div><input class="editInput" id="t157_ctaText" /></label>
-                        <!-- <label>ctaText:<input class="editInput" id="t157_ctaText" /></label> -->
                     </div>
                     <div class="inputGroup">
                         <button class="editBtn" id="t157_applyBtn" onclick="handlers.goSavet157()" type="button">Apply &rsaquo;</button>
@@ -1910,7 +2080,7 @@
                     </div>
                     <div class="inputGroup">
                         <!-- <label>h1Text:<input class="editInput" id="t204_h1Text" /></label> -->
-                        <label><div class="flexlabel"><div>h1Text:</div> <div>use | between each</div></div><textarea rows="6" class="editInput" id="t204_h1Text"></textarea></label>
+                        <label><div class="flexlabel"><div>h1Text:</div> <div>leave blank to remove</div></div><textarea rows="3" class="editInput" id="t204_h1Text"></textarea></label>
                     </div>
                     <div class="inputGroup">
                         <label>pTextColor:
@@ -1921,7 +2091,8 @@
                         </label>
                     </div>
                     <div class="inputGroup">
-                        <label>pText:<input class="editInput" id="t204_pText" /></label>
+                        <label><div class="flexlabel"><div>pText:</div> <div>use | between each</div></div><textarea rows="6" class="editInput" id="t204_pText"></textarea></label>
+                        <!-- <label>pText:<input class="editInput" id="t204_pText" /></label> -->
                     </div>
                     <div class="inputGroup">
                         <label>ctaBackgroundColor:
@@ -3344,6 +3515,103 @@
                     </div>
                 </div>
                 <!-- /t300 -->
+
+                <!-- t300d -->
+                <div class="t300d_controls templateControlGroup hideme" id="templateObj_300d_controls">
+                    <div class="inputGroup">
+                        <label>backgroundColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t300d_backgroundColor" />
+                                <button type="button" id="t300d_backgroundColorCP" class="cpTooltip" value="t300d_backgroundColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>pTextColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t300d_pTextColor" />
+                                <button type="button" id="t300d_pTextColorCP" class="cpTooltip" value="t300d_pTextColor"></button>
+                            </div>
+                        </label>
+                    </div>
+
+                    <br><br>
+
+                    <div class="inputGroup">
+                        <label><div class="flexlabel"><div>Use social icons?</div> <div>leave blank to remove</div></div><input class="editInput" id="t300d_socialCodeInput"></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>socialSpacerBottom:<input class="editInput" id="t300d_socialSpacerBottom" /></label>
+                    </div>
+
+                    <br><br>
+
+                    <div class="inputGroup">
+                        <label><div class="flexlabel"><div>linkUrlList:</div><div>use | between each</div></div><textarea rows="6" class="editInput" id="t300d_linkUrlList"></textarea></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label><div class="flexlabel"><div>linkTextList:</div><div>use | between each</div></div><textarea rows="6" class="editInput" id="t300d_linkTextList" use | between each></textarea></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>linkSpacerBottom:<input class="editInput" id="t300d_linkSpacerBottom" /></label>
+                    </div>
+
+                    <br><br>
+
+                    <div class="inputGroup">
+                        <label><div class="flexlabel"><div>productList:</div> <div></div></div><textarea rows="6" class="editInput" id="t300d_productList"></textarea></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>productSpacerBottom:<input class="editInput" id="t300d_productSpacerBottom" /></label>
+                    </div>
+
+                    <br><br>
+
+                    <div class="inputGroup">
+                        <label><div class="flexlabel"><div>citationText:</div> <div>leave blank to remove</div></div><textarea rows="3" class="editInput" id="t300d_citationText"></textarea></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>citationSpacerBottom:<input class="editInput" id="t300d_citationSpacerBottom" /></label>
+                    </div>
+
+                    <br><br>
+                    
+                    
+                    <div class="inputGroup">
+                        <label>footerUwStatement:<textarea rows="6" class="editInput" id="t300d_footerUwStatement"></textarea></label>
+                    </div>
+                    
+                    <div class="inputGroup">
+                        <label>emailFieldMerge:<input class="editInput" id="t300d_emailFieldMerge" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>unsubscribeUrl:<input class="editInput" id="t300d_unsubscribeUrl" /></label>
+                    </div>
+
+                    <br><br>
+
+                    <div class="inputGroup">
+                        <label>bottomAddress:<textarea rows="6" class="editInput" id="t300d_bottomAddress"></textarea></label>
+                    </div>
+                    
+                    <div class="inputGroup">
+                        <label>bottomAddressSpacerBottom:<input class="editInput" id="t300d_bottomAddressSpacerBottom" /></label>
+                    </div>
+
+                    <br><br>
+
+                    <div class="inputGroup">
+                        <label>formNumberDateAudience:<textarea rows="3" class="editInput" id="t300d_formNumberDateAudience"></textarea></label>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label>year:<input class="editInput" id="t300d_year" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <button class="editBtn" id="t300d_applyBtn" onclick="handlers.goSavet300d()" type="button">Apply &rsaquo;</button>
+                    </div>
+                </div>
+                <!-- /t300d -->
 
                 <!-- t301 -->
                 <div class="t301_controls templateControlGroup hideme" id="templateObj_301_controls">
