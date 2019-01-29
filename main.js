@@ -1,5 +1,5 @@
 // #region TEMPLATE REPEAT AREA
-const version = "2.0.4"
+const version = "2.0.5"
 let importedEmailFile = null // to set the export filename if we imported a file
 
 // used to insert current year in footer templates with dt.getFullYear()
@@ -1378,6 +1378,118 @@ const megaTemplateObj = {
             spacerBottom: '50'
         }
     } // templateObj_202
+    ,
+    templateObj_202d: {
+        templateDesc: '202d',
+        templateId: 'templateObj_202d',
+        baseCode: `<!-- c202d -->
+        <table align="center" class="container" style="Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">
+            <table class="wrapper birch-wrapper-padding birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 53px; padding-right: 53px; text-align: left; vertical-align: top;">
+                <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_spacerTop_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_spacerTop_birchpx; font-weight: normal; line-height: birch_spacerTop_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+                
+                birch_contactIntroTextCode_birch
+        
+                birch_iconCode_birch 
+        
+                birch_contactNameTextCode_birch
+
+                birch_contactTitleTextCode_birch
+
+                birch_contactEmailTextCode_birch
+
+                birch_contactSpacerBetweenEmailAndPhoneCode_birch
+                 
+                birch_contactPhoneTextCode_birch
+                
+                <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_spacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_spacerBottom_birchpx; font-weight: normal; line-height: birch_spacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+            </td></tr></table>
+        </td></tr></tbody></table>
+        <!-- /c202d -->`,
+        category: 'body',
+        tags: ['1col', 'alignedCenter'],
+        defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
+            backgroundColor: 'white',
+            spacerTop: '50',
+
+            contactIntroTextCode: `<p class="text-center birch-small-text birch--contactIntroColor" style="Margin: 0; Margin-bottom: 10px; color: birch_contactIntroColor_birch; font-family: Arial; font-size: 12px; font-style: normal; font-weight: 400; line-height: 1.3; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;"><i>birch_contactIntroText_birch</i></p>`,
+            contactIntroColor: '#2E2E2E',
+            contactIntroText: 'If you’d like to talk more about leave and absence management at your company, just reply to this email or reach out to me anytime using the contact information below. Warm regards,',
+            contactIntroText_OPT: 'contactIntroTextCode',
+
+            iconCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
+            <img class="birch-min-width-50 birch--iconAltTextColor float-center" width="50" height="50" src="birch_iconUrl_birch" alt="birch_iconAltText_birch" align="center" style="-ms-interpolation-mode: bicubic; Margin: 0 auto; clear: both; color: birch_iconAltTextColor_birch; display: block; float: none; margin: 0 auto; max-width: 100%; min-width: 50px; outline: none; text-align: center; text-decoration: none; width: auto;">
+        </center>
+        <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="10px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 10px; font-weight: normal; line-height: 10px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+            iconUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-50.jpg?raw=true',
+            iconAltText: '',
+            iconAltTextColor: '#2E2E2E',
+
+            contactNameTextCode: `<p class="text-center birch-contactName birch--contactNameColor" style="Margin: 0; Margin-bottom: 10px; color: birch_contactNameColor_birch; font-family: Arial; font-size: 19.2px; font-style: normal; font-weight: 400; line-height: 1.2; margin: 0; margin-bottom: 5px; padding: 0; text-align: center;">birch_contactNameText_birch</p>`,
+            contactNameColor: "#2E2E2E",
+            contactNameText: "Joyce Harper",
+            contactNameText_OPT: 'contactNameTextCode',
+
+            contactTitleTextCode: `<p class="text-center birch-contactTitle birch--contactTitleColor" style="Margin: 0; Margin-bottom: 10px; color: birch_contactTitleColor_birch; font-family: Arial; font-size: 16px; font-style: normal; font-weight: 600; line-height: 1.2; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;">birch_contactTitleText_birch</p>`,
+            contactTitleColor: "#024882",
+            contactTitleText: "Onboarding Specialist",
+            contactTitleText_OPT: 'contactTitleTextCode',
+
+            contactEmailTextCode: `<p class="text-center birch-contactEmail birch--contactEmailPhoneColor" style="Margin: 0; Margin-bottom: 10px; color: birch_contactEmailPhoneColor_birch; font-family: Arial; font-size: 16px; font-style: normal; font-weight: 400; line-height: 1.4; margin: 0; margin-bottom: 0; padding: 0; text-align: center;"><a href="mailto:birch_contactEmailText_birch" style="Margin: 0; color: birch_contactEmailPhoneColor_birch; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">birch_contactEmailText_birch</a></p>`,
+            contactEmailText: "jharper@unum.com",
+            contactEmailText_OPT: 'contactEmailTextCode',
+
+            contactSpacerBetweenEmailAndPhoneCode: `<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="5px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 5px; font-weight: normal; line-height: 5px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+
+            contactPhoneTextCode: `<p class="text-center birch-contactPhone birch--contactEmailPhoneColor" style="Margin: 0; Margin-bottom: 10px; color: birch_contactEmailPhoneColor_birch; font-family: Arial; font-size: 16px; font-style: normal; font-weight: 400; line-height: 1.4; margin: 0; margin-bottom: 0; padding: 0; text-align: center;"><a href="tel:birch_contactPhoneText_birch" style="Margin: 0; color: birch_contactEmailPhoneColor_birch; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">birch_contactPhoneText_birch</a></p>`,
+            contactPhoneText: "(555) 123-1234",
+            contactPhoneText_OPT: 'contactPhoneTextCode',
+
+            contactEmailPhoneColor: "#5A7184",
+
+            spacerBottom: '50'     
+        },
+        defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
+            backgroundColor: 'white',
+            spacerTop: '50',
+
+            contactIntroTextCode: `<p class="text-center birch-small-text birch--contactIntroColor" style="Margin: 0; Margin-bottom: 10px; color: birch_contactIntroColor_birch; font-family: Arial; font-size: 12px; font-style: normal; font-weight: 400; line-height: 1.3; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;"><i>birch_contactIntroText_birch</i></p>`,
+            contactIntroColor: '#2E2E2E',
+            contactIntroText: 'If you’d like to talk more about leave and absence management at your company, just reply to this email or reach out to me anytime using the contact information below. Warm regards,',
+            contactIntroText_OPT: 'contactIntroTextCode',
+
+            iconCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
+            <img class="birch-min-width-50 birch--iconAltTextColor float-center" width="50" height="50" src="birch_iconUrl_birch" alt="birch_iconAltText_birch" align="center" style="-ms-interpolation-mode: bicubic; Margin: 0 auto; clear: both; color: birch_iconAltTextColor_birch; display: block; float: none; margin: 0 auto; max-width: 100%; min-width: 50px; outline: none; text-align: center; text-decoration: none; width: auto;">
+        </center>
+        <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="10px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 10px; font-weight: normal; line-height: 10px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+            iconUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-50.jpg?raw=true',
+            iconAltText: '',
+            iconAltTextColor: '#2E2E2E',
+
+            contactNameTextCode: `<p class="text-center birch-contactName birch--contactNameColor" style="Margin: 0; Margin-bottom: 10px; color: birch_contactNameColor_birch; font-family: Arial; font-size: 19.2px; font-style: normal; font-weight: 400; line-height: 1.2; margin: 0; margin-bottom: 5px; padding: 0; text-align: center;">birch_contactNameText_birch</p>`,
+            contactNameColor: "#2E2E2E",
+            contactNameText: "Joyce Harper",
+            contactNameText_OPT: 'contactNameTextCode',
+
+            contactTitleTextCode: `<p class="text-center birch-contactTitle birch--contactTitleColor" style="Margin: 0; Margin-bottom: 10px; color: birch_contactTitleColor_birch; font-family: Arial; font-size: 16px; font-style: normal; font-weight: 600; line-height: 1.2; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;">birch_contactTitleText_birch</p>`,
+            contactTitleColor: "#19557F",
+            contactTitleText: "Onboarding Specialist",
+            contactTitleText_OPT: 'contactTitleTextCode',
+
+            contactEmailTextCode: `<p class="text-center birch-contactEmail birch--contactEmailPhoneColor" style="Margin: 0; Margin-bottom: 10px; color: birch_contactEmailPhoneColor_birch; font-family: Arial; font-size: 16px; font-style: normal; font-weight: 400; line-height: 1.4; margin: 0; margin-bottom: 0; padding: 0; text-align: center;"><a href="mailto:birch_contactEmailText_birch" style="Margin: 0; color: birch_contactEmailPhoneColor_birch; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">birch_contactEmailText_birch</a></p>`,
+            contactEmailText: "jharper@unum.com",
+            contactEmailText_OPT: 'contactEmailTextCode',
+
+            contactSpacerBetweenEmailAndPhoneCode: `<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="5px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 5px; font-weight: normal; line-height: 5px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+
+            contactPhoneTextCode: `<p class="text-center birch-contactPhone birch--contactEmailPhoneColor" style="Margin: 0; Margin-bottom: 10px; color: birch_contactEmailPhoneColor_birch; font-family: Arial; font-size: 16px; font-style: normal; font-weight: 400; line-height: 1.4; margin: 0; margin-bottom: 0; padding: 0; text-align: center;"><a href="tel:birch_contactPhoneText_birch" style="Margin: 0; color: birch_contactEmailPhoneColor_birch; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">birch_contactPhoneText_birch</a></p>`,
+            contactPhoneText: "(555) 123-1234",
+            contactPhoneText_OPT: 'contactPhoneTextCode',
+
+            contactEmailPhoneColor: "#5B7183",
+
+            spacerBottom: '50'
+        }
+    } // templateObj_202d
     ,
     templateObj_203: {
         templateDesc: '203',
@@ -3833,6 +3945,24 @@ const main = {
             document.querySelector('#t202_spacerBottom').value = matchingDataComp.templateValuesObj.spacerBottom
             mergeCodeWithDataForEditShared()
         }
+        if (receivedTemplateId == 'templateObj_202d'){
+            document.querySelector('#t202d_backgroundColor').value = matchingDataComp.templateValuesObj.backgroundColor
+            document.querySelector('#t202d_spacerTop').value = matchingDataComp.templateValuesObj.spacerTop
+            document.querySelector('#t202d_contactIntroColor').value = matchingDataComp.templateValuesObj.contactIntroColor
+            document.querySelector('#t202d_contactIntroText').value = matchingDataComp.templateValuesObj.contactIntroText
+            document.querySelector('#t202d_iconUrl').value = matchingDataComp.templateValuesObj.iconUrl
+            document.querySelector('#t202d_iconAltText').value = matchingDataComp.templateValuesObj.iconAltText
+            document.querySelector('#t202d_iconAltTextColor').value = matchingDataComp.templateValuesObj.iconAltTextColor
+            document.querySelector('#t202d_contactNameColor').value = matchingDataComp.templateValuesObj.contactNameColor
+            document.querySelector('#t202d_contactNameText').value = matchingDataComp.templateValuesObj.contactNameText
+            document.querySelector('#t202d_contactTitleColor').value = matchingDataComp.templateValuesObj.contactTitleColor
+            document.querySelector('#t202d_contactTitleText').value = matchingDataComp.templateValuesObj.contactTitleText
+            document.querySelector('#t202d_contactEmailPhoneColor').value = matchingDataComp.templateValuesObj.contactEmailPhoneColor
+            document.querySelector('#t202d_contactEmailText').value = matchingDataComp.templateValuesObj.contactEmailText
+            document.querySelector('#t202d_contactPhoneText').value = matchingDataComp.templateValuesObj.contactPhoneText
+            document.querySelector('#t202d_spacerBottom').value = matchingDataComp.templateValuesObj.spacerBottom
+            mergeCodeWithDataForEditShared()
+        }
 
         if (receivedTemplateId == 'templateObj_203'){
             document.querySelector('#t203_backgroundColor').value = matchingDataComp.templateValuesObj.backgroundColor
@@ -5082,6 +5212,27 @@ const handlers = {
         view.displayComponents()
     }, // 202
 
+    goSavet202d: function(){ // enter edit mode for a component in the email
+        //console.log('welcome to goSavet202d...')
+        let selectedComp = getSelectedComp()
+        selectedComp.templateValuesObj.backgroundColor = document.querySelector('#t202d_backgroundColor').value
+        selectedComp.templateValuesObj.spacerTop = document.querySelector('#t202d_spacerTop').value
+        selectedComp.templateValuesObj.contactIntroColor = document.querySelector('#t202d_contactIntroColor').value
+        selectedComp.templateValuesObj.contactIntroText = document.querySelector('#t202d_contactIntroText').value
+        selectedComp.templateValuesObj.iconUrl = document.querySelector('#t202d_iconUrl').value
+        selectedComp.templateValuesObj.iconAltText = document.querySelector('#t202d_iconAltText').value
+        selectedComp.templateValuesObj.iconAltTextColor = document.querySelector('#t202d_iconAltTextColor').value
+        selectedComp.templateValuesObj.contactNameColor = document.querySelector('#t202d_contactNameColor').value
+        selectedComp.templateValuesObj.contactNameText = document.querySelector('#t202d_contactNameText').value
+        selectedComp.templateValuesObj.contactTitleColor = document.querySelector('#t202d_contactTitleColor').value
+        selectedComp.templateValuesObj.contactTitleText = document.querySelector('#t202d_contactTitleText').value
+        selectedComp.templateValuesObj.contactEmailPhoneColor = document.querySelector('#t202d_contactEmailPhoneColor').value
+        selectedComp.templateValuesObj.contactEmailText = document.querySelector('#t202d_contactEmailText').value
+        selectedComp.templateValuesObj.contactPhoneText = document.querySelector('#t202d_contactPhoneText').value
+        selectedComp.templateValuesObj.spacerBottom = document.querySelector('#t202d_spacerBottom').value
+        view.displayComponents()
+    }, // 202d
+
     goSavet203: function(){ // enter edit mode for a component in the email
         //console.log('welcome to goSavet203...')
         let selectedComp = getSelectedComp()
@@ -5896,6 +6047,7 @@ function themeChange(theme){
     compArray.push(megaTemplateObj.templateObj_201)
     compArray.push(megaTemplateObj.templateObj_201c)
     compArray.push(megaTemplateObj.templateObj_202)
+    compArray.push(megaTemplateObj.templateObj_202d)
     compArray.push(megaTemplateObj.templateObj_203)
     compArray.push(megaTemplateObj.templateObj_204)
     compArray.push(megaTemplateObj.templateObj_204e)
@@ -6506,6 +6658,80 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
                 baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_spacerAfterIconCode_birch`, templateDataObj.spacerAfterIconCode)
             }
         }
+
+
+        // 202d
+        // attempt at a generic handler for "if blank remove placeholder else insert code"
+        // birch_nameIntroTextCode_birch
+        // nameIntroTextBLANK_OR_CODE
+        // nameIntroTextCode
+
+
+        // look for a special data pair... nameIntroText_OPT: 'nameIntroTextCode',  = <inputControlField>_OPT: <codeField>
+        // nameIntroText_OPT: 'nameIntroTextCode',
+        if (fieldLabel.slice(-4) === "_OPT"){
+            //console.log(`${fieldLabel}) I see the option for ${fieldData}`)
+            let inputControlField = fieldLabel.slice(0, -4) // nameIntroText_OPT -> nameIntroText
+            if (templateDataObj[inputControlField] == ''){ // remove the placeholder
+                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_${fieldData}_birch`, '')
+            }
+            else{ // replace the placeholder with the code
+                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_${fieldData}_birch`, templateDataObj[fieldData])
+            }
+        }
+
+        if (fieldLabel === 'contactSpacerBetweenEmailAndPhoneCode'){
+            if (templateDataObj.contactEmailText.length > 0 && templateDataObj.contactPhoneText.length > 0){
+                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_${fieldLabel}_birch`, fieldData)
+            }
+            else{
+                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_${fieldLabel}_birch`, '')
+            }
+        }
+        
+
+        // 202d
+        // if (fieldLabel === 'nameIntroText'){  // REMEMBER this are fields on the data object!
+        //     if (templateDataObj.nameIntroText == ''){ // exclude the cta
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_nameIntroTextCode_birch`, '')
+        //     }
+        //     else{
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_nameIntroTextCode_birch`, templateDataObj.nameIntroTextCode)
+        //     }
+        // }
+        // if (fieldLabel === 'nameHeadlineText'){  // REMEMBER this are fields on the data object!
+        //     if (templateDataObj.nameHeadlineText == ''){ // exclude the cta
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_nameHeadlineTextCode_birch`, '')
+        //     }
+        //     else{
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_nameHeadlineTextCode_birch`, templateDataObj.nameHeadlineTextCode)
+        //     }
+        // }
+        // if (fieldLabel === 'nameSubheadlineText'){  // REMEMBER this are fields on the data object!
+        //     if (templateDataObj.nameSubheadlineText == ''){ // exclude the cta
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_nameSubheadlineTextCode_birch`, '')
+        //     }
+        //     else{
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_nameSubheadlineTextCode_birch`, templateDataObj.nameSubheadlineTextCode)
+        //     }
+        // }
+        // if (fieldLabel === 'nameContactInfoText'){   // REMEMBER this are fields on the data object!
+        //     if (templateDataObj.nameContactInfoText == ''){ // exclude the cta
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_nameContactInfoTextCode_birch`, '')
+        //     }
+        //     else{
+        //         let fieldDataArray = fieldData.split('|')
+        //         let dataCount = fieldDataArray.length
+        //         let s = prepRepeatableFieldForMerge(fieldData, templateDataObj.nameContactInfoTextCode)
+        //         // loop again to merge into each repeated field
+        //         for (let i=0; i<dataCount; i++){
+        //             s=s.replace(`birch_nameContactInfoColor_birch`, templateDataObj.nameContactInfoColor)
+        //             s=s.replace(`birch_nameContactInfoText_birch`, fieldDataArray[i])
+        //         }
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_nameContactInfoTextCode_birch`, s)
+        //     }
+            
+        // }
 
         // ## maybe others with an h1 tag should use this - to cleanly remove it if needed
         // ##

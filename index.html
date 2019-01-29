@@ -61,7 +61,13 @@
         <!-- <button class="closeMenuButton" type="button" onclick="document.querySelector('#navBtnAbout').click()"><i class="far fa-times-circle"></i></button> -->
         <h2 class="aboutH2">About</h2>
 
-        <p><strong>2.0.4 (current version)</strong>
+        <p><strong>2.0.5 (current version)</strong>
+        <ul>
+            <li>Adds 202d.</li>
+            <li>released 1/29/2019 (DEV)</li>
+        </ul>
+
+        <p><strong>2.0.4</strong>
         <ul>
             <li>Adds dymanic 154d. Allows you to add or removed all of the parts. (may replace many similar components)  This component also doesn't have the fixed 200px height&mdash;which might be a design requirement that is no longer desired.</li>
             <li>Adds dymanic 154e.  It's a left-aligned version of 154d (only without the icon)</li>
@@ -2000,6 +2006,95 @@
                     </div>
                 </div>
                 <!-- /t202 -->
+
+                <!-- t202d -->
+                <div class="t202d_controls templateControlGroup hideme" id="templateObj_202d_controls">
+                    <div class="inputGroup">
+                        <label>backgroundColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t202d_backgroundColor" />
+                                <button type="button" id="t202d_backgroundColorCP" class="cpTooltip" value="t202d_backgroundColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>spacerTop:<input class="editInput" id="t202d_spacerTop" /></label>
+                    </div>
+                    <br><br>
+                    <div class="inputGroup">
+                        <label>contactIntroColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t202d_contactIntroColor" />
+                                <button type="button" id="t202d_contactIntroColorCP" class="cpTooltip" value="t202d_contactIntroColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                            <label><div class="flexlabel"><div>contactIntroText:</div> <div>leave blank to remove</div></div><textarea rows="6" class="editInput" id="t202d_contactIntroText"></textarea></label>
+                    </div>
+                    <br><br>
+                    <div class="inputGroup">
+                        <label><div class="flexlabel"><div>iconUrl:</div> <div>leave blank to remove</div></div><input class="editInput" id="t202d_iconUrl" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>iconAltText:<input class="editInput" id="t202d_iconAltText" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>iconAltTextColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t202d_iconAltTextColor" />
+                                <button type="button" id="t202d_iconAltTextColorCP" class="cpTooltip" value="t202d_iconAltTextColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <br><br>
+                    <div class="inputGroup">
+                        <label>contactNameColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t202d_contactNameColor" />
+                                <button type="button" id="t202d_contactNameColorCP" class="cpTooltip" value="t202d_contactNameColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label><div class="flexlabel"><div>contactNameText:</div> <div>leave blank to remove</div></div><input class="editInput" id="t202d_contactNameText" /></label>
+                    </div>
+                    <br><br>
+                    <div class="inputGroup">
+                        <label>contactTitleColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t202d_contactTitleColor" />
+                                <button type="button" id="t202d_contactTitleColorCP" class="cpTooltip" value="t202d_contactTitleColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label><div class="flexlabel"><div>contactTitleText:</div> <div>leave blank to remove</div></div><input class="editInput" id="t202d_contactTitleText" /></label>
+                    </div>
+                    <br><br>
+                    <div class="inputGroup">
+                        <label>contactEmailPhoneColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t202d_contactEmailPhoneColor" />
+                                <button type="button" id="t202d_contactEmailPhoneColorCP" class="cpTooltip" value="t202d_contactEmailPhoneColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label><div class="flexlabel"><div>contactEmailText:</div> <div>leave blank to remove</div></div><input class="editInput" id="t202d_contactEmailText" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label><div class="flexlabel"><div>contactPhoneText:</div> <div>leave blank to remove</div></div><input class="editInput" id="t202d_contactPhoneText" /></label>
+                    </div>
+                    <br><br>
+                    <div class="inputGroup">
+                        <label>spacerBottom:<input class="editInput" id="t202d_spacerBottom" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <button class="editBtn" id="t202d_applyBtn" onclick="handlers.goSavet202d()" type="button">Apply &rsaquo;</button>
+                    </div>
+                </div>
+                <!-- /t202d -->
 
                 <!-- t203 -->
                 <div class="t203_controls templateControlGroup hideme" id="templateObj_203_controls">
