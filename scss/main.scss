@@ -533,15 +533,21 @@ body{
 .inputGroup{
     margin-bottom: 1rem;
     font-size: 1rem;
-    & label > input{
+    & .editInput{
         margin-top: 5px;
     }
-    & label > select{
-        margin-top: 5px;
-    }
-    & label > textarea{
-        margin-top: 5px;
-    }
+    // & label > input{
+    //     margin-top: 5px;
+    // }
+    // & label > select{
+    //     margin-top: 5px;
+    // }
+    // & label > textarea{
+    //     margin-top: 5px;
+    // }
+}
+.editCB{
+    display: inline-flex; // strangely enough this seems to make for better bottom alignment with text next to it.
 }
 .editInput{
     display:inline-block; // changed from block for the colorbox insert
@@ -1044,7 +1050,7 @@ select {
 .colorboxFlex{
     display: flex;
     align-items: center;
-    margin-top: 5px;
+    //margin-top: 5px;
 }
 // color picker styles END
 

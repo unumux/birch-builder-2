@@ -396,12 +396,11 @@ body {
 .inputGroup {
   margin-bottom: 1rem;
   font-size: 1rem; }
-  .inputGroup label > input {
+  .inputGroup .editInput {
     margin-top: 5px; }
-  .inputGroup label > select {
-    margin-top: 5px; }
-  .inputGroup label > textarea {
-    margin-top: 5px; }
+
+.editCB {
+  display: inline-flex; }
 
 .editInput {
   display: inline-block;
@@ -626,8 +625,7 @@ select {
 
 .colorboxFlex {
   display: flex;
-  align-items: center;
-  margin-top: 5px; }
+  align-items: center; }
 
 .gutter {
   background-color: #444444;

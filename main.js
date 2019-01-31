@@ -1,3 +1,4 @@
+
 // #region TEMPLATE REPEAT AREA
 const version = "2.0.5"
 let importedEmailFile = null // to set the export filename if we imported a file
@@ -1426,7 +1427,7 @@ const megaTemplateObj = {
 
             contactNameTextCode: `<p class="text-center birch-contactName birch--contactNameColor" style="Margin: 0; Margin-bottom: 10px; color: birch_contactNameColor_birch; font-family: Arial; font-size: 19.2px; font-style: normal; font-weight: 400; line-height: 1.2; margin: 0; margin-bottom: 5px; padding: 0; text-align: center;">birch_contactNameText_birch</p>`,
             contactNameColor: "#2E2E2E",
-            contactNameText: "Joyce Harper",
+            contactNameText: "Jayne Smith",
             contactNameText_OPT: 'contactNameTextCode',
 
             contactTitleTextCode: `<p class="text-center birch-contactTitle birch--contactTitleColor" style="Margin: 0; Margin-bottom: 10px; color: birch_contactTitleColor_birch; font-family: Arial; font-size: 16px; font-style: normal; font-weight: 600; line-height: 1.2; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;">birch_contactTitleText_birch</p>`,
@@ -1435,7 +1436,7 @@ const megaTemplateObj = {
             contactTitleText_OPT: 'contactTitleTextCode',
 
             contactEmailTextCode: `<p class="text-center birch-contactEmail birch--contactEmailPhoneColor" style="Margin: 0; Margin-bottom: 10px; color: birch_contactEmailPhoneColor_birch; font-family: Arial; font-size: 16px; font-style: normal; font-weight: 400; line-height: 1.4; margin: 0; margin-bottom: 0; padding: 0; text-align: center;"><a href="mailto:birch_contactEmailText_birch" style="Margin: 0; color: birch_contactEmailPhoneColor_birch; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">birch_contactEmailText_birch</a></p>`,
-            contactEmailText: "jharper@unum.com",
+            contactEmailText: "jsmith@unum.com",
             contactEmailText_OPT: 'contactEmailTextCode',
 
             contactSpacerBetweenEmailAndPhoneCode: `<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="5px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 5px; font-weight: normal; line-height: 5px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
@@ -1467,7 +1468,7 @@ const megaTemplateObj = {
 
             contactNameTextCode: `<p class="text-center birch-contactName birch--contactNameColor" style="Margin: 0; Margin-bottom: 10px; color: birch_contactNameColor_birch; font-family: Arial; font-size: 19.2px; font-style: normal; font-weight: 400; line-height: 1.2; margin: 0; margin-bottom: 5px; padding: 0; text-align: center;">birch_contactNameText_birch</p>`,
             contactNameColor: "#2E2E2E",
-            contactNameText: "Joyce Harper",
+            contactNameText: "Jayne Smith",
             contactNameText_OPT: 'contactNameTextCode',
 
             contactTitleTextCode: `<p class="text-center birch-contactTitle birch--contactTitleColor" style="Margin: 0; Margin-bottom: 10px; color: birch_contactTitleColor_birch; font-family: Arial; font-size: 16px; font-style: normal; font-weight: 600; line-height: 1.2; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;">birch_contactTitleText_birch</p>`,
@@ -1476,7 +1477,7 @@ const megaTemplateObj = {
             contactTitleText_OPT: 'contactTitleTextCode',
 
             contactEmailTextCode: `<p class="text-center birch-contactEmail birch--contactEmailPhoneColor" style="Margin: 0; Margin-bottom: 10px; color: birch_contactEmailPhoneColor_birch; font-family: Arial; font-size: 16px; font-style: normal; font-weight: 400; line-height: 1.4; margin: 0; margin-bottom: 0; padding: 0; text-align: center;"><a href="mailto:birch_contactEmailText_birch" style="Margin: 0; color: birch_contactEmailPhoneColor_birch; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">birch_contactEmailText_birch</a></p>`,
-            contactEmailText: "jharper@unum.com",
+            contactEmailText: "jsmith@unum.com",
             contactEmailText_OPT: 'contactEmailTextCode',
 
             contactSpacerBetweenEmailAndPhoneCode: `<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="5px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 5px; font-weight: normal; line-height: 5px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
@@ -2842,12 +2843,16 @@ const megaTemplateObj = {
         </p>
         <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_productSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_productSpacerBottom_birchpx; font-weight: normal; line-height: birch_productSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
             productList: `Disability &bull; Life &bull; Accident &bull; Critical Illness &bull; Hospital &bull; Dental &bull; Vision`,
+            productList_OPT: 'productListCode',
             productSpacerBottom: '20',
-            citationCode: `<p class="birch-text-styles-p--legal birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;">birch_citations_birch</p>
+            
+            citationCode: `<p class="birch-text-styles-p--legal birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;">birch_citationText_birch</p>
 
             <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_citationSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_citationSpacerBottom_birchpx; font-weight: normal; line-height: birch_citationSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
             citationText: `1. Citation number one.<br>2. Citation number two.`,
+            citationText_OPT: 'citationCode',
             citationSpacerBottom: '5',
+
             emailFieldMerge: '%%EMAIL%%',
             unsubscribeUrl: '#SPONECLICKOPTOUT',
             footerUwStatement: 'Unum insurance products are underwritten by the subsidiaries of Unum Group. Dental/Vision plans are marketed by Unum and underwritten by Starmount.',
@@ -2902,6 +2907,172 @@ const megaTemplateObj = {
             year: dt.getFullYear(),
         }
     } // templateObj_300d
+    ,
+    templateObj_300dc: {
+        templateDesc: '300dc',
+        templateId: 'templateObj_300dc',
+        baseCode: `<!-- c300dc -->
+        <table align="center" class="container" style="Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">
+            <table class="wrapper birch-wrapper-padding birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 53px; padding-right: 53px; text-align: left; vertical-align: top;">
+                <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_spacerTop_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_spacerTop_birchpx; font-weight: normal; line-height: birch_spacerTop_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+        
+                birch_socialCode_birch
+        
+                birch_linkListCode_birch
+                
+                birch_productListCode_birch
+                 
+                birch_citationCode_birch
+                 
+                <p class="text-left birch-text-styles-p--legal birch--pTextColor hb-footerUwStatementAndDisclosures" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; margin-bottom: 10px; padding: 0; text-align: birch_alignment_birch;">birch_footerUwStatement_birch</p>
+                <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="5px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 5px; font-weight: normal; line-height: 5px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+        
+                <p class="text-left birch-text-styles-p--legal birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; margin-bottom: 10px; padding: 0; text-align: birch_alignment_birch;">You are receiving this email at <a name="myname" xt="SPNOTRACK" class="birch--pTextColor" style="Margin: 0; color: birch_pTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: underline;" href="_mailto:birch_emailFieldMerge_birch">birch_emailFieldMerge_birch</a>.
+                    <a href="birch_unsubscribeUrl_birch" id="unsubscribe" name="unsubscribe" class="birch-text-styles-link--legal birch--pTextColor" style="Margin: 0; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; padding: 0; text-align: center; text-decoration: underline;">Click here to unsubscribe</a>
+                </p>
+                <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="5px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 5px; font-weight: normal; line-height: 5px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+        
+                birch_footerSiteUrlCode_birch
+                 
+        
+                <p class="text-left birch-text-styles-p--legal birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; margin-bottom: 10px; padding: 0; text-align: birch_alignment_birch;">&copy; birch_year_birch Unum Group. All rights reserved. Unum is a registered trademark and marketing brand of Unum Group and its insuring subsidiaries.</p>
+
+                <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="5px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 5px; font-weight: normal; line-height: 5px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+        
+                birch_bottomAddressCode_birch
+                
+                birch_formNumberDateAudienceCode_birch
+                
+                <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_spacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_spacerBottom_birchpx; font-weight: normal; line-height: birch_spacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+            </td></tr></table>
+        </td></tr></tbody></table>
+        <!-- /c300dc -->`,
+        category: 'footer',
+        defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
+            spacerTop: '50',
+            backgroundColor: '#015294',
+            alignment: 'left',
+            pTextColor: 'white',
+            socialCodeInput: 'true',
+            socialCode: `<table align="birch_alignment_birch" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
+            <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://twitter.com/unumnews" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-alt/blob/master/images/components/unum-twitter-icon.png?raw=true" alt="twitter" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
+            <td width="20" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">&nbsp;</td>
+            <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.facebook.com/unumbenefits/" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-alt/blob/master/images/components/iunum-facebook-icon.png?raw=true" alt="facebook" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
+            <td width="20" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">&nbsp;</td>
+            <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.linkedin.com/company/unum" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-alt/blob/master/images/components/unum-linkedin-icon.png?raw=true" alt="linkedin" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
+        </tr></tbody></table>
+        
+        <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_socialSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_socialSpacerBottom_birchpx; font-weight: normal; line-height: birch_socialSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+            socialSpacerBottom: '20',
+            linkListCode: `<p class="text-left birch--pTextColor birch-text-styles-p--legal" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; margin-bottom: 10px; padding: 0; text-align: birch_alignment_birch;">
+            birch_linkEntries_birch
+        </p>
+        <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_linkSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_linkSpacerBottom_birchpx; font-weight: normal; line-height: birch_linkSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> `,
+            linkListEntryCode: `<a href="birch_emailLinkUrl_birch" class="birch--pTextColor birch-text-styles-link--contact" style="Margin: 0; color: birch_pTextColor_birch; font-family: Arial; font-size: 14px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; padding: 0; text-align: center; text-decoration: underline;">birch_emailLinkText_birch</a> &nbsp;&nbsp;&nbsp;`,
+            linkList: `[mailto:example@unum.com](EMAIL US)|[https://services.unum.com/](LOGIN)|[tel:+18002758686](CALL US: 1.800.275.8686)`,
+            XlinkUrlList: 'http://www.example.com|http://www.example.com|tel:+18002758686',
+            XlinkTextList: 'EMAIL US|LOGIN|CALL US: 1.800.275.8686',
+            linkSpacerBottom: '10',
+            productListCode: `<p class="text-left birch--pTextColor birch-text-styles-p--products" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 12px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 10px; padding: 0; text-align: birch_alignment_birch;">
+            birch_productList_birch
+        </p>
+        <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_productSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_productSpacerBottom_birchpx; font-weight: normal; line-height: birch_productSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+            productList: `Disability &bull; Life &bull; Accident &bull; Critical Illness &bull; Hospital &bull; Dental &bull; Vision`,
+            productList_OPT: 'productListCode',
+            productSpacerBottom: '20',
+            
+            citationCode: `<p class="text-left birch-text-styles-p--legal birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; margin-bottom: 10px; padding: 0; text-align: birch_alignment_birch;">birch_citationText_birch</p>
+            <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_citationSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_citationSpacerBottom_birchpx; font-weight: normal; line-height: birch_citationSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+            citationText: `1. Citation number one.<br>2. Citation number two.`,
+            citationText_OPT: 'citationCode',
+            citationSpacerBottom: '5',
+
+            emailFieldMerge: '%%EMAIL%%',
+            unsubscribeUrl: '#SPONECLICKOPTOUT',
+            footerUwStatement: 'Unum insurance products are underwritten by the subsidiaries of Unum Group. Dental/Vision plans are marketed by Unum and underwritten by Starmount.',
+            bottomAddressCode: `<p class="text-left birch-text-styles-p--legal birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; margin-bottom: 10px; padding: 0; text-align: birch_alignment_birch;">birch_bottomAddress_birch</p>
+            <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_bottomAddressSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_bottomAddressSpacerBottom_birchpx; font-weight: normal; line-height: birch_bottomAddressSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+
+            footerSiteUrlCode: `<p class="text-left birch-text-styles-p--legal birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; margin-bottom: 10px; padding: 0; text-align: birch_alignment_birch;">
+            <a href="birch_footerSiteUrl_birch" class="birch-text-styles-link--legal birch--pTextColor" style="Margin: 0; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; padding: 0; text-align: center; text-decoration: underline;">birch_footerSiteUrlText_birch</a>
+        </p>
+        <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_footerSiteUrlSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_footerSiteUrlSpacerBottom_birchpx; font-weight: normal; line-height: birch_footerSiteUrlSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+            footerSiteUrl: `https://www.unum.com`,
+            footerSiteUrlText: `unum.com`,
+            footerSiteUrlText_OPT: 'footerSiteUrlCode',
+            footerSiteUrlSpacerBottom: '5',
+
+            bottomAddress: `Unum - One Fountain Square - Chattanooga, TN 37402 - US - <a href="https://www.unum.com/privacy" class="birch-text-styles-link--legal birch--pTextColor" style="Margin: 0; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; padding: 0; text-align: center; text-decoration: underline;">privacy policy</a>`,
+            bottomAddressSpacerBottom: '5',
+            formNumberDateAudienceCode: `<p class="text-left birch-text-styles-p--legal birch--pTextColor hb-footerTrackingNumber" style="Margin: 0; Margin-bottom: 0; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; margin-bottom: 0; padding: 0; text-align: birch_alignment_birch;">birch_formNumberDateAudience_birch</p>`,
+            formNumberDateAudience: `MK-1234 (1-19) FOR EMPLOYERS`,
+            formNumberDateAudience_OPT: 'formNumberDateAudienceCode',
+            spacerBottom: '100',
+            year: dt.getFullYear(),
+        },
+        defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
+            spacerTop: '50',
+            backgroundColor: '#015294',
+            alignment: 'left',
+            pTextColor: 'white',
+            socialCodeInput: 'true',
+            socialCode: `<table align="birch_alignment_birch" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
+            <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://twitter.com/unumnews" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-alt/blob/master/images/components/unum-twitter-icon.png?raw=true" alt="twitter" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
+            <td width="20" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">&nbsp;</td>
+            <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.facebook.com/unumbenefits/" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-alt/blob/master/images/components/iunum-facebook-icon.png?raw=true" alt="facebook" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
+            <td width="20" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">&nbsp;</td>
+            <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.linkedin.com/company/unum" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-alt/blob/master/images/components/unum-linkedin-icon.png?raw=true" alt="linkedin" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
+        </tr></tbody></table>
+        
+        <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_socialSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_socialSpacerBottom_birchpx; font-weight: normal; line-height: birch_socialSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+            socialSpacerBottom: '20',
+            linkListCode: `<p class="text-left birch--pTextColor birch-text-styles-p--legal" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; margin-bottom: 10px; padding: 0; text-align: birch_alignment_birch;">
+            birch_linkEntries_birch
+        </p>
+        <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_linkSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_linkSpacerBottom_birchpx; font-weight: normal; line-height: birch_linkSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> `,
+            linkListEntryCode: `<a href="birch_emailLinkUrl_birch" class="birch--pTextColor birch-text-styles-link--contact" style="Margin: 0; color: birch_pTextColor_birch; font-family: Arial; font-size: 14px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; padding: 0; text-align: center; text-decoration: underline;">birch_emailLinkText_birch</a> &nbsp;&nbsp;&nbsp;`,
+            linkList: `[mailto:example@unum.com](EMAIL US)|[https://services.unum.com/](LOGIN)|[tel:+18002758686](CALL US: 1.800.275.8686)`,
+            XlinkUrlList: 'http://www.example.com|http://www.example.com|tel:+18002758686',
+            XlinkTextList: 'EMAIL US|LOGIN|CALL US: 1.800.275.8686',
+            linkSpacerBottom: '10',
+            productListCode: `<p class="text-left birch--pTextColor birch-text-styles-p--products" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 12px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 10px; padding: 0; text-align: birch_alignment_birch;">
+            birch_productList_birch
+        </p>
+        <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_productSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_productSpacerBottom_birchpx; font-weight: normal; line-height: birch_productSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+            productList: `Disability &bull; Life &bull; Accident &bull; Critical Illness &bull; Hospital &bull; Dental &bull; Vision`,
+            productList_OPT: 'productListCode',
+            productSpacerBottom: '20',
+            
+            citationCode: `<p class="text-left birch-text-styles-p--legal birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; margin-bottom: 10px; padding: 0; text-align: birch_alignment_birch;">birch_citationText_birch</p>
+            <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_citationSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_citationSpacerBottom_birchpx; font-weight: normal; line-height: birch_citationSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+            citationText: `1. Citation number one.<br>2. Citation number two.`,
+            citationText_OPT: 'citationCode',
+            citationSpacerBottom: '5',
+
+            emailFieldMerge: '%%EMAIL%%',
+            unsubscribeUrl: '#SPONECLICKOPTOUT',
+            footerUwStatement: 'Unum insurance products are underwritten by the subsidiaries of Unum Group. Dental/Vision plans are marketed by Unum and underwritten by Starmount.',
+            bottomAddressCode: `<p class="text-left birch-text-styles-p--legal birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; margin-bottom: 10px; padding: 0; text-align: birch_alignment_birch;">birch_bottomAddress_birch</p>
+            <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_bottomAddressSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_bottomAddressSpacerBottom_birchpx; font-weight: normal; line-height: birch_bottomAddressSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+
+            footerSiteUrlCode: `<p class="text-left birch-text-styles-p--legal birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; margin-bottom: 10px; padding: 0; text-align: birch_alignment_birch;">
+            <a href="birch_footerSiteUrl_birch" class="birch-text-styles-link--legal birch--pTextColor" style="Margin: 0; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; padding: 0; text-align: center; text-decoration: underline;">birch_footerSiteUrlText_birch</a>
+        </p>
+        <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_footerSiteUrlSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_footerSiteUrlSpacerBottom_birchpx; font-weight: normal; line-height: birch_footerSiteUrlSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+            footerSiteUrl: `https://www.unum.com`,
+            footerSiteUrlText: `unum.com`,
+            footerSiteUrlText_OPT: 'footerSiteUrlCode',
+            footerSiteUrlSpacerBottom: '5',
+
+            bottomAddress: `Unum - One Fountain Square - Chattanooga, TN 37402 - US - <a href="https://www.unum.com/privacy" class="birch-text-styles-link--legal birch--pTextColor" style="Margin: 0; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; padding: 0; text-align: center; text-decoration: underline;">privacy policy</a>`,
+            bottomAddressSpacerBottom: '5',
+            formNumberDateAudienceCode: `<p class="text-left birch-text-styles-p--legal birch--pTextColor hb-footerTrackingNumber" style="Margin: 0; Margin-bottom: 0; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; margin-bottom: 0; padding: 0; text-align: birch_alignment_birch;">birch_formNumberDateAudience_birch</p>`,
+            formNumberDateAudience: `MK-1234 (1-19) FOR EMPLOYERS`,
+            formNumberDateAudience_OPT: 'formNumberDateAudienceCode',
+            spacerBottom: '100',
+            year: dt.getFullYear(),
+        }
+    } // templateObj_300dc
     ,
     templateObj_301: {
         templateDesc: '301',
@@ -4334,6 +4505,36 @@ const main = {
             mergeCodeWithDataForEditShared()
         }
 
+        if (receivedTemplateId == 'templateObj_300dc'){
+            document.querySelector('#t300dc_backgroundColor').value = matchingDataComp.templateValuesObj.backgroundColor
+            document.querySelector('#t300dc_spacerTop').value = matchingDataComp.templateValuesObj.spacerTop
+            document.querySelector('#t300dc_alignment').value = matchingDataComp.templateValuesObj.alignment
+            document.querySelector('#t300dc_pTextColor').value = matchingDataComp.templateValuesObj.pTextColor
+            document.querySelector('#t300dc_socialCodeInput').value = matchingDataComp.templateValuesObj.socialCodeInput
+            document.querySelector('#t300dc_socialSpacerBottom').value = matchingDataComp.templateValuesObj.socialSpacerBottom
+            document.querySelector('#t300dc_linkList').value = prepForTextArea(matchingDataComp.templateValuesObj.linkList)
+            // document.querySelector('#t300dc_linkUrlList').value = prepForTextArea(matchingDataComp.templateValuesObj.linkUrlList)
+            // document.querySelector('#t300dc_linkTextList').value = prepForTextArea(matchingDataComp.templateValuesObj.linkTextList)
+            document.querySelector('#t300dc_linkSpacerBottom').value = matchingDataComp.templateValuesObj.linkSpacerBottom
+            //document.querySelector('#t300dc_productListCode').value = matchingDataComp.templateValuesObj.productListCode
+            document.querySelector('#t300dc_productList').value = matchingDataComp.templateValuesObj.productList
+            document.querySelector('#t300dc_productSpacerBottom').value = matchingDataComp.templateValuesObj.productSpacerBottom
+            document.querySelector('#t300dc_citationText').value = matchingDataComp.templateValuesObj.citationText
+            document.querySelector('#t300dc_citationSpacerBottom').value = matchingDataComp.templateValuesObj.citationSpacerBottom
+            document.querySelector('#t300dc_footerUwStatement').value = matchingDataComp.templateValuesObj.footerUwStatement
+            document.querySelector('#t300dc_emailFieldMerge').value = matchingDataComp.templateValuesObj.emailFieldMerge
+            document.querySelector('#t300dc_unsubscribeUrl').value = matchingDataComp.templateValuesObj.unsubscribeUrl
+            document.querySelector('#t300dc_footerSiteUrl').value = matchingDataComp.templateValuesObj.footerSiteUrl
+            document.querySelector('#t300dc_footerSiteUrlText').value = matchingDataComp.templateValuesObj.footerSiteUrlText
+            document.querySelector('#t300dc_footerSiteUrlSpacerBottom').value = matchingDataComp.templateValuesObj.footerSiteUrlSpacerBottom
+            document.querySelector('#t300dc_bottomAddress').value = matchingDataComp.templateValuesObj.bottomAddress
+            document.querySelector('#t300dc_bottomAddressSpacerBottom').value = matchingDataComp.templateValuesObj.bottomAddressSpacerBottom
+            document.querySelector('#t300dc_formNumberDateAudience').value = matchingDataComp.templateValuesObj.formNumberDateAudience
+            document.querySelector('#t300dc_year').value = matchingDataComp.templateValuesObj.year
+            document.querySelector('#t300dc_spacerBottom').value = matchingDataComp.templateValuesObj.spacerBottom
+            mergeCodeWithDataForEditShared()
+        }
+
         if (receivedTemplateId == 'templateObj_301'){
             document.querySelector('#t301_backgroundColor').value = matchingDataComp.templateValuesObj.backgroundColor
             document.querySelector('#t301_pTextColor').value = matchingDataComp.templateValuesObj.pTextColor
@@ -5670,6 +5871,39 @@ const handlers = {
         view.displayComponents()
     }, // 300d
 
+    goSavet300dc: function(){ // enter edit mode for a component in the email
+        //console.log('welcome to goSavet300dc...')
+        let selectedComp = getSelectedComp()
+        selectedComp.templateValuesObj.spacerTop = document.querySelector('#t300dc_spacerTop').value
+        selectedComp.templateValuesObj.backgroundColor = document.querySelector('#t300dc_backgroundColor').value
+        selectedComp.templateValuesObj.alignment = document.querySelector('#t300dc_alignment').value
+        selectedComp.templateValuesObj.pTextColor = document.querySelector('#t300dc_pTextColor').value
+        selectedComp.templateValuesObj.socialCodeInput = document.querySelector('#t300dc_socialCodeInput').value
+        selectedComp.templateValuesObj.socialSpacerBottom = document.querySelector('#t300dc_socialSpacerBottom').value
+        selectedComp.templateValuesObj.linkList = document.querySelector('#t300dc_linkList').value.replace(/(\r\n\t|\n|\r\t)/gm, "") // remove extra line
+        // selectedComp.templateValuesObj.linkUrlList = document.querySelector('#t300dc_linkUrlList').value.replace(/(\r\n\t|\n|\r\t)/gm, "") // remove extra line
+        // selectedComp.templateValuesObj.linkTextList = document.querySelector('#t300dc_linkTextList').value.replace(/(\r\n\t|\n|\r\t)/gm, "") // remove extra line
+        selectedComp.templateValuesObj.linkSpacerBottom = document.querySelector('#t300dc_linkSpacerBottom').value
+        //selectedComp.templateValuesObj.productListCode = document.querySelector('#t300dc_productListCode').value
+        selectedComp.templateValuesObj.productList = document.querySelector('#t300dc_productList').value
+        selectedComp.templateValuesObj.productSpacerBottom = document.querySelector('#t300dc_productSpacerBottom').value
+        selectedComp.templateValuesObj.citationText = document.querySelector('#t300dc_citationText').value
+        selectedComp.templateValuesObj.citationSpacerBottom = document.querySelector('#t300dc_citationSpacerBottom').value
+        selectedComp.templateValuesObj.footerUwStatement = document.querySelector('#t300dc_footerUwStatement').value
+        selectedComp.templateValuesObj.emailFieldMerge = document.querySelector('#t300dc_emailFieldMerge').value
+        selectedComp.templateValuesObj.unsubscribeUrl = document.querySelector('#t300dc_unsubscribeUrl').value
+        selectedComp.templateValuesObj.footerSiteUrl = document.querySelector('#t300dc_footerSiteUrl').value
+        selectedComp.templateValuesObj.footerSiteUrlText = document.querySelector('#t300dc_footerSiteUrlText').value
+        selectedComp.templateValuesObj.footerSiteUrlSpacerBottom = document.querySelector('#t300dc_footerSiteUrlSpacerBottom').value
+        selectedComp.templateValuesObj.bottomAddress = document.querySelector('#t300dc_bottomAddress').value
+        selectedComp.templateValuesObj.bottomAddressSpacerBottom = document.querySelector('#t300dc_bottomAddressSpacerBottom').value
+        selectedComp.templateValuesObj.formNumberDateAudience = document.querySelector('#t300dc_formNumberDateAudience').value
+        selectedComp.templateValuesObj.year = document.querySelector('#t300dc_year').value
+        selectedComp.templateValuesObj.spacerBottom = document.querySelector('#t300dc_spacerBottom').value
+        //mergeCodeWithDataForEditShared()
+        view.displayComponents()
+    }, // 300d
+
     goSavet301: function(){ // enter edit mode for a component in the email
         //console.log('welcome to goSavet301...')
         let selectedComp = getSelectedComp()
@@ -6070,7 +6304,8 @@ function themeChange(theme){
     compArray.push(megaTemplateObj.templateObj_217)
     if (theme == 'unum'){
         compArray.push(megaTemplateObj.templateObj_300)
-        compArray.push(megaTemplateObj.templateObj_300d)
+        // compArray.push(megaTemplateObj.templateObj_300d)
+        compArray.push(megaTemplateObj.templateObj_300dc)
         compArray.push(megaTemplateObj.templateObj_301)
         compArray.push(megaTemplateObj.templateObj_302)
         compArray.push(megaTemplateObj.templateObj_302s)
@@ -6548,9 +6783,16 @@ function getSelectedComp(){
 function isOdd(num) { return num % 2;}
 function pickColor(el){
     let selectedColor = el.value
-    document.querySelector('#'+main.colorPickerInputId).value = selectedColor
+    let targetInputEl = document.querySelector('#'+main.colorPickerInputId)
+    targetInputEl.value = selectedColor
+    // document.querySelector('#'+main.colorPickerInputId).value = selectedColor
     document.querySelector('#'+main.colorPickerId).style.backgroundColor = selectedColor
     document.querySelector('body').click() // closes the tooltip popup
+
+    // this is to auto-save without needing to click the save button
+    if (targetInputEl.dataset.savetarget){ // not null, undefined, etc.
+        saveMe(targetInputEl.dataset.savetarget)
+    }
 }
 
 
@@ -6567,8 +6809,20 @@ function prepForTextArea(s){
     })
     return displayString.trim()
 }
-
-
+function getLinkTextfromMarkdownLink(mdLinkText){
+    // [http://www.example.com](click me)
+    let ar = mdLinkText.split('](')
+    let textPreClean = ar[1]
+    let textClean = textPreClean.trim().slice(0,-1)
+    return textClean
+}
+function getUrlfromMarkdownLink(mdLinkText){
+    // [http://www.example.com](click me)
+    let ar = mdLinkText.split('](')
+    let urlPreClean = ar[0]
+    let urlClean = urlPreClean.trim().substr(1)
+    return urlClean
+}
 
 
 
@@ -6660,7 +6914,7 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
         }
 
 
-        // 202d
+        // 202d (parts of 300d also)
         // attempt at a generic handler for "if blank remove placeholder else insert code"
         // birch_nameIntroTextCode_birch
         // nameIntroTextBLANK_OR_CODE
@@ -6802,7 +7056,30 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
                 baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_socialCode_birch`, templateDataObj.socialCode)
             }
         }
-        if (fieldLabel === 'linkTextList'){
+        // if (fieldLabel === 'linkTextList'){
+        //     if (templateDataObj.linkTextList == ''){ // exclude the linkListCode
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_linkListCode_birch`, '')
+        //     }
+        //     else{ // include the linkListCode
+        //         // first swap in the linkListCode
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_linkListCode_birch`, templateDataObj.linkListCode)
+
+        //         // now build the code to put into birch_linkEntries_birch using the two input arrays (linkUrlList & linkTextList) and linkListEntryCode
+        //         let urlArray = templateDataObj.linkUrlList.split('|')
+        //         let textArray = templateDataObj.linkTextList.split('|')
+        //         let dataCount = urlArray.length
+
+        //         let s = prepRepeatableFieldForMerge(templateDataObj.linkTextList, templateDataObj.linkListEntryCode)
+        //         // loop again to merge into each repeated field
+        //         for (let i=0; i<dataCount; i++){
+        //             s=s.replace(`birch_emailLinkUrl_birch`, urlArray[i])
+        //             s=s.replace(`birch_emailLinkText_birch`, textArray[i])
+        //             s=s.replace(`birch_pTextColor_birch`, templateDataObj.pTextColor)
+        //         }
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_linkEntries_birch`, s)
+        //     }
+        // }
+        if (fieldLabel === 'linkList'){
             if (templateDataObj.linkTextList == ''){ // exclude the linkListCode
                 baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_linkListCode_birch`, '')
             }
@@ -6811,37 +7088,36 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
                 baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_linkListCode_birch`, templateDataObj.linkListCode)
 
                 // now build the code to put into birch_linkEntries_birch using the two input arrays (linkUrlList & linkTextList) and linkListEntryCode
-                let urlArray = templateDataObj.linkUrlList.split('|')
-                let textArray = templateDataObj.linkTextList.split('|')
-                let dataCount = urlArray.length
+                let linkArray = templateDataObj.linkList.split('|')
+                let dataCount = linkArray.length
+                let s = prepRepeatableFieldForMerge(templateDataObj.linkList, templateDataObj.linkListEntryCode)
 
-                let s = prepRepeatableFieldForMerge(templateDataObj.linkTextList, templateDataObj.linkListEntryCode)
                 // loop again to merge into each repeated field
                 for (let i=0; i<dataCount; i++){
-                    s=s.replace(`birch_emailLinkUrl_birch`, urlArray[i])
-                    s=s.replace(`birch_emailLinkText_birch`, textArray[i])
+                    s=s.replace(`birch_emailLinkUrl_birch`, getUrlfromMarkdownLink(linkArray[i]))
+                    s=s.replace(`birch_emailLinkText_birch`, getLinkTextfromMarkdownLink(linkArray[i]))
                     s=s.replace(`birch_pTextColor_birch`, templateDataObj.pTextColor)
                 }
                 baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_linkEntries_birch`, s)
             }
         }
-        if (fieldLabel === 'productList'){
-            if (templateDataObj.productList == ''){ // exclude the productListCode
-                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_productListCode_birch`, '')
-            }
-            else{
-                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_productListCode_birch`, templateDataObj.productListCode)
-            }
-        }
-        if (fieldLabel === 'citationText'){
-            if (templateDataObj.citationText == ''){ // exclude the citationCode
-                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_citationCode_birch`, '')
-            }
-            else{
-                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_citationCode_birch`, templateDataObj.citationCode)
-                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_citations_birch`, templateDataObj.citationText)
-            }
-        }
+        // if (fieldLabel === 'productList'){
+        //     if (templateDataObj.productList == ''){ // exclude the productListCode
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_productListCode_birch`, '')
+        //     }
+        //     else{
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_productListCode_birch`, templateDataObj.productListCode)
+        //     }
+        // }
+        // if (fieldLabel === 'citationText'){
+        //     if (templateDataObj.citationText == ''){ // exclude the citationCode
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_citationCode_birch`, '')
+        //     }
+        //     else{
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_citationCode_birch`, templateDataObj.citationCode)
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_citations_birch`, templateDataObj.citationText)
+        //     }
+        // }
         if (fieldLabel === 'bottomAddress'){
             if (templateDataObj.bottomAddress == ''){ // exclude the citationCode
                 baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_bottomAddressCode_birch`, '')
@@ -7624,7 +7900,27 @@ function loadEmail(theText){
 }
 
 
-
+function blankTo0(guy){
+    if (guy.value === ''){
+        guy.value = 0;
+    }
+}
+function saveMe(target){
+    // target: 300dc  from a call like: saveMe('300dc')
+    // build: handlers.goSavet300dc()
+    if (target){ // not undefined, null, etc...
+        eval(`handlers.goSavet${target}()`)
+    }
+}
+function editCBToggle(target){
+    let matchingInputEl = document.querySelector('#'+target.dataset.twin)
+    if (matchingInputEl.value === ''){
+        matchingInputEl.value = 'true'
+    }
+    else{
+        matchingInputEl.value = ''
+    }
+}
 
 // only used to insert the email subject and preheader
 // this version only swaps the first located match
