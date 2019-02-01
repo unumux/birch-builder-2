@@ -61,7 +61,13 @@
         <!-- <button class="closeMenuButton" type="button" onclick="document.querySelector('#navBtnAbout').click()"><i class="far fa-times-circle"></i></button> -->
         <h2 class="aboutH2">About</h2>
 
-        <p><strong>2.0.5 (current version)</strong>
+        <p><strong>2.0.6 (current version)</strong>
+        <ul>
+            <li>Adds 300dc. This replaces the recent 300d by doing everything it did plus more.  Dynamic centering, dynamic social buttons that work better with different background colors, more optional fields, and perhaps most interesting: auto saving after each change to a field!  If this model of auto-saving works well, I may extend it to the other components.</li>
+            <li>released 2/1/2019</li>
+        </ul>
+
+        <p><strong>2.0.5</strong>
         <ul>
             <li>Adds 202d.</li>
             <li>released 1/29/2019 (DEV)</li>
@@ -3739,7 +3745,7 @@
 
                     <br><br>
 
-                    <div class="inputGroup">
+                    <!-- <div class="inputGroup">
                         <label>
                             <div class="flexlabel">
                                 <div><input type="checkbox" class="editCB" data-twin="t300dc_socialCodeInput" onchange="editCBToggle(this);saveMe('300dc');" checked> Use social icons?</div>
@@ -3747,6 +3753,25 @@
                             </div>
                         </label>
                         <input class="editInput" id="t300dc_socialCodeInput" onblur="saveMe('300dc');" disabled>
+                    </div> -->
+
+                    <div class="inputGroup">
+                        <div class="flexlabel">
+                            <div>Social icons: </div>
+                            <div>
+                                <label class="radioLabel">
+                                    <input type="radio" class="editRadio" data-twin="t300dc_socialRadioInput" name="socialIconRadio" onchange="editRadioToggle(this);saveMe('300dc');" value="light" checked>Light
+                                </label>
+                                <label class="radioLabel">
+                                    <input type="radio" class="editRadio" data-twin="t300dc_socialRadioInput" name="socialIconRadio" onchange="editRadioToggle(this);saveMe('300dc');" value="dark">Dark
+                                </label>
+                                <label>
+                                    <input type="radio" class="editRadio" data-twin="t300dc_socialRadioInput" name="socialIconRadio" onchange="editRadioToggle(this);saveMe('300dc');" value="none">None
+                                </label>
+                            </div>
+                        </div>
+
+                        <input class="editInput" id="t300dc_socialRadioInput" onblur="saveMe('300dc');" disabled>
                     </div>
                     <!-- <div class="inputGroup">
                         <label><div class="flexlabel"><div>Use social icons?</div> <div>leave blank to remove</div></div>

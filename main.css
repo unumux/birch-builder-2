@@ -402,6 +402,13 @@ body {
 .editCB {
   display: inline-flex; }
 
+.editRadio {
+  display: inline-flex;
+  margin-right: .3rem; }
+
+.radioLabel {
+  margin-right: 1rem; }
+
 .editInput {
   display: inline-block;
   width: 100%;

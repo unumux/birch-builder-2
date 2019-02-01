@@ -1,6 +1,6 @@
 
 // #region TEMPLATE REPEAT AREA
-const version = "2.0.5"
+const version = "2.0.6"
 let importedEmailFile = null // to set the export filename if we imported a file
 
 // used to insert current year in footer templates with dt.getFullYear()
@@ -2953,16 +2953,25 @@ const megaTemplateObj = {
             backgroundColor: '#015294',
             alignment: 'left',
             pTextColor: 'white',
-            socialCodeInput: 'true',
             socialCode: `<table align="birch_alignment_birch" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
-            <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://twitter.com/unumnews" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-alt/blob/master/images/components/unum-twitter-icon.png?raw=true" alt="twitter" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
+            <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://twitter.com/unumnews" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="birch_socialUrlTwitter_birch" alt="twitter" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
             <td width="20" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">&nbsp;</td>
-            <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.facebook.com/unumbenefits/" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-alt/blob/master/images/components/iunum-facebook-icon.png?raw=true" alt="facebook" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
+            <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.facebook.com/unumbenefits/" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="birch_socialUrlFacebook_birch" alt="facebook" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
             <td width="20" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">&nbsp;</td>
-            <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.linkedin.com/company/unum" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-alt/blob/master/images/components/unum-linkedin-icon.png?raw=true" alt="linkedin" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
+            <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://www.linkedin.com/company/unum" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="birch_socialUrlLinkedin_birch" alt="linkedin" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
         </tr></tbody></table>
         
         <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_socialSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_socialSpacerBottom_birchpx; font-weight: normal; line-height: birch_socialSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+            socialRadioInput: 'light',
+            socialUrlTwitter: 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-icon-twitter-light.png?raw=true',
+            socialUrlFacebook: 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-icon-facebook-light.png?raw=true',
+            socialUrlLinkedin: 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-icon-linkedin-light.png?raw=true',
+            socialUrlTwitterLight: 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-icon-twitter-light.png?raw=true',
+            socialUrlTwitterDark: 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-icon-twitter-dark.png?raw=true',
+            socialUrlFacebookLight: 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-icon-facebook-light.png?raw=true',
+            socialUrlFacebookDark: 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-icon-facebook-dark.png?raw=true',
+            socialUrlLinkedinLight: 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-icon-linkedin-light.png?raw=true',
+            socialUrlLinkedinDark: 'https://github.com/unumux/birch-alt/blob/master/images/components/unum-icon-linkedin-dark.png?raw=true',
             socialSpacerBottom: '20',
             linkListCode: `<p class="text-left birch--pTextColor birch-text-styles-p--legal" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 11px; font-style: normal; font-weight: 400; line-height: 14px; margin: 0; margin-bottom: 10px; padding: 0; text-align: birch_alignment_birch;">
             birch_linkEntries_birch
@@ -3015,7 +3024,6 @@ const megaTemplateObj = {
             backgroundColor: '#015294',
             alignment: 'left',
             pTextColor: 'white',
-            socialCodeInput: 'true',
             socialCode: `<table align="birch_alignment_birch" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
             <td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="https://twitter.com/unumnews" style="Margin: 0; color: #2199e8; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;"><img width="25" height="25" src="https://github.com/unumux/birch-alt/blob/master/images/components/unum-twitter-icon.png?raw=true" alt="twitter" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: auto;"></a></td>
             <td width="20" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">&nbsp;</td>
@@ -4510,7 +4518,8 @@ const main = {
             document.querySelector('#t300dc_spacerTop').value = matchingDataComp.templateValuesObj.spacerTop
             document.querySelector('#t300dc_alignment').value = matchingDataComp.templateValuesObj.alignment
             document.querySelector('#t300dc_pTextColor').value = matchingDataComp.templateValuesObj.pTextColor
-            document.querySelector('#t300dc_socialCodeInput').value = matchingDataComp.templateValuesObj.socialCodeInput
+            // document.querySelector('#t300dc_socialCodeInput').value = matchingDataComp.templateValuesObj.socialCodeInput
+            document.querySelector('#t300dc_socialRadioInput').value = matchingDataComp.templateValuesObj.socialRadioInput
             document.querySelector('#t300dc_socialSpacerBottom').value = matchingDataComp.templateValuesObj.socialSpacerBottom
             document.querySelector('#t300dc_linkList').value = prepForTextArea(matchingDataComp.templateValuesObj.linkList)
             // document.querySelector('#t300dc_linkUrlList').value = prepForTextArea(matchingDataComp.templateValuesObj.linkUrlList)
@@ -5878,7 +5887,8 @@ const handlers = {
         selectedComp.templateValuesObj.backgroundColor = document.querySelector('#t300dc_backgroundColor').value
         selectedComp.templateValuesObj.alignment = document.querySelector('#t300dc_alignment').value
         selectedComp.templateValuesObj.pTextColor = document.querySelector('#t300dc_pTextColor').value
-        selectedComp.templateValuesObj.socialCodeInput = document.querySelector('#t300dc_socialCodeInput').value
+        // selectedComp.templateValuesObj.socialCodeInput = document.querySelector('#t300dc_socialCodeInput').value
+        selectedComp.templateValuesObj.socialRadioInput = document.querySelector('#t300dc_socialRadioInput').value
         selectedComp.templateValuesObj.socialSpacerBottom = document.querySelector('#t300dc_socialSpacerBottom').value
         selectedComp.templateValuesObj.linkList = document.querySelector('#t300dc_linkList').value.replace(/(\r\n\t|\n|\r\t)/gm, "") // remove extra line
         // selectedComp.templateValuesObj.linkUrlList = document.querySelector('#t300dc_linkUrlList').value.replace(/(\r\n\t|\n|\r\t)/gm, "") // remove extra line
@@ -7048,13 +7058,42 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
         }
 
         // 300d
-        if (fieldLabel === 'socialCodeInput'){
-            if (templateDataObj.socialCodeInput == ''){ // exclude the socialCode
+        // if (fieldLabel === 'socialCodeInput'){
+        //     if (templateDataObj.socialCodeInput == ''){ // exclude the socialCode
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_socialCode_birch`, '')
+        //     }
+        //     else{ // include the socialCode
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_socialCode_birch`, templateDataObj.socialCode)
+        //     }
+        // }
+        if (fieldLabel === 'socialRadioInput'){
+            if (fieldData == 'none'){ 
+                // exclude the socialCode
                 baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_socialCode_birch`, '')
             }
-            else{ // include the socialCode
+            else if (fieldData == 'light'){ 
+                // swap in the light urls...
+                templateDataObj.socialUrlTwitter = templateDataObj.socialUrlTwitterLight
+                templateDataObj.socialUrlFacebook = templateDataObj.socialUrlFacebookLight
+                templateDataObj.socialUrlLinkedin = templateDataObj.socialUrlLinkedinLight
                 baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_socialCode_birch`, templateDataObj.socialCode)
+                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_socialUrlTwitter_birch`, templateDataObj.socialUrlTwitter)
+                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_socialUrlFacebook_birch`, templateDataObj.socialUrlFacebook)
+                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_socialUrlLinkedin_birch`, templateDataObj.socialUrlLinkedin)
             }
+            else if (fieldData == 'dark'){ 
+                // swap in the light urls...
+                templateDataObj.socialUrlTwitter = templateDataObj.socialUrlTwitterDark
+                templateDataObj.socialUrlFacebook = templateDataObj.socialUrlFacebookDark
+                templateDataObj.socialUrlLinkedin = templateDataObj.socialUrlLinkedinDark
+                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_socialCode_birch`, templateDataObj.socialCode)
+                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_socialUrlTwitter_birch`, templateDataObj.socialUrlTwitter)
+                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_socialUrlFacebook_birch`, templateDataObj.socialUrlFacebook)
+                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_socialUrlLinkedin_birch`, templateDataObj.socialUrlLinkedin)
+            }
+            // else{ // include the socialCode
+            //     baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_socialCode_birch`, templateDataObj.socialCode)
+            // }
         }
         // if (fieldLabel === 'linkTextList'){
         //     if (templateDataObj.linkTextList == ''){ // exclude the linkListCode
@@ -7921,6 +7960,13 @@ function editCBToggle(target){
         matchingInputEl.value = ''
     }
 }
+function editRadioToggle(target){
+    //console.log('welcome to editRadioToggle()...')
+    let matchingInputEl = document.querySelector('#'+target.dataset.twin)
+    //console.log('target =', target)
+    //console.log('matchingInputEl =', matchingInputEl)
+    matchingInputEl.value = target.value
+}
 
 // only used to insert the email subject and preheader
 // this version only swaps the first located match
@@ -8014,7 +8060,7 @@ const baseEmailHtmlTop = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitio
   }
 
   table.body .container {
-    width: 95% !important;
+    width: 100% !important;
   }
 
   table.body .columns {
@@ -8166,7 +8212,9 @@ const baseEmailHtmlTop = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitio
 </style>
   </head>
   <body style="-moz-box-sizing: border-box; -ms-text-size-adjust: 100%; -webkit-box-sizing: border-box; -webkit-text-size-adjust: 100%; Margin: 0; background: {{emailBackGroundColor}}; background: {{emailBackGroundColor}} !important; box-sizing: border-box; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; min-width: 100%; padding: 0; text-align: left; width: 100% !important">
-    <span class="preheader" style="color: {{emailBackGroundColor}}; display: none !important; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; mso-hide: all !important; opacity: 0; overflow: hidden; visibility: hidden">{{emailPreheader}}</span>
+
+  <span class="preheader" style="display: none; font-size: 0px; line-height: 0px; max-height: 0px; max-width: 0px; width: 0px; opacity: 0; overflow: hidden;">{{emailPreheader}}</span>
+    
     <table class="body" style="Margin: 0; background: {{emailBackGroundColor}}; background: {{emailBackGroundColor}} !important; border-collapse: collapse; border-spacing: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; height: 100%; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top; width: 100%">
       <tr style="padding: 0; text-align: left; vertical-align: top">
         <td class="center" align="center" valign="top" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word">

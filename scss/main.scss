@@ -549,6 +549,13 @@ body{
 .editCB{
     display: inline-flex; // strangely enough this seems to make for better bottom alignment with text next to it.
 }
+.editRadio{
+    display: inline-flex; // strangely enough this seems to make for better bottom alignment with text next to it.
+    margin-right: .3rem;
+}
+.radioLabel{
+    margin-right: 1rem;
+}
 .editInput{
     display:inline-block; // changed from block for the colorbox insert
     width: 100%;
