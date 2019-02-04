@@ -2163,67 +2163,66 @@
                     <div class="inputGroup">
                         <label>backgroundColor:
                             <div class="colorboxFlex">
-                                <input class="editInput" id="t204_backgroundColor" />
+                                <input class="editInput" id="t204_backgroundColor" onblur="saveMe('204');" data-savetarget="204" />
                                 <button type="button" id="t204_backgroundColorCP" class="cpTooltip" value="t204_backgroundColor"></button>
                             </div>
                         </label>
                     </div>
                     <div class="inputGroup">
-                        <!-- <label>spacerTop:<input class="editInput" id="t204_spacerTop" /></label> -->
                         <label>spacerTop:<input type="number" min="0" class="editInput" id="t204_spacerTop" onblur="blankTo0(this);saveMe('204');" /></label>
                     </div>
                     <div class="inputGroup">
                         <label>h1TextColor:
                             <div class="colorboxFlex">
-                                <input class="editInput" id="t204_h1TextColor" />
+                                <input class="editInput" id="t204_h1TextColor" onblur="saveMe('204');" data-savetarget="204" />
                                 <button type="button" id="t204_h1TextColorCP" class="cpTooltip" value="t204_h1TextColor"></button>
                             </div>
                         </label>
                     </div>
                     <div class="inputGroup">
                         <!-- <label>h1Text:<input class="editInput" id="t204_h1Text" /></label> -->
-                        <label><div class="flexlabel"><div>h1Text:</div> <div>leave blank to remove</div></div><textarea rows="3" class="editInput" id="t204_h1Text"></textarea></label>
+                        <label><div class="flexlabel"><div>h1Text:</div> <div>leave blank to remove</div></div><textarea rows="3" class="editInput" id="t204_h1Text" onblur="saveMe('204');"></textarea></label>
                     </div>
                     <div class="inputGroup">
                         <label>pTextColor:
                             <div class="colorboxFlex">
-                                <input class="editInput" id="t204_pTextColor" />
+                                <input class="editInput" id="t204_pTextColor" onblur="saveMe('204');" data-savetarget="204" />
                                 <button type="button" id="t204_pTextColorCP" class="cpTooltip" value="t204_pTextColor"></button>
                             </div>
                         </label>
                     </div>
                     <div class="inputGroup">
-                        <label><div class="flexlabel"><div>pText:</div> <div>use | between each</div></div><textarea rows="6" class="editInput" id="t204_pText"></textarea></label>
+                        <label><div class="flexlabel"><div>pText:</div> <div>use | between each</div></div><textarea rows="6" class="editInput" id="t204_pText" onblur="saveMe('204');"></textarea></label>
                         <!-- <label>pText:<input class="editInput" id="t204_pText" /></label> -->
                     </div>
                     <div class="inputGroup">
                         <label>ctaBackgroundColor:
                             <div class="colorboxFlex">
-                                <input class="editInput" id="t204_ctaBackgroundColor" />
+                                <input class="editInput" id="t204_ctaBackgroundColor" onblur="saveMe('204');" data-savetarget="204" />
                                 <button type="button" id="t204_ctaBackgroundColorCP" class="cpTooltip" value="t204_ctaBackgroundColor"></button>
                             </div>
                         </label>
                     </div>
                     <div class="inputGroup">
-                        <label>ctaUrl:<input class="editInput" id="t204_ctaUrl" /></label>
+                        <label>ctaUrl:<input class="editInput" id="t204_ctaUrl" onblur="saveMe('204');" /></label>
                     </div>
                     <div class="inputGroup">
                         <label>ctaTextColor:
                             <div class="colorboxFlex">
-                                <input class="editInput" id="t204_ctaTextColor" />
+                                <input class="editInput" id="t204_ctaTextColor" onblur="saveMe('204');" data-savetarget="204" />
                                 <button type="button" id="t204_ctaTextColorCP" class="cpTooltip" value="t204_ctaTextColor"></button>
                             </div>
                         </label>
                     </div>
                     <div class="inputGroup">
-                        <label><div class="flexlabel"><div>ctaText:</div> <div>leave blank to remove cta</div></div><input class="editInput" id="t204_ctaText" /></label>
+                        <label><div class="flexlabel"><div>ctaText:</div> <div>leave blank to remove cta</div></div><input class="editInput" id="t204_ctaText" onblur="saveMe('204');" /></label>
                         <!-- <label>ctaText:<input class="editInput" id="t204_ctaText" /></label> -->
                     </div>
                     <div class="inputGroup">
                         <!-- <label>spacerBottom:<input class="editInput" id="t204_spacerBottom" /></label> -->
                         <label>spacerBottom:<input type="number" min="0" class="editInput" id="t204_spacerBottom" onblur="blankTo0(this);saveMe('204');" /></label>
                     </div>
-                    <div class="inputGroup">
+                    <div class="inputGroup hideme">
                         <button class="editBtn" id="t204_applyBtn" onclick="handlers.goSavet204()" type="button">Apply &rsaquo;</button>
                     </div>
                 </div>
