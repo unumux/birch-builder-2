@@ -7131,7 +7131,7 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
         //     }
         // }
         if (fieldLabel === 'linkList'){
-            if (templateDataObj.linkTextList == ''){ // exclude the linkListCode
+            if (templateDataObj.linkList == ''){ // exclude the linkListCode
                 baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_linkListCode_birch`, '')
             }
             else{ // include the linkListCode
