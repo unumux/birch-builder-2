@@ -4124,7 +4124,7 @@ const main = {
             document.querySelector('#t202_spacerBottom').value = matchingDataComp.templateValuesObj.spacerBottom
             mergeCodeWithDataForEditShared()
         }
-        
+
         if (receivedTemplateId == 'templateObj_202d'){
             document.querySelector('#t202d_backgroundColor').value = matchingDataComp.templateValuesObj.backgroundColor
             document.querySelector('#t202d_spacerTop').value = matchingDataComp.templateValuesObj.spacerTop
@@ -6822,17 +6822,28 @@ function prepForTextArea(s){
 }
 function getLinkTextfromMarkdownLink(mdLinkText){
     // [http://www.example.com](click me)
-    let ar = mdLinkText.split('](')
-    let textPreClean = ar[1]
-    let textClean = textPreClean.trim().slice(0,-1)
-    return textClean
+    if (mdLinkText){
+        let ar = mdLinkText.split('](')
+        let textPreClean = ar[1]
+        let textClean = textPreClean.trim().slice(0,-1)
+        return textClean
+    }
+    else{
+        return 'getLinkText parsing error. mdLinkText='+mdLinkText
+    }
 }
 function getUrlfromMarkdownLink(mdLinkText){
     // [http://www.example.com](click me)
-    let ar = mdLinkText.split('](')
-    let urlPreClean = ar[0]
-    let urlClean = urlPreClean.trim().substr(1)
-    return urlClean
+    if (mdLinkText){
+        let ar = mdLinkText.split('](')
+        let urlPreClean = ar[0]
+        let urlClean = urlPreClean.trim().substr(1)
+        return urlClean
+    }
+    else{
+        return 'getUrl parsing error. mdLinkText='+mdLinkText
+    }
+    
 }
 
 
