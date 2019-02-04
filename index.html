@@ -2168,8 +2168,9 @@
                             </div>
                         </label>
                     </div>
-                    <div class="inputGroup hideme">
-                        <label>spacerTop:<input class="editInput" id="t204_spacerTop" /></label>
+                    <div class="inputGroup">
+                        <!-- <label>spacerTop:<input class="editInput" id="t204_spacerTop" /></label> -->
+                        <label>spacerTop:<input type="number" min="0" class="editInput" id="t204_spacerTop" onblur="blankTo0(this);saveMe('204');" /></label>
                     </div>
                     <div class="inputGroup">
                         <label>h1TextColor:
@@ -2218,8 +2219,9 @@
                         <label><div class="flexlabel"><div>ctaText:</div> <div>leave blank to remove cta</div></div><input class="editInput" id="t204_ctaText" /></label>
                         <!-- <label>ctaText:<input class="editInput" id="t204_ctaText" /></label> -->
                     </div>
-                    <div class="inputGroup hideme">
-                        <label>spacerBottom:<input class="editInput" id="t204_spacerBottom" /></label>
+                    <div class="inputGroup">
+                        <!-- <label>spacerBottom:<input class="editInput" id="t204_spacerBottom" /></label> -->
+                        <label>spacerBottom:<input type="number" min="0" class="editInput" id="t204_spacerBottom" onblur="blankTo0(this);saveMe('204');" /></label>
                     </div>
                     <div class="inputGroup">
                         <button class="editBtn" id="t204_applyBtn" onclick="handlers.goSavet204()" type="button">Apply &rsaquo;</button>
