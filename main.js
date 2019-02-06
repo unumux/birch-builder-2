@@ -1172,7 +1172,7 @@ const megaTemplateObj = {
         <!-- /c163 -->`,
         category: 'banners',
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
-            backgroundColor: '#19557F'
+            backgroundColor: '#015294'
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#19557F'
@@ -1250,7 +1250,7 @@ const megaTemplateObj = {
         </td></tr></tbody></table>
         <!-- /c200dc -->`,
         category: 'body',
-        tags: ['1col', 'alignedLeft'],
+        tags: ['1col'], // excluding the left or center value puts it into both.
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
@@ -3728,6 +3728,7 @@ let compCategoryAlignedCenter = []
 const megaTemplateArray = Object.entries(megaTemplateObj)
 megaTemplateArray.map( (item, i) => {
     // each item is an array: [0]='templateObj_X' [1]={}
+    // to have a component in both alignedLeft and alignedCenter, don't assign it to either.
     if(typeof item[1].tags !== "undefined"){
         if (item[1].tags.includes('1col')){ compCategory1col.push(item[0]) }
         if (item[1].tags.includes('2col')){ compCategory2col.push(item[0]) }
@@ -6390,7 +6391,7 @@ function themeChange(theme){
         document.querySelector('#t10_EmailThemeDD [value="unum"]').selected = true;
         // update the accord "last component" labels
         document.querySelector('#accord-headers-last-id').innerHTML = '103'
-        document.querySelector('#accord-banners-last-id').innerHTML = '158'
+        document.querySelector('#accord-banners-last-id').innerHTML = '163'
         document.querySelector('#accord-body-last-id').innerHTML = '217'
         document.querySelector('#accord-footers-first-id').innerHTML = '300'
         document.querySelector('#accord-footers-last-id').innerHTML = '302s'
@@ -6433,8 +6434,8 @@ function themeChange(theme){
         compArray.push(megaTemplateObj.templateObj_161)
         compArray.push(megaTemplateObj.templateObj_161b)
         compArray.push(megaTemplateObj.templateObj_162)
-        compArray.push(megaTemplateObj.templateObj_163)
     }
+    compArray.push(megaTemplateObj.templateObj_163)
     compArray.push(megaTemplateObj.templateObj_200)
     compArray.push(megaTemplateObj.templateObj_200dc)
     compArray.push(megaTemplateObj.templateObj_201)
