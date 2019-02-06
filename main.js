@@ -1,6 +1,6 @@
 
 // #region TEMPLATE REPEAT AREA
-const version = "2.0.6"
+const version = "2.0.7"
 let importedEmailFile = null // to set the export filename if we imported a file
 
 // used to insert current year in footer templates with dt.getFullYear()
@@ -1226,6 +1226,93 @@ const megaTemplateObj = {
         }
     } // templateObj_200
     ,
+    templateObj_200dc: {
+        templateDesc: '200dc',
+        templateId: 'templateObj_200dc',
+        baseCode: `<!-- c200dc -->
+        <table align="center" class="container" style="Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">
+            <table class="wrapper birch-wrapper-padding birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 53px; padding-right: 53px; text-align: left; vertical-align: top;">
+
+                <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_spacerTop_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_spacerTop_birchpx; font-weight: normal; line-height: birch_spacerTop_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>
+
+                birch_h1Code_birch
+                
+                birch_h2Code_birch
+                
+                birch_pRepeatingCodeFrame_birch
+                
+                birch_ctaCode_birch
+
+                birch_linkCode_birch
+
+                <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_spacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_spacerBottom_birchpx; font-weight: normal; line-height: birch_spacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+            </td></tr></table>
+        </td></tr></tbody></table>
+        <!-- /c200dc -->`,
+        category: 'body',
+        tags: ['1col', 'alignedCenter'],
+        defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
+            backgroundColor: '#f7f7f7',
+            spacerTop: '50',
+            alignment: 'left',
+
+            h1Code: `<h1 class="text-birch_alignment_birch birch-text-styles-h1-large birch--h1TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h1TextColor_birch; font-family: Arial; font-size: 24px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: birch_h1SpacerBottom_birchpx; padding: 0; text-align: birch_alignment_birch; word-wrap: normal;">birch_h1Text_birch</h1>`,
+            h1TextColor: '#015294',
+            h1Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
+            h1SpacerBottom: '10',
+            h1Text_OPT: 'h1Code',
+
+            h2Code: `<h2 class="text-birch_alignment_birch birch-text-styles-h2 birch--h2TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h2TextColor_birch; font-family: Arial; font-size: 20px; font-style: normal; font-weight: bold; line-height: 21px; margin: 0; margin-bottom: birch_h2SpacerBottom_birchpx; padding: 0; text-align: birch_alignment_birch; word-wrap: normal;">birch_h2Text_birch</h2>`,
+            h2TextColor: '#015294',
+            h2Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
+            h2SpacerBottom: '10',
+            h2Text_OPT: 'h2Code',
+
+            pRepeatingCodeFrame: `birch_pRepeatedCode_birch
+            <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_pSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_pSpacerBottom_birchpx; font-weight: normal; line-height: birch_pSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+            pRepeatedCode: `<p class="text-birch_alignment_birch birch-text-styles-p birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: birch_alignment_birch;">birch_pText_birch</p>`,
+            pTextColor: '#2E2E2E',
+            pText: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
+            repeatingCodeFields: 'pText|pRepeatingCodeFrame|pRepeatedCode',
+            pSpacerBottom: '10',
+            //pText_OPT: 'pRepeatingCodeFrame',
+            
+            ctaBackgroundColor: '#015294',
+            ctaUrl: 'https://www.unum.com',
+            ctaTextColor: '#fefefe',
+            ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>`,
+            ctaAlignment: 'left',
+            ctaAfterSpacerCode: `<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_ctaSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_ctaSpacerBottom_birchpx; font-weight: normal; line-height: birch_ctaSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+            ctaSpacerBottom: '10',
+            centerBlockStart: `<center data-parsed="" style="min-width: initial !important; width: 100%;">`,
+            centerBlockEnd: `</center>`,
+
+            linkCode: `<p class="text-birch_alignment_birch birch-text-styles-p" style="Margin: 0; Margin-bottom: birch_linkSpacerBottom_birchpx; color: birch_linkColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: birch_linkSpacerBottom_birchpx; padding: 0; text-align: birch_alignment_birch;"><a href="birch_linkUrl_birch" class="birch-text-styles-link birch--linkColor" style="Margin: 0; color: birch_linkColor_birch; font-family: Arial; font-size: 16px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; padding: 0; text-align: birch_alignment_birch; text-decoration: underline;">birch_linkText_birch</a></p>`,
+            linkUrl: 'http://www.example.com',
+            linkColor: '#015294',
+            linkText: 'Mauris non tempor quam, et lacinia sapien',
+            linkSpacerBottom: '10',
+            linkText_OPT: 'linkCode',
+
+            spacerBottom: '50'     
+        },
+        defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
+            backgroundColor: '#f7f7f7',
+            spacerTop: '50',
+            h1TextColor: '#19557F',
+            h1Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
+            ctaBackgroundColor: '#1A8573',
+            ctaUrl: 'https://www.coloniallife.com',
+            ctaTextColor: 'white',
+            ctaText: 'Call-to-action&nbsp;&rsaquo;',
+            ctaCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
+            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
+        </center>`,
+            spacerBottom: '50'
+        }
+    } // templateObj_200dc
+    ,
     templateObj_201: {
         templateDesc: '201',
         templateId: 'templateObj_201',
@@ -1498,13 +1585,14 @@ const megaTemplateObj = {
         baseCode: `<!-- c203 -->
         <table align="center" class="container" style="Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">
             <table class="wrapper birch-wrapper-padding birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 53px; padding-right: 53px; text-align: left; vertical-align: top;">
-                <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
+                <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_spacerTop_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_spacerTop_birchpx; font-weight: normal; line-height: birch_spacerTop_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
 
                 <h1 class="birch-text-styles-h1-large birch--h1TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h1TextColor_birch; font-family: Arial; font-size: 24px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 10px; padding: 0; text-align: left; word-wrap: normal;">birch_h1Text_birch</h1>
 
                 birch_ctaCode_birch
 
-                <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+                <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_spacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_spacerBottom_birchpx; font-weight: normal; line-height: birch_spacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
             </td></tr></table>
         </td></tr></tbody></table>
         <!-- /c203 -->`,
@@ -2979,8 +3067,8 @@ const megaTemplateObj = {
         <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_linkSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_linkSpacerBottom_birchpx; font-weight: normal; line-height: birch_linkSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> `,
             linkListEntryCode: `<a href="birch_emailLinkUrl_birch" class="birch--pTextColor birch-text-styles-link--contact" style="Margin: 0; color: birch_pTextColor_birch; font-family: Arial; font-size: 14px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; padding: 0; text-align: center; text-decoration: underline;">birch_emailLinkText_birch</a> &nbsp;&nbsp;&nbsp;`,
             linkList: `[mailto:example@unum.com](EMAIL US)|[https://services.unum.com/](LOGIN)|[tel:+18002758686](CALL US: 1.800.275.8686)`,
-            XlinkUrlList: 'http://www.example.com|http://www.example.com|tel:+18002758686',
-            XlinkTextList: 'EMAIL US|LOGIN|CALL US: 1.800.275.8686',
+            // XlinkUrlList: 'http://www.example.com|http://www.example.com|tel:+18002758686',
+            // XlinkTextList: 'EMAIL US|LOGIN|CALL US: 1.800.275.8686',
             linkSpacerBottom: '10',
             productListCode: `<p class="text-left birch--pTextColor birch-text-styles-p--products" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 12px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 10px; padding: 0; text-align: birch_alignment_birch;">
             birch_productList_birch
@@ -4079,6 +4167,34 @@ const main = {
             document.querySelector('#t200_ctaText').value = matchingDataComp.templateValuesObj.ctaText
             document.querySelector('#t200_spacerBottom').value = matchingDataComp.templateValuesObj.spacerBottom
             mergeCodeWithDataForEditShared()
+        }
+
+        if (receivedTemplateId == 'templateObj_200dc'){
+            document.querySelector('#t200dc_backgroundColor').value = matchingDataComp.templateValuesObj.backgroundColor
+            document.querySelector('#t200dc_spacerTop').value = matchingDataComp.templateValuesObj.spacerTop
+            document.querySelector('#t200dc_alignment').value = matchingDataComp.templateValuesObj.alignment
+            document.querySelector('#t200dc_h1TextColor').value = matchingDataComp.templateValuesObj.h1TextColor
+            document.querySelector('#t200dc_h1Text').value = matchingDataComp.templateValuesObj.h1Text
+            document.querySelector('#t200dc_h1SpacerBottom').value = matchingDataComp.templateValuesObj.h1SpacerBottom
+            document.querySelector('#t200dc_h2TextColor').value = matchingDataComp.templateValuesObj.h2TextColor
+            document.querySelector('#t200dc_h2Text').value = matchingDataComp.templateValuesObj.h2Text
+            document.querySelector('#t200dc_h2SpacerBottom').value = matchingDataComp.templateValuesObj.h2SpacerBottom
+            document.querySelector('#t200dc_pTextColor').value = matchingDataComp.templateValuesObj.pTextColor
+            document.querySelector('#t200dc_pText').value = prepForTextArea(matchingDataComp.templateValuesObj.pText)
+            document.querySelector('#t200dc_pSpacerBottom').value = matchingDataComp.templateValuesObj.pSpacerBottom
+            document.querySelector('#t200dc_ctaBackgroundColor').value = matchingDataComp.templateValuesObj.ctaBackgroundColor
+            document.querySelector('#t200dc_ctaUrl').value = matchingDataComp.templateValuesObj.ctaUrl
+            document.querySelector('#t200dc_ctaTextColor').value = matchingDataComp.templateValuesObj.ctaTextColor
+            document.querySelector('#t200dc_ctaText').value = matchingDataComp.templateValuesObj.ctaText
+            document.querySelector('#t200dc_ctaAlignment').value = matchingDataComp.templateValuesObj.ctaAlignment
+            document.querySelector('#t200dc_ctaSpacerBottom').value = matchingDataComp.templateValuesObj.ctaSpacerBottom
+            document.querySelector('#t200dc_spacerBottom').value = matchingDataComp.templateValuesObj.spacerBottom
+            document.querySelector('#t200dc_linkUrl').value = matchingDataComp.templateValuesObj.linkUrl
+            document.querySelector('#t200dc_linkColor').value = matchingDataComp.templateValuesObj.linkColor
+            document.querySelector('#t200dc_linkText').value = matchingDataComp.templateValuesObj.linkText
+            document.querySelector('#t200dc_linkSpacerBottom').value = matchingDataComp.templateValuesObj.linkSpacerBottom
+            mergeCodeWithDataForEditShared()
+            // backgroundColor spacerTop alignment h1Code h1TextColor h1Text h1SpacerBottom h1Text_OPT
         }
 
         if (receivedTemplateId == 'templateObj_201'){
@@ -5370,6 +5486,37 @@ const handlers = {
         view.displayComponents()
     }, // 200
 
+    goSavet200dc: function(){ // enter edit mode for a component in the email
+        //console.log('welcome to goSavet200dc...')
+        let selectedComp = getSelectedComp()
+        selectedComp.templateValuesObj.backgroundColor = document.querySelector('#t200dc_backgroundColor').value
+        selectedComp.templateValuesObj.spacerTop = document.querySelector('#t200dc_spacerTop').value
+        selectedComp.templateValuesObj.alignment = document.querySelector('#t200dc_alignment').value
+        selectedComp.templateValuesObj.h1TextColor = document.querySelector('#t200dc_h1TextColor').value
+        selectedComp.templateValuesObj.h1Text = document.querySelector('#t200dc_h1Text').value
+        selectedComp.templateValuesObj.h1SpacerBottom = document.querySelector('#t200dc_h1SpacerBottom').value
+        selectedComp.templateValuesObj.h2TextColor = document.querySelector('#t200dc_h2TextColor').value
+        selectedComp.templateValuesObj.h2Text = document.querySelector('#t200dc_h2Text').value
+        selectedComp.templateValuesObj.h2SpacerBottom = document.querySelector('#t200dc_h2SpacerBottom').value
+        selectedComp.templateValuesObj.pTextColor = document.querySelector('#t200dc_pTextColor').value
+        selectedComp.templateValuesObj.pText = document.querySelector('#t200dc_pText').value.replace(/(\r\n\t|\n|\r\t)/gm, "") // remove extra line
+        selectedComp.templateValuesObj.pSpacerBottom = document.querySelector('#t200dc_pSpacerBottom').value
+        selectedComp.templateValuesObj.ctaBackgroundColor = document.querySelector('#t200dc_ctaBackgroundColor').value
+        selectedComp.templateValuesObj.ctaUrl = document.querySelector('#t200dc_ctaUrl').value
+        selectedComp.templateValuesObj.ctaTextColor = document.querySelector('#t200dc_ctaTextColor').value
+        selectedComp.templateValuesObj.ctaText = document.querySelector('#t200dc_ctaText').value
+        selectedComp.templateValuesObj.ctaAlignment = document.querySelector('#t200dc_ctaAlignment').value
+        selectedComp.templateValuesObj.ctaSpacerBottom = document.querySelector('#t200dc_ctaSpacerBottom').value
+        selectedComp.templateValuesObj.linkUrl = document.querySelector('#t200dc_linkUrl').value
+        selectedComp.templateValuesObj.linkColor = document.querySelector('#t200dc_linkColor').value
+        selectedComp.templateValuesObj.linkText = document.querySelector('#t200dc_linkText').value
+        selectedComp.templateValuesObj.linkSpacerBottom = document.querySelector('#t200dc_linkSpacerBottom').value
+        selectedComp.templateValuesObj.spacerBottom = document.querySelector('#t200dc_spacerBottom').value
+        //mergeCodeWithDataForEditShared()
+        // // backgroundColor spacerTop alignment h1Code h1TextColor h1Text h1SpacerBottom h1Text_OPT
+        view.displayComponents()
+    }, // 200dc
+
     goSavet201: function(){ // enter edit mode for a component in the email
         //console.log('welcome to goSavet201...')
         let selectedComp = getSelectedComp()
@@ -6289,6 +6436,7 @@ function themeChange(theme){
         compArray.push(megaTemplateObj.templateObj_163)
     }
     compArray.push(megaTemplateObj.templateObj_200)
+    compArray.push(megaTemplateObj.templateObj_200dc)
     compArray.push(megaTemplateObj.templateObj_201)
     compArray.push(megaTemplateObj.templateObj_201c)
     compArray.push(megaTemplateObj.templateObj_202)
@@ -6911,6 +7059,12 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
                 let dataCount = fieldDataArray.length
                 let s = templateDataObj.pCode
 
+                // if (templateDataObj.pSpacerBottom){
+                //     console.log(s)
+                //     s=s.replace(`birch_pSpacerBottom_birch`, templateDataObj.pSpacerBottom)
+                //     console.log('s is now:', s)
+                // }
+
                 if (dataCount > 1){ // without a | there would be 1.  With a |, dataCount would be 2. etc.
                     s = prepRepeatableFieldForMerge(fieldData, templateDataObj.pCode)
                 }
@@ -6938,16 +7092,11 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
 
         // 202d (parts of 300d also)
         // attempt at a generic handler for "if blank remove placeholder else insert code"
-        // birch_nameIntroTextCode_birch
-        // nameIntroTextBLANK_OR_CODE
-        // nameIntroTextCode
-
-
         // look for a special data pair... nameIntroText_OPT: 'nameIntroTextCode',  = <inputControlField>_OPT: <codeField>
         // nameIntroText_OPT: 'nameIntroTextCode',
         if (fieldLabel.slice(-4) === "_OPT"){
-            //console.log(`${fieldLabel}) I see the option for ${fieldData}`)
             let inputControlField = fieldLabel.slice(0, -4) // nameIntroText_OPT -> nameIntroText
+            
             if (templateDataObj[inputControlField] == ''){ // remove the placeholder
                 baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_${fieldData}_birch`, '')
             }
@@ -6955,6 +7104,59 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
                 baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_${fieldData}_birch`, templateDataObj[fieldData])
             }
         }
+
+        // 200dc
+        // if (fieldLabel === 'pRepeatingCodeFrame'){
+        //     if (templateDataObj['pText'] == ''){ // if input is blank remove the placeholder
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_${fieldLabel}_birch`, '')
+        //     }
+        //     else{
+        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_${fieldLabel}_birch`, fieldData)
+        //     }
+        //     let fieldDataArray = templateDataObj.pText.split('|')
+        //     let dataCount = fieldDataArray.length
+        //     let s = prepRepeatableFieldForMerge(templateDataObj.pText, templateDataObj.pRepeatedCode)
+        //     // loop again to merge into each repeated field
+        //     for (let i=0; i<dataCount; i++){
+        //         s=s.replace(`birch_pText_birch`, fieldDataArray[i])
+        //     }
+        //     baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_pRepeatedCode_birch`, s)
+        // }
+        // generic flag version:
+        // pRepeatingCodeFrame pText pRepeatedCode
+        // repeatingCodeFields: 'pText|pRepeatingCodeFrame|pRepeatedCode' // 'xText(user-input)|xRepeatingCodeFrame|xRepeatedCode'
+        // repeatingCodeFields: 'pText|pRepeatingCodeFrame|pRepeatedCode', // 'xText(user-input)|xRepeatingCodeFrame|xRepeatedCode'
+        if (fieldLabel === 'repeatingCodeFields'){
+            let rcFields = fieldData.split('|') // rc stands for 'Repeating Code'
+            let [rcText, rcRepeatingCodeFrame, rcRepeatedCode] = rcFields // destructure into vars
+            if (templateDataObj[rcText] == ''){ // if input is blank remove the placeholder
+                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_${rcRepeatingCodeFrame}_birch`, '')
+            }
+            else{
+                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_${rcRepeatingCodeFrame}_birch`, templateDataObj[rcRepeatingCodeFrame])
+            }
+            let fieldDataArray = templateDataObj[rcText].split('|')
+            let dataCount = fieldDataArray.length
+            let s = prepRepeatableFieldForMerge(templateDataObj[rcText], templateDataObj[rcRepeatedCode])
+            // loop again to merge into each repeated field
+            for (let i=0; i<dataCount; i++){
+                s=s.replace(`birch_${rcText}_birch`, fieldDataArray[i])
+            }
+            baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_${rcRepeatedCode}_birch`, s)
+        }
+
+
+        // pRepeatingCodeFrame: `birch_pRepeatedCode_birch
+        //     <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="pSpacerBottompx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: pSpacerBottompx; font-weight: normal; line-height: pSpacerBottompx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+        //     pRepeatedCode: `<p class="text-birch_alignment_birch birch-text-styles-p birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: birch_alignment_birch;">birch_pText_birch</p>`,
+        //     pTextColor: '#2E2E2E',
+        //     pText: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
+        //     pSpacerBottom: '10',
+        //     pText_OPT: 'pRepeatingCodeFrame',
+
+
+
+
 
         if (fieldLabel === 'contactSpacerBetweenEmailAndPhoneCode'){
             if (templateDataObj.contactEmailText.length > 0 && templateDataObj.contactPhoneText.length > 0){
@@ -6965,49 +7167,6 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
             }
         }
         
-
-        // 202d
-        // if (fieldLabel === 'nameIntroText'){  // REMEMBER this are fields on the data object!
-        //     if (templateDataObj.nameIntroText == ''){ // exclude the cta
-        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_nameIntroTextCode_birch`, '')
-        //     }
-        //     else{
-        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_nameIntroTextCode_birch`, templateDataObj.nameIntroTextCode)
-        //     }
-        // }
-        // if (fieldLabel === 'nameHeadlineText'){  // REMEMBER this are fields on the data object!
-        //     if (templateDataObj.nameHeadlineText == ''){ // exclude the cta
-        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_nameHeadlineTextCode_birch`, '')
-        //     }
-        //     else{
-        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_nameHeadlineTextCode_birch`, templateDataObj.nameHeadlineTextCode)
-        //     }
-        // }
-        // if (fieldLabel === 'nameSubheadlineText'){  // REMEMBER this are fields on the data object!
-        //     if (templateDataObj.nameSubheadlineText == ''){ // exclude the cta
-        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_nameSubheadlineTextCode_birch`, '')
-        //     }
-        //     else{
-        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_nameSubheadlineTextCode_birch`, templateDataObj.nameSubheadlineTextCode)
-        //     }
-        // }
-        // if (fieldLabel === 'nameContactInfoText'){   // REMEMBER this are fields on the data object!
-        //     if (templateDataObj.nameContactInfoText == ''){ // exclude the cta
-        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_nameContactInfoTextCode_birch`, '')
-        //     }
-        //     else{
-        //         let fieldDataArray = fieldData.split('|')
-        //         let dataCount = fieldDataArray.length
-        //         let s = prepRepeatableFieldForMerge(fieldData, templateDataObj.nameContactInfoTextCode)
-        //         // loop again to merge into each repeated field
-        //         for (let i=0; i<dataCount; i++){
-        //             s=s.replace(`birch_nameContactInfoColor_birch`, templateDataObj.nameContactInfoColor)
-        //             s=s.replace(`birch_nameContactInfoText_birch`, fieldDataArray[i])
-        //         }
-        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_nameContactInfoTextCode_birch`, s)
-        //     }
-            
-        // }
 
         // ## maybe others with an h1 tag should use this - to cleanly remove it if needed
         // ##
@@ -7050,7 +7209,17 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
                 baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_ctaCode_birch`, '')
             }
             else{ // include the cta
-                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_ctaCode_birch`, templateDataObj.ctaCode)
+                if (templateDataObj.centerBlockStart){ // it's not null, undefined, or other things I'd rather not mention
+                    if (templateDataObj.ctaAlignment == 'center'){
+                        baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_ctaCode_birch`, templateDataObj.centerBlockStart + templateDataObj.ctaCode + templateDataObj.centerBlockEnd + templateDataObj.ctaAfterSpacerCode)
+                    }
+                    else if (templateDataObj.ctaAlignment == 'left'){
+                        baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_ctaCode_birch`, templateDataObj.ctaCode + templateDataObj.ctaAfterSpacerCode)
+                    }
+                }
+                else{
+                    baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_ctaCode_birch`, templateDataObj.ctaCode)
+                }
             }
         }
         // special situation for 217 which has two ctas
@@ -7070,14 +7239,6 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
         }
 
         // 300d
-        // if (fieldLabel === 'socialCodeInput'){
-        //     if (templateDataObj.socialCodeInput == ''){ // exclude the socialCode
-        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_socialCode_birch`, '')
-        //     }
-        //     else{ // include the socialCode
-        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_socialCode_birch`, templateDataObj.socialCode)
-        //     }
-        // }
         if (fieldLabel === 'socialRadioInput'){
             if (fieldData == 'none'){ 
                 // exclude the socialCode
@@ -7103,33 +7264,7 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
                 baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_socialUrlFacebook_birch`, templateDataObj.socialUrlFacebook)
                 baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_socialUrlLinkedin_birch`, templateDataObj.socialUrlLinkedin)
             }
-            // else{ // include the socialCode
-            //     baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_socialCode_birch`, templateDataObj.socialCode)
-            // }
         }
-        // if (fieldLabel === 'linkTextList'){
-        //     if (templateDataObj.linkTextList == ''){ // exclude the linkListCode
-        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_linkListCode_birch`, '')
-        //     }
-        //     else{ // include the linkListCode
-        //         // first swap in the linkListCode
-        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_linkListCode_birch`, templateDataObj.linkListCode)
-
-        //         // now build the code to put into birch_linkEntries_birch using the two input arrays (linkUrlList & linkTextList) and linkListEntryCode
-        //         let urlArray = templateDataObj.linkUrlList.split('|')
-        //         let textArray = templateDataObj.linkTextList.split('|')
-        //         let dataCount = urlArray.length
-
-        //         let s = prepRepeatableFieldForMerge(templateDataObj.linkTextList, templateDataObj.linkListEntryCode)
-        //         // loop again to merge into each repeated field
-        //         for (let i=0; i<dataCount; i++){
-        //             s=s.replace(`birch_emailLinkUrl_birch`, urlArray[i])
-        //             s=s.replace(`birch_emailLinkText_birch`, textArray[i])
-        //             s=s.replace(`birch_pTextColor_birch`, templateDataObj.pTextColor)
-        //         }
-        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_linkEntries_birch`, s)
-        //     }
-        // }
         if (fieldLabel === 'linkList'){
             if (templateDataObj.linkList == ''){ // exclude the linkListCode
                 baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_linkListCode_birch`, '')
@@ -7152,23 +7287,6 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
                 baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_linkEntries_birch`, s)
             }
         }
-        // if (fieldLabel === 'productList'){
-        //     if (templateDataObj.productList == ''){ // exclude the productListCode
-        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_productListCode_birch`, '')
-        //     }
-        //     else{
-        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_productListCode_birch`, templateDataObj.productListCode)
-        //     }
-        // }
-        // if (fieldLabel === 'citationText'){
-        //     if (templateDataObj.citationText == ''){ // exclude the citationCode
-        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_citationCode_birch`, '')
-        //     }
-        //     else{
-        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_citationCode_birch`, templateDataObj.citationCode)
-        //         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_citations_birch`, templateDataObj.citationText)
-        //     }
-        // }
         if (fieldLabel === 'bottomAddress'){
             if (templateDataObj.bottomAddress == ''){ // exclude the citationCode
                 baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_bottomAddressCode_birch`, '')
@@ -7190,7 +7308,7 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
         //console.log(`fieldLabel(merge-loop):${fieldLabel} -  fieldData:${fieldData}`)
         codeWithAllDataMerged = myReplaceAll(codeWithAllDataMerged, `birch_${fieldLabel}_birch`, fieldData)
     }
-    // birch_ctaTextColor_birch is use twice, so merge that one again...or should we make a replaceAll function?
+    // birch_ctaTextColor_birch is used twice, so merge that one again...or should we make a replaceAll function?
     // Let's start with using it and see if we run into problems....
     function myReplaceAll(targetString, replaceThis, withThat){
         const afterAllSwapped = targetString.split(replaceThis).join(withThat)
@@ -7218,277 +7336,6 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
 
 
 
-
-
-
-
-
-
-// this one is replaced by the one above it
-function mergeDataIntoPlaceholdersY(templateBaseCode, templateDataObj){
-    // the input data is not needed because it's assumed to already be saved into the templateDataObj
-    // to merge correctly, the fields in the dataObj need to match the names of the placeholder middle. birch_thispart_birch
-    //console.log('Welcome to mergeDataIntoPlaceholdersNEW(templateBaseCode, templateDataObj)...')
-    //console.log('Received templateBaseCode = ', templateBaseCode);
-    //console.log('Received templateDataObj = ', templateDataObj);
-
-    // plan:  loop through the templateDataObj to find placeholder names
-    //        for each matching placholder in templateBaseCode, swap in real data
-    let templateBaseCodeMerged = templateBaseCode
-    const templateDataObjEntries = Object.entries(templateDataObj)
-
-    function prepRepeatableFieldForMerge(fieldData, codeSnippetToRepeat){
-        let s = ''
-        let fieldDataArray = fieldData.split('|')
-        let dataCount = fieldDataArray.length
-        // build a string with as many are needed from the data input
-        for (let i=0; i<dataCount; i++){
-            s+=codeSnippetToRepeat
-            if (i<dataCount-1){
-                s+='\n'
-            }
-        }
-        return s
-    }
-
-    // merge 1: merge normal data and also insert placeholders that live in the normal data
-    for (const [fieldLabel, fieldData] of templateDataObjEntries) {
-        //console.log(`fieldLabel:${fieldLabel} -  fieldData:${fieldData}`)
-        // this works for any comp with 1) birch_ctaCode_birch in the template; and 2) ctaCode in it's dataObject
-
-        // 100, 102, 104 (makes 103 obsolete)
-        if (fieldLabel === 'ctaLinkCode'){   // REMEMBER this are fields on the data object!
-            if (templateDataObj.ctaText == ''){ // exclude the cta
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaLinkCode_birch`, '')
-            }
-            else if (templateDataObj.ctaUrl == ''){ // no link, just text
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaLinkCode_birch`, templateDataObj.ctaText)
-            }
-            else{ // include the full cta link
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaLinkCode_birch`, templateDataObj.ctaLinkCode)
-                // now merge the data into the cta placeholders
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaTextColor_birch`, templateDataObj.ctaTextColor)
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaUrl_birch`, templateDataObj.ctaUrl)
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaText_birch`, templateDataObj.ctaText)
-            }
-        }
-
-        // all spacerTop and spacerBottoms (need to be repeated to get all 3 instances)
-        if (fieldLabel === 'spacerTop' || fieldLabel === 'spacerBottom'){  // REMEMBER this are fields on the data object!
-            // console.log('** looking at spacerTop...')
-            // console.log('** looking at fieldLabel:', fieldLabel)
-            // console.log('** looking at fieldData:', fieldData)
-            templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_${fieldLabel}_birch`, fieldData)
-            templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_${fieldLabel}_birch`, fieldData)
-            templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_${fieldLabel}_birch`, fieldData)
-            //console.log('templateBaseCodeMerged:', templateBaseCodeMerged);
-        }
-
-        // dynamic icon (154d and others with iconCode)
-        if (fieldLabel === 'iconUrl'){  // REMEMBER this are fields on the data object!
-            if (templateDataObj.iconCode){ // it's not null, undefined, or other things I'd rather not mention
-                if (templateDataObj.iconUrl == ''){ // exclude the icon
-                    console.log('exclude the iconCode...');
-                    // the problem may be that this placeholder is no longer here due to a merge...(yes!)
-                    // this might be a bigger problem!!
-                    // think about any spot where replacing the placeholder with the code removes future placeholder insertion!!!!!
-                    console.log('templateBaseCodeMerged:',templateBaseCodeMerged)
-                    templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_iconCode_birch`, '')
-                }
-                else{
-                    console.log('insert the iconCode...')
-                    templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_iconCode_birch`, templateDataObj.iconCode)
-                }
-                console.log('** templateBaseCodeMerged:', templateBaseCodeMerged)
-            }
-        }
-
-        // 154 (and all pText that have pCode)
-        if (fieldLabel === 'pText'){  // REMEMBER this are fields on the data object!
-            
-            if (templateDataObj.pCode){ // it's not null, undefined, or other things I'd rather not mention
-
-                let fieldDataArray = fieldData.split('|')
-                let dataCount = fieldDataArray.length
-                let s = templateDataObj.pCode
-
-                if (dataCount > 1){ // without a | there would be 1.  With a |, dataCount would be 2. etc.
-                    s = prepRepeatableFieldForMerge(fieldData, templateDataObj.pCode)
-                }
-
-                // merge in the x amount of pCode
-                templateBaseCodeMerged = templateBaseCode.replace(`birch_pCode_birch`, s)
-
-                // now merge to the fields inside that inserted code
-                for (let i=0; i<dataCount; i++){
-                    templateBaseCodeMerged=templateBaseCodeMerged.replace(`birch_pTextColor_birch`, templateDataObj.pTextColor)
-                    templateBaseCodeMerged=templateBaseCodeMerged.replace(`birch_pText_birch`, fieldDataArray[i])
-                }
-            }
-        }
-
-        // 205
-        if (fieldLabel === 'listItemsAsString'){  // REMEMBER this are fields on the data object!
-            let fieldDataArray = fieldData.split('|')
-            let dataCount = fieldDataArray.length
-            let s = prepRepeatableFieldForMerge(fieldData, templateDataObj.listItemsAsStringCode)
-            // loop again to merge into each repeated field
-            for (let i=0; i<dataCount; i++){
-                s=s.replace(`birch_listItemsAsStringItem_birch`, fieldDataArray[i])
-            }
-            templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_${fieldLabel}_birch`, s)
-        }
-
-        // 205e
-        if (fieldLabel === 'bulletTextList'){   // REMEMBER this are fields on the data object!
-            let fieldDataArray = fieldData.split('|')
-            let dataCount = fieldDataArray.length
-            let s = prepRepeatableFieldForMerge(fieldData, templateDataObj.bulletCode)
-            let bulletImgDataArray = templateDataObj.bulletImageList.split('|')
-            // loop again to merge into each repeated field
-            for (let i=0; i<dataCount; i++){
-                s=s.replace(`birch_repeatingImgUrl_birch`, bulletImgDataArray[i])
-                s=s.replace(`birch_repeatingImgText_birch`, fieldDataArray[i])
-            }
-            templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_${fieldLabel}_birch`, s)
-        }
-
-        // this works for any comp with 1) birch_ctaCode_birch in the template; and 2) ctaCode in it's dataObject
-        if (fieldLabel === 'ctaCode'){   // REMEMBER this are fields on the data object!
-            if (templateDataObj.ctaText == ''){ // exclude the cta
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaCode_birch`, '')
-            }
-            else{ // include the cta
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaCode_birch`, templateDataObj.ctaCode)
-                // now merge the data into the cta placeholders
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaBackgroundColor_birch`, templateDataObj.ctaBackgroundColor)
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaTextColor_birch`, templateDataObj.ctaTextColor)
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaUrl_birch`, templateDataObj.ctaUrl)
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaText_birch`, templateDataObj.ctaText)
-            }
-        }
-
-        // special situation for 217 which has two ctas
-        if (fieldLabel === 'ctaCode1'){   // REMEMBER this are fields on the data object!
-            if (templateDataObj.ctaText1 == ''){ // exclude the cta
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaCode1_birch`, '')
-            }
-            else{ // include the cta
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaCode1_birch`, templateDataObj.ctaCode1)
-                // now merge the data into the cta placeholders
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaBackgroundColor1_birch`, templateDataObj.ctaBackgroundColor1)
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaTextColor1_birch`, templateDataObj.ctaTextColor1)
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaUrl1_birch`, templateDataObj.ctaUrl1)
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaText1_birch`, templateDataObj.ctaText1)
-            }
-            if (templateDataObj.ctaText2 == ''){ // exclude the cta
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaCode2_birch`, '')
-            }
-            else{ // include the cta
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaCode2_birch`, templateDataObj.ctaCode2)
-                // now merge the data into the cta placeholders
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaBackgroundColor2_birch`, templateDataObj.ctaBackgroundColor2)
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaTextColor2_birch`, templateDataObj.ctaTextColor2)
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaUrl2_birch`, templateDataObj.ctaUrl2)
-                templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_ctaText2_birch`, templateDataObj.ctaText2)
-            }
-        }
-
-        else{ // do a normal merge (ones without repeatable fields)
-            templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_${fieldLabel}_birch`, fieldData)
-        }
-    }
-    //console.log('\n\nPost merge1 templateBaseCodeMerged:', templateBaseCodeMerged);
-
-    // merge 2: merge again to populate placeholders that arrived from the data of merge1
-    for (const [fieldLabel, fieldData] of templateDataObjEntries) {
-        //console.log(`fieldLabel:${fieldLabel} -  fieldData:${fieldData}`)
-        templateBaseCodeMerged = templateBaseCodeMerged.replace(`birch_${fieldLabel}_birch`, fieldData)
-    }
-    //console.log('\n\nPost merge2 templateBaseCodeMerged:', templateBaseCodeMerged);
-
-
-
-    return templateBaseCodeMerged
-    
-
-}
-
-
-// this one is the really old version, replaced by the one above which was also replaced, haha.  Embrace refactoring!
-function mergeDataIntoPlaceholdersX(templateHtml, dataObj){
-
-    // call our new test function
-    mergeDataIntoPlaceholdersNEW(templateHtml, dataObj)
-
-    // mergeDataIntoPlaceholders(template, dataObj)
-    // comp.baseCode, comp.defaultUnumDataObj
-    // template is the baseCode from the template variable
-    // dataObj is the defaultUnumDataObj of the same template which is an obj of each placeholder
-
-    //  console.log('welcome to mergeDataIntoPlaceholders...')
-    //  console.log('received templateHtml: ', templateHtml)
-    //  console.log('received obj: ', dataObj)
-    let html = templateHtml
-    //let dataObj = comp.defaultUnumDataObj
-
-    for (var key in dataObj) {
-        if (dataObj.hasOwnProperty(key)) {
-            // console.log(key + " -> " + dataObj[key]);
-            // https://flaviocopes.com/how-to-replace-all-occurrences-string-javascript/
-            const tokens = html.split(`birch_${key}_birch`)
-            //console.log('tokens = ', tokens);
-            
-
-            // tokens.length = 1 (0 matches found)
-            // tokens.length = 2 (1 matches found)
-            // tokens.length = 3 (2 matches found)
-            // tokens.length = 4 (3 matches found)
-            
-            // loop to build a join statement that inserts
-            if (tokens.length >= 2){ // at least one match
-                let loopDuration = tokens.length + (tokens.length-1) // total tokens + total matches
-                let tokenIndex = 0;
-                let tokensWithInsertedValues = []
-                for (let x=0; x<loopDuration; x++){
-                    if (isOdd(x)){
-                        //console.log('the key is ', key)
-                        if (key === 'listItemsAsString'){   
-                            let liArray = dataObj[key].split('|')
-                            let liAsString = liArray.map( item => '<li class="birch-text-styles-li" style="font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px">'+item+'</li>').join('')
-                            tokensWithInsertedValues.push(liAsString)
-                        }
-                        else if (key === 'birch_dynamicH1code204_birch'){
-                            console.log('i see birch_dynamicH1code204_birch!!!');
-                            
-                        }
-                        else if (key === 'bulletTextList'){ 
-                            let liImgDelimitedString = dataObj['bulletImageList']
-                            let liImgArray = liImgDelimitedString.split('|')
-                            
-                            let liArray = dataObj[key].split('|')
-                            let liAsString = liArray.map( (item, i) => `<table class="row collapse" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
-                    <th class="small-2 large-1 columns first" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 0; padding-right: 0; text-align: left; width: 58px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;"><img src="${liImgArray[i] != null ? liImgArray[i] : 'https://github.com/unumux/birch-builder-2/blob/master/images/components/cl-checkmark.png?raw=true'}" class="birch-min-width-25" alt="" style="-ms-interpolation-mode: bicubic; clear: both; display: block; max-width: 100%; min-width: 25px; outline: none; text-decoration: none; width: auto;"></th></tr></table></th><!--  continue here -->
-                    <th class="small-10 large-11 columns last" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 0; padding-right: 0; text-align: left; width: 558px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;"><p class="birch--bulletTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_bulletTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;">${liArray[i] != null ? liArray[i] : ''}</p></th></tr></table></th>
-                </tr></tbody></table>`).join('')
-                            tokensWithInsertedValues.push(liAsString)
-                        }
-                        else{
-                            tokensWithInsertedValues.push(dataObj[key])
-                        }
-                    }
-                    else{ // even
-                        tokensWithInsertedValues.push(tokens[tokenIndex])
-                        tokenIndex++
-                    }
-                }
-                html = tokensWithInsertedValues.join('')
-            }
-
-        }
-    }
-    return html
-}
 
 
 
@@ -7796,7 +7643,6 @@ function backToIntro(){  // using handlers.openInNewWindow() now instead...
     document.querySelector('#navBtnPreview').classList.add('hideme')
     document.querySelector('#navBtnCopy').classList.add('hideme')
     document.querySelector('#navBtnNew').classList.add('hideme')
-
     document.querySelector('body').classList.remove('scrollFreeze')
     // close all open accordions
     let openAccordions = document.querySelectorAll('.accordion.open > .accord-header')
@@ -7816,7 +7662,6 @@ function exportEmail(){
     exportObj.subjectline = document.querySelector('#t10_emailSubjectLine').value;
     exportObj.preheader = document.querySelector('#t10_emailPreheader').value;
     exportObj.emailBackgroundColor = document.querySelector('#t10_backgroundColor').value;
-    
     exportObj.comps = {}
     
     for (const entry of entries) { // loop through main.comps converted to 'entries'
@@ -7862,7 +7707,6 @@ function handleFileSelect(evt) { // triggered from html input event
 
         importedEmailFile = main.fileName  // to track if exporting later
         //console.log('importedEmailFile:',importedEmailFile)
-
         reader.readAsText(f);
     }
 }
@@ -7903,13 +7747,10 @@ function loadEmail(theText){
             //console.log(comp.compId)
             main.addComp(comp.compId)
 
-            
             const dataEntries = Object.entries(comp.compData)
             //console.log('dataEntries: ', dataEntries)
-
             let idsplit = comp.compId.split('_')
             
-
             dataEntries.map( (dataEntry, i) => {
                 let fieldname = 't'+idsplit[1]+'_'+dataEntry[0]
                 var myEle = document.getElementById(fieldname);
@@ -7924,25 +7765,7 @@ function loadEmail(theText){
 
             $("#emailComponentsArea").click() // unselect
             $("#emailComponentsArea").animate({ scrollTop: 0 }, 0); // scroll to top of email
-
-            //console.log(idsplit)
-            // t90_backgroundColor
-            // t90_linkColor
-            // t90_linkUrl
-            // t90_linkText
-            // compData{backgroundColor: "white"...}
-            // compId: "templateObj_90"
         })
-
-        // if (importObj.theme == "unum"){
-        //     startFromScratch('unum')
-        // }
-        // if (importObj.theme == "colonial"){
-        //     startFromScratch('unum')
-        // }
-        //document.querySelector('#introAll').classList.remove('hideme')
-        //document.querySelector('#main').classList.add('hideme')
-        //document.querySelector('#navBtnPreview').classList.add('hideme')
 
     } catch (e) {
         alert('Error.  This file does not appear to be a valid email build save format.')
@@ -7973,49 +7796,10 @@ function editCBToggle(target){
     }
 }
 function editRadioToggle(target){
-    //console.log('welcome to editRadioToggle()...')
     let matchingInputEl = document.querySelector('#'+target.dataset.twin)
-    //console.log('target =', target)
-    //console.log('matchingInputEl =', matchingInputEl)
     matchingInputEl.value = target.value
 }
 
-// only used to insert the email subject and preheader
-// this version only swaps the first located match
-/*function swapMe(targetString, oldSubString, newSubString){
-    let findIndex = -1;
-    try {
-        findIndex = targetString.indexOf(oldSubString);
-        if (findIndex > -1){ // found something
-            let stringBefore = targetString.substring(0,findIndex)
-            let stringAfter = targetString.substring(findIndex+oldSubString.length)
-            let combinedAfterSwap = stringBefore + newSubString + stringAfter
-            return combinedAfterSwap
-        }
-        else{
-            throw `!! swapMe error.  Did not find the substring.\nLooking for:\n${oldSubString}\nInside:\n${targetString}`
-            //return false
-        }
-    }
-    catch(e) { console.log(e); }
-    return false
-}*/
-
-// new
-/*function copyEmailCode(){
-    let tempCode = editor.getValue()
-    let tempEl = document.querySelector('#emailCodeTemp')
-    tempEl.value = tempCode
-    tempEl.select()
-    document.execCommand('copy');
-
-    let navCopyBtn = document.querySelector('#navBtnCopy')
-    navCopyBtn.innerHTML = `<img src="images/check.svg" class="navIcon" alt=""> Copied`
-
-    setTimeout(() => {
-        navCopyBtn.innerHTML = `<img src="images/copy-code.svg" class="navIcon" alt=""> Copy code`
-    }, 2000);
-}*/
 
 
 // one merge to rule them all

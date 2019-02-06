@@ -61,7 +61,13 @@
         <!-- <button class="closeMenuButton" type="button" onclick="document.querySelector('#navBtnAbout').click()"><i class="far fa-times-circle"></i></button> -->
         <h2 class="aboutH2">About</h2>
 
-        <p><strong>2.0.6 (current version)</strong>
+        <p><strong>2.0.7 (current version)</strong>
+        <ul>
+            <li>Adds 200dc. This dynamic centering component might replace 200, 201, 201c, 202, 203, and 204. It brings top and bottom spacers, auto saving, optional subcomponents, and dynamic centering.</li>
+            <li>released 2/6/2019</li>
+        </ul>
+
+        <p><strong>2.0.6</strong>
         <ul>
             <li>Adds 300dc. This replaces the recent 300d by doing everything it did plus more.  Dynamic centering, dynamic social buttons that work better with different background colors, more optional fields, and perhaps most interesting: auto saving after each change to a field!  If this model of auto-saving works well, I may extend it to the other components.</li>
             <li>released 2/1/2019</li>
@@ -1821,6 +1827,173 @@
                 </div>
                 <!-- /t200 -->
 
+                <!-- t200dc -->
+                <div class="t200dc_controls templateControlGroup hideme" id="templateObj_200dc_controls">
+                    <div class="inputGroup">
+                        <label>spacerTop:
+                            <input type="number" min="0" class="editInput" id="t200dc_spacerTop" onblur="blankTo0(this);saveMe('200dc');" />
+                        </label>
+                    </div>    
+                    <div class="inputGroup">
+                        <label>backgroundColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t200dc_backgroundColor" onblur="saveMe('200dc');" data-savetarget="200dc" />
+                                <button type="button" id="t200dc_backgroundColorCP" class="cpTooltip" value="t200dc_backgroundColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>alignment:
+                        <select class="editInput" id="t200dc_alignment" onchange="saveMe('200dc');">
+                            <option value="left">left</option>
+                            <option value="center">center</option>
+                        </select></label>
+                    </div>
+
+                    <br><br>
+                    <div class="inputGroup">
+                        <label>h1TextColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t200dc_h1TextColor" onblur="saveMe('200dc');" data-savetarget="200dc" />
+                                <button type="button" id="t200dc_h1TextColorCP" class="cpTooltip" value="t200dc_h1TextColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>
+                            <div class="flexlabel">
+                                <div>h1Text:</div> 
+                                <div>leave blank to remove</div>
+                            </div>
+                            <input class="editInput" id="t200dc_h1Text" onblur="saveMe('200dc');" />
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>h1SpacerBottom:
+                            <input type="number" min="0" class="editInput" id="t200dc_h1SpacerBottom" onblur="blankTo0(this);saveMe('200dc');" />
+                        </label>
+                    </div>
+                    <br><br>
+
+                    <div class="inputGroup">
+                        <label>h2TextColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t200dc_h2TextColor" onblur="saveMe('200dc');" data-savetarget="200dc" />
+                                <button type="button" id="t200dc_h2TextColorCP" class="cpTooltip" value="t200dc_h2TextColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>
+                            <div class="flexlabel">
+                                <div>h2Text:</div> 
+                                <div>leave blank to remove</div>
+                            </div>
+                            <input class="editInput" id="t200dc_h2Text" onblur="saveMe('200dc');" />
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>h2SpacerBottom:
+                            <input type="number" min="0" class="editInput" id="t200dc_h2SpacerBottom" onblur="blankTo0(this);saveMe('200dc');" />
+                        </label>
+                    </div>
+                    <br><br>
+
+                    <div class="inputGroup">
+                        <label>pTextColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t200dc_pTextColor" onblur="saveMe('200dc');" data-savetarget="200dc" />
+                                <button type="button" id="t200dc_pTextColorCP" class="cpTooltip" value="t200dc_pTextColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>
+                            <div class="flexlabel"><div>pText:</div><div>use | between each</div></div>
+                            <textarea rows="6" class="editInput" id="t200dc_pText" onblur="saveMe('200dc');"></textarea>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>pSpacerBottom:
+                            <input type="number" min="0" class="editInput" id="t200dc_pSpacerBottom" onblur="blankTo0(this);saveMe('200dc');" />
+                        </label>
+                    </div>
+                    <br><br>
+                    <div class="inputGroup">
+                        <label>ctaBackgroundColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t200dc_ctaBackgroundColor" onblur="saveMe('200dc');" data-savetarget="200dc" />
+                                <button type="button" id="t200dc_ctaBackgroundColorCP" class="cpTooltip" value="t200dc_ctaBackgroundColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>ctaUrl:<input class="editInput" id="t200dc_ctaUrl" onblur="saveMe('200dc');" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>ctaTextColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t200dc_ctaTextColor" onblur="saveMe('200dc');" data-savetarget="200dc" />
+                                <button type="button" id="t200dc_ctaTextColorCP" class="cpTooltip" value="t200dc_ctaTextColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>
+                            <div class="flexlabel">
+                                <div>ctaText:</div> 
+                                <div>leave blank to remove</div>
+                            </div>
+                            <input class="editInput" id="t200dc_ctaText" onblur="saveMe('200dc');" />
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>ctaAlignment:
+                        <select class="editInput" id="t200dc_ctaAlignment" onchange="saveMe('200dc');">
+                            <option value="left">left</option>
+                            <option value="center">center</option>
+                        </select></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>ctaSpacerBottom:
+                            <input type="number" min="0" class="editInput" id="t200dc_ctaSpacerBottom" onblur="blankTo0(this);saveMe('200dc');" />
+                        </label>
+                    </div>
+                    <br><br>
+
+                    <div class="inputGroup">
+                        <label>linkUrl:<input class="editInput" id="t200dc_linkUrl" onblur="saveMe('200dc');" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>linkColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t200dc_linkColor" onblur="saveMe('200dc');" data-savetarget="200dc" />
+                                <button type="button" id="t200dc_linkColorCP" class="cpTooltip" value="t200dc_linkColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>linkText:<input class="editInput" id="t200dc_linkText" onblur="saveMe('200dc');" /></label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>linkSpacerBottom:
+                            <input type="number" min="0" class="editInput" id="t200dc_linkSpacerBottom" onblur="blankTo0(this);saveMe('200dc');" />
+                        </label>
+                    </div>
+                    <br><br>
+                    
+
+                    <div class="inputGroup">
+                        <label>spacerBottom:
+                            <input type="number" min="0" class="editInput" id="t200dc_spacerBottom" onblur="blankTo0(this);saveMe('200dc');" />
+                        </label>
+                    </div>
+                    <div class="inputGroup hideme">
+                        <button class="editBtn" id="t200dc_applyBtn" onclick="handlers.goSavet200dc()" type="button">Apply &rsaquo;</button>
+                    </div>
+                </div>
+                <!-- /t200dc -->
+
                 <!-- t201 -->
                 <div class="t201_controls templateControlGroup hideme" id="templateObj_201_controls">
                     <div class="inputGroup">
@@ -2107,18 +2280,18 @@
                     <div class="inputGroup">
                         <label>backgroundColor:
                             <div class="colorboxFlex">
-                                <input class="editInput" id="t203_backgroundColor" />
+                                <input class="editInput" id="t203_backgroundColor" onblur="saveMe('203');" data-savetarget="203" />
                                 <button type="button" id="t203_backgroundColorCP" class="cpTooltip" value="t203_backgroundColor"></button>
                             </div>
                         </label>
                     </div>
-                    <div class="inputGroup hideme">
-                        <label>spacerTop:<input class="editInput" id="t203_spacerTop" /></label>
+                    <div class="inputGroup">
+                        <label>spacerTop:<input type="number" min="0" class="editInput" id="t203_spacerTop" onblur="blankTo0(this);saveMe('203');" /></label>
                     </div>
                     <div class="inputGroup">
                         <label>h1TextColor:
                             <div class="colorboxFlex">
-                                <input class="editInput" id="t203_h1TextColor" />
+                                <input class="editInput" id="t203_h1TextColor" onblur="saveMe('203');" data-savetarget="203" />
                                 <button type="button" id="t203_h1TextColorCP" class="cpTooltip" value="t203_h1TextColor"></button>
                             </div>
                         </label>
@@ -2129,7 +2302,7 @@
                     <div class="inputGroup">
                         <label>ctaBackgroundColor:
                             <div class="colorboxFlex">
-                                <input class="editInput" id="t203_ctaBackgroundColor" />
+                                <input class="editInput" id="t203_ctaBackgroundColor" onblur="saveMe('203');" data-savetarget="203" />
                                 <button type="button" id="t203_ctaBackgroundColorCP" class="cpTooltip" value="t203_ctaBackgroundColor"></button>
                             </div>
                         </label>
@@ -2140,17 +2313,16 @@
                     <div class="inputGroup">
                         <label>ctaTextColor:
                             <div class="colorboxFlex">
-                                <input class="editInput" id="t203_ctaTextColor" />
+                                <input class="editInput" id="t203_ctaTextColor" onblur="saveMe('203');" data-savetarget="203" />
                                 <button type="button" id="t203_ctaTextColorCP" class="cpTooltip" value="t203_ctaTextColor"></button>
                             </div>
                         </label>
                     </div>
                     <div class="inputGroup">
                         <label><div class="flexlabel"><div>ctaText:</div> <div>leave blank to remove cta</div></div><input class="editInput" id="t203_ctaText" /></label>
-                        <!-- <label>ctaText:<input class="editInput" id="t203_ctaText" /></label> -->
                     </div>
-                    <div class="inputGroup hideme">
-                        <label>spacerBottom:<input class="editInput" id="t203_spacerBottom" /></label>
+                    <div class="inputGroup">
+                        <label>spacerBottom:<input type="number" min="0" class="editInput" id="t203_spacerBottom" onblur="blankTo0(this);saveMe('203');" /></label>
                     </div>
                     <div class="inputGroup">
                         <button class="editBtn" id="t203_applyBtn" onclick="handlers.goSavet203()" type="button">Apply &rsaquo;</button>
@@ -2180,7 +2352,6 @@
                         </label>
                     </div>
                     <div class="inputGroup">
-                        <!-- <label>h1Text:<input class="editInput" id="t204_h1Text" /></label> -->
                         <label><div class="flexlabel"><div>h1Text:</div> <div>leave blank to remove</div></div><textarea rows="3" class="editInput" id="t204_h1Text" onblur="saveMe('204');"></textarea></label>
                     </div>
                     <div class="inputGroup">
@@ -2193,7 +2364,6 @@
                     </div>
                     <div class="inputGroup">
                         <label><div class="flexlabel"><div>pText:</div> <div>use | between each</div></div><textarea rows="6" class="editInput" id="t204_pText" onblur="saveMe('204');"></textarea></label>
-                        <!-- <label>pText:<input class="editInput" id="t204_pText" /></label> -->
                     </div>
                     <div class="inputGroup">
                         <label>ctaBackgroundColor:
@@ -2216,11 +2386,11 @@
                     </div>
                     <div class="inputGroup">
                         <label><div class="flexlabel"><div>ctaText:</div> <div>leave blank to remove cta</div></div><input class="editInput" id="t204_ctaText" onblur="saveMe('204');" /></label>
-                        <!-- <label>ctaText:<input class="editInput" id="t204_ctaText" /></label> -->
                     </div>
                     <div class="inputGroup">
-                        <!-- <label>spacerBottom:<input class="editInput" id="t204_spacerBottom" /></label> -->
-                        <label>spacerBottom:<input type="number" min="0" class="editInput" id="t204_spacerBottom" onblur="blankTo0(this);saveMe('204');" /></label>
+                        <label>spacerBottom:
+                            <input type="number" min="0" class="editInput" id="t204_spacerBottom" onblur="blankTo0(this);saveMe('204');" />
+                        </label>
                     </div>
                     <div class="inputGroup hideme">
                         <button class="editBtn" id="t204_applyBtn" onclick="handlers.goSavet204()" type="button">Apply &rsaquo;</button>
@@ -3785,8 +3955,10 @@
                     <br><br>
 
                     <div class="inputGroup">
-                        <label><div class="flexlabel"><div>linkList:</div><div>use | between each</div></div>
-                            <textarea rows="6" class="editInput" id="t300dc_linkList" onblur="saveMe('300dc');"></textarea></label>
+                        <label>
+                            <div class="flexlabel"><div>linkList:</div><div>use | between each</div></div>
+                            <textarea rows="6" class="editInput" id="t300dc_linkList" onblur="saveMe('300dc');"></textarea>
+                        </label>
                     </div>
                     <!-- <div class="inputGroup">
                         <label><div class="flexlabel"><div>linkUrlList:</div><div>use | between each</div></div>

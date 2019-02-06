@@ -200,7 +200,7 @@ body {
 
 .main {
   flex: 1;
-  height: calc(100vh - 69px);
+  height: calc(100vh - 63px);
   display: flex;
   color: #dfdfdf; }
 
@@ -622,7 +622,8 @@ select {
   cursor: pointer;
   border-radius: 3px;
   margin-left: -30px;
-  border: 1px solid #2E2E2E; }
+  border: 1px solid #2E2E2E;
+  margin-top: 5px; }
 
 .tooltipster-sidetip .tooltipster-box {
   background: white; }
