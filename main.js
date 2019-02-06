@@ -1250,7 +1250,7 @@ const megaTemplateObj = {
         </td></tr></tbody></table>
         <!-- /c200dc -->`,
         category: 'body',
-        tags: ['1col', 'alignedCenter'],
+        tags: ['1col', 'alignedCenter', 'alignedLeft'],
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
