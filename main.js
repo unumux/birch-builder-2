@@ -1235,6 +1235,8 @@ const megaTemplateObj = {
 
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_spacerTop_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_spacerTop_birchpx; font-weight: normal; line-height: birch_spacerTop_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>
 
+                birch_imageCompCode_birch
+
                 birch_h1Code_birch
                 
                 birch_h2Code_birch
@@ -1256,6 +1258,20 @@ const megaTemplateObj = {
             spacerTop: '50',
             alignment: 'left',
 
+            imageCompCode: `<img class="birch-util-full-width birch-min-width-480 birch--imgAltTextColor" width="birch_imageCompWidth_birch" height="birch_imageCompHeight_birch" src="birch_imageCompUrl_birch" alt="birch_imageCompAltText_birch" style="-ms-interpolation-mode: bicubic; clear: both; color: birch_imageCompAltTextColor_birch; display: block; max-width: 100%; min-width: birch_imageCompWidth_birchpx; outline: none; text-decoration: none;">
+
+            <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_imageCompSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_imageCompSpacerBottom_birchpx; font-weight: normal; line-height: birch_imageCompSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+            imageCompUrl: 'https://imgplaceholder.com/100x100?font-size=15',
+            imageCompWidth: '100',
+            imageCompHeight: '100',
+            // imageCompUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-480x200.jpg?raw=true',
+            // imageCompWidth: '480',
+            // imageCompHeight: '200',
+            imageCompAltText: 'ALT tags are important',
+            imageCompAltTextColor: '#2E2E2E',
+            imageCompSpacerBottom: '16',
+            // (birch_imageCompCode_birch) imageCompUrl imageCompWidth imageCompHeight imageCompAltText imageCompAltTextColor imageCompSpacerBottom
+
             h1Code: `<h1 class="text-birch_alignment_birch birch-text-styles-h1-large birch--h1TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h1TextColor_birch; font-family: Arial; font-size: 24px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: birch_h1SpacerBottom_birchpx; padding: 0; text-align: birch_alignment_birch; word-wrap: normal;">birch_h1Text_birch</h1>`,
             h1TextColor: '#015294',
             h1Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
@@ -1275,7 +1291,6 @@ const megaTemplateObj = {
             pText: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
             repeatingCodeFields: 'pText|pRepeatingCodeFrame|pRepeatedCode',
             pSpacerBottom: '10',
-            //pText_OPT: 'pRepeatingCodeFrame',
             
             ctaBackgroundColor: '#015294',
             ctaUrl: 'https://www.unum.com',
@@ -1300,15 +1315,60 @@ const megaTemplateObj = {
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#f7f7f7',
             spacerTop: '50',
+            alignment: 'left',
+
+            imageCompCode: `<img class="birch-util-full-width birch-min-width-480 birch--imgAltTextColor" width="birch_imageCompWidth_birch" height="birch_imageCompHeight_birch" src="birch_imageCompUrl_birch" alt="birch_imageCompAltText_birch" style="-ms-interpolation-mode: bicubic; clear: both; color: birch_imageCompAltTextColor_birch; display: block; max-width: 100%; min-width: birch_imageCompWidth_birchpx; outline: none; text-decoration: none;">
+
+            <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_imageCompSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_imageCompSpacerBottom_birchpx; font-weight: normal; line-height: birch_imageCompSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+            imageCompUrl: 'https://imgplaceholder.com/100x100?font-size=15',
+            imageCompWidth: '100',
+            imageCompHeight: '100',
+            // imageCompUrl: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-480x200.jpg?raw=true',
+            // imageCompWidth: '480',
+            // imageCompHeight: '200',
+            imageCompAltText: 'ALT tags are important',
+            imageCompAltTextColor: '#2E2E2E',
+            imageCompSpacerBottom: '16',
+            // (birch_imageCompCode_birch) imageCompUrl imageCompWidth imageCompHeight imageCompAltText imageCompAltTextColor imageCompSpacerBottom
+
+            h1Code: `<h1 class="text-birch_alignment_birch birch-text-styles-h1-large birch--h1TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h1TextColor_birch; font-family: Arial; font-size: 24px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: birch_h1SpacerBottom_birchpx; padding: 0; text-align: birch_alignment_birch; word-wrap: normal;">birch_h1Text_birch</h1>`,
             h1TextColor: '#19557F',
             h1Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
+            h1SpacerBottom: '10',
+            h1Text_OPT: 'h1Code',
+
+            h2Code: `<h2 class="text-birch_alignment_birch birch-text-styles-h2 birch--h2TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h2TextColor_birch; font-family: Arial; font-size: 20px; font-style: normal; font-weight: bold; line-height: 21px; margin: 0; margin-bottom: birch_h2SpacerBottom_birchpx; padding: 0; text-align: birch_alignment_birch; word-wrap: normal;">birch_h2Text_birch</h2>`,
+            h2TextColor: '#19557F',
+            h2Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
+            h2SpacerBottom: '10',
+            h2Text_OPT: 'h2Code',
+
+            pRepeatingCodeFrame: `birch_pRepeatedCode_birch
+            <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_pSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_pSpacerBottom_birchpx; font-weight: normal; line-height: birch_pSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+            pRepeatedCode: `<p class="text-birch_alignment_birch birch-text-styles-p birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: birch_alignment_birch;">birch_pText_birch</p>`,
+            pTextColor: '#2E2E2E',
+            pText: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
+            repeatingCodeFields: 'pText|pRepeatingCodeFrame|pRepeatedCode',
+            pSpacerBottom: '10',
+
             ctaBackgroundColor: '#1A8573',
             ctaUrl: 'https://www.coloniallife.com',
             ctaTextColor: 'white',
             ctaText: 'Call-to-action&nbsp;&rsaquo;',
-            ctaCode: `<center data-parsed="" style="min-width: initial !important; width: 100%;">
-            <table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>
-        </center>`,
+            ctaCode: `<table class="button small-expanded radius birch--ctaButton float-center" style="Margin: 0 0 16px 0; border-collapse: collapse; border-spacing: 0; float: none; margin: 0; padding: 0; text-align: center; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor_birch; border-radius: 3px; color: birch_ctaTextColor_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 16px 8px 16px; text-align: left; text-decoration: none;">birch_ctaText_birch</a></td></tr></table></td></tr></table>`,
+            ctaAlignment: 'left',
+            ctaAfterSpacerCode: `<table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_ctaSpacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_ctaSpacerBottom_birchpx; font-weight: normal; line-height: birch_ctaSpacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>`,
+            ctaSpacerBottom: '10',
+            centerBlockStart: `<center data-parsed="" style="min-width: initial !important; width: 100%;">`,
+            centerBlockEnd: `</center>`,
+
+            linkCode: `<p class="text-birch_alignment_birch birch-text-styles-p" style="Margin: 0; Margin-bottom: birch_linkSpacerBottom_birchpx; color: birch_linkColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: birch_linkSpacerBottom_birchpx; padding: 0; text-align: birch_alignment_birch;"><a href="birch_linkUrl_birch" class="birch-text-styles-link birch--linkColor" style="Margin: 0; color: birch_linkColor_birch; font-family: Arial; font-size: 16px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; padding: 0; text-align: birch_alignment_birch; text-decoration: underline;">birch_linkText_birch</a></p>`,
+            linkUrl: 'http://www.example.com',
+            linkColor: '#19557F',
+            linkText: 'Mauris non tempor quam, et lacinia sapien',
+            linkSpacerBottom: '10',
+            linkText_OPT: 'linkCode',
+            
             spacerBottom: '50'
         }
     } // templateObj_200dc
@@ -1935,8 +1995,11 @@ const megaTemplateObj = {
         <table align="center" class="container" style="Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">
             <table class="wrapper birch-wrapper-padding birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 53px; padding-right: 53px; text-align: left; vertical-align: top;">
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
                 <img class="birch-util-full-width birch-min-width-480 birch--imgAltTextColor" width="480" height="200" src="birch_imgUrl_birch" alt="birch_imgAltText_birch" style="-ms-interpolation-mode: bicubic; clear: both; color: birch_imgAltTextColor_birch; display: block; max-width: 100%; min-width: 480px; outline: none; text-decoration: none; width: 100%;">
-                <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="16px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 16px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
+                <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="16px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 16px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>
+
                 <h2 class="text-center birch-text-styles-h2 birch--h2TextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_h2TextColor_birch; font-family: Arial; font-size: 20px; font-style: normal; font-weight: bold; line-height: 21px; margin: 0; margin-bottom: 10px; padding: 0; text-align: center; word-wrap: normal;">birch_h2Text_birch</h2>
                 <p class="text-center birch-text-styles-p birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;">birch_pText_birch</p>
                 <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
@@ -4174,6 +4237,14 @@ const main = {
             document.querySelector('#t200dc_backgroundColor').value = matchingDataComp.templateValuesObj.backgroundColor
             document.querySelector('#t200dc_spacerTop').value = matchingDataComp.templateValuesObj.spacerTop
             document.querySelector('#t200dc_alignment').value = matchingDataComp.templateValuesObj.alignment
+
+            document.querySelector('#t200dc_imageCompUrl').value = matchingDataComp.templateValuesObj.imageCompUrl
+            document.querySelector('#t200dc_imageCompWidth').value = matchingDataComp.templateValuesObj.imageCompWidth
+            document.querySelector('#t200dc_imageCompHeight').value = matchingDataComp.templateValuesObj.imageCompHeight
+            document.querySelector('#t200dc_imageCompAltText').value = matchingDataComp.templateValuesObj.imageCompAltText
+            document.querySelector('#t200dc_imageCompAltTextColor').value = matchingDataComp.templateValuesObj.imageCompAltTextColor
+            document.querySelector('#t200dc_imageCompSpacerBottom').value = matchingDataComp.templateValuesObj.imageCompSpacerBottom
+
             document.querySelector('#t200dc_h1TextColor').value = matchingDataComp.templateValuesObj.h1TextColor
             document.querySelector('#t200dc_h1Text').value = matchingDataComp.templateValuesObj.h1Text
             document.querySelector('#t200dc_h1SpacerBottom').value = matchingDataComp.templateValuesObj.h1SpacerBottom
@@ -5493,6 +5564,14 @@ const handlers = {
         selectedComp.templateValuesObj.backgroundColor = document.querySelector('#t200dc_backgroundColor').value
         selectedComp.templateValuesObj.spacerTop = document.querySelector('#t200dc_spacerTop').value
         selectedComp.templateValuesObj.alignment = document.querySelector('#t200dc_alignment').value
+
+        selectedComp.templateValuesObj.imageCompUrl = document.querySelector('#t200dc_imageCompUrl').value
+        selectedComp.templateValuesObj.imageCompWidth = document.querySelector('#t200dc_imageCompWidth').value
+        selectedComp.templateValuesObj.imageCompHeight = document.querySelector('#t200dc_imageCompHeight').value
+        selectedComp.templateValuesObj.imageCompAltText = document.querySelector('#t200dc_imageCompAltText').value
+        selectedComp.templateValuesObj.imageCompAltTextColor = document.querySelector('#t200dc_imageCompAltTextColor').value
+        selectedComp.templateValuesObj.imageCompSpacerBottom = document.querySelector('#t200dc_imageCompSpacerBottom').value
+
         selectedComp.templateValuesObj.h1TextColor = document.querySelector('#t200dc_h1TextColor').value
         selectedComp.templateValuesObj.h1Text = document.querySelector('#t200dc_h1Text').value
         selectedComp.templateValuesObj.h1SpacerBottom = document.querySelector('#t200dc_h1SpacerBottom').value
@@ -6436,14 +6515,14 @@ function themeChange(theme){
         compArray.push(megaTemplateObj.templateObj_162)
     }
     compArray.push(megaTemplateObj.templateObj_163)
-    compArray.push(megaTemplateObj.templateObj_200)
+    // compArray.push(megaTemplateObj.templateObj_200)  // replaced by 200dc
     compArray.push(megaTemplateObj.templateObj_200dc)
-    compArray.push(megaTemplateObj.templateObj_201)
-    compArray.push(megaTemplateObj.templateObj_201c)
-    compArray.push(megaTemplateObj.templateObj_202)
+    // compArray.push(megaTemplateObj.templateObj_201)  // replaced by 200dc
+    // compArray.push(megaTemplateObj.templateObj_201c) // replaced by 200dc
+    // compArray.push(megaTemplateObj.templateObj_202)  // replaced by 200dc
     compArray.push(megaTemplateObj.templateObj_202d)
-    compArray.push(megaTemplateObj.templateObj_203)
-    compArray.push(megaTemplateObj.templateObj_204)
+    // compArray.push(megaTemplateObj.templateObj_203)  // replaced by 200dc
+    // compArray.push(megaTemplateObj.templateObj_204)  // replaced by 200dc
     compArray.push(megaTemplateObj.templateObj_204e)
     compArray.push(megaTemplateObj.templateObj_204i)
     compArray.push(megaTemplateObj.templateObj_205)
@@ -7145,6 +7224,23 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
             }
             baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_${rcRepeatedCode}_birch`, s)
         }
+        // image component for 200dc:
+        // (birch_imageCompCode_birch) imageCompUrl imageCompWidth imageCompHeight imageCompAltText imageCompAltTextColor imageCompSpacerBottom
+        if (fieldLabel === 'imageCompUrl'){
+            if (templateDataObj.imageCompUrl == ''){ // remove the placeholder
+                baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_imageCompCode_birch`, '')
+            }
+            else{ // replace the placeholder with the code
+                if (templateDataObj.alignment == 'center'){
+                    baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_imageCompCode_birch`, templateDataObj.centerBlockStart + templateDataObj.imageCompCode + templateDataObj.centerBlockEnd)
+                }
+                else if (templateDataObj.alignment == 'left'){
+                    baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_imageCompCode_birch`, templateDataObj.imageCompCode)
+                }
+
+                // baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_imageCompCode_birch`, templateDataObj.imageCompCode)
+            }
+        }
 
 
         // pRepeatingCodeFrame: `birch_pRepeatedCode_birch
@@ -7211,10 +7307,10 @@ function mergeDataIntoPlaceholders(templateBaseCode, templateDataObj){
             }
             else{ // include the cta
                 if (templateDataObj.centerBlockStart){ // it's not null, undefined, or other things I'd rather not mention
-                    if (templateDataObj.ctaAlignment == 'center'){
+                    if (templateDataObj.alignment == 'center'){
                         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_ctaCode_birch`, templateDataObj.centerBlockStart + templateDataObj.ctaCode + templateDataObj.centerBlockEnd + templateDataObj.ctaAfterSpacerCode)
                     }
-                    else if (templateDataObj.ctaAlignment == 'left'){
+                    else if (templateDataObj.alignment == 'left'){
                         baseCodeWithDynamicCodeInserted = baseCodeWithDynamicCodeInserted.replace(`birch_ctaCode_birch`, templateDataObj.ctaCode + templateDataObj.ctaAfterSpacerCode)
                     }
                 }

@@ -64,7 +64,8 @@
         <p><strong>2.0.7 (current version)</strong>
         <ul>
             <li>Adds 200dc. This dynamic centering component might replace 200, 201, 201c, 202, 203, and 204. It brings top and bottom spacers, auto saving, optional subcomponents, and dynamic centering.</li>
-            <li>released 2/6/2019</li>
+            <li>Added optional image in 200dc.</li>
+            <li>released 2/6/2019 -> optional image added 2/11/2019</li>
         </ul>
 
         <p><strong>2.0.6</strong>
@@ -1851,6 +1852,56 @@
                     </div>
 
                     <br><br>
+                    <!-- // imageCompUrl imageCompWidth imageCompHeight imageCompAltText imageCompAltTextColor imageCompSpacerBottom -->
+                    <div class="inputGroup">
+                        <label>
+                            <div class="flexlabel">
+                                <div>imageCompUrl:</div> 
+                                <div>leave blank to remove</div>
+                            </div>
+                            <textarea rows="6" class="editInput" id="t200dc_imageCompUrl" onblur="saveMe('200dc');"></textarea>
+                            <!-- <input class="editInput" id="t200dc_imageCompUrl" onblur="saveMe('200dc');" /> -->
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>
+                            <div class="flexlabel">
+                                <div>imageCompWidth:</div> 
+                                <div>480 max</div>
+                            </div>
+                            <input type="number" min="0" max="480" class="editInput" id="t200dc_imageCompWidth" onblur="blankTo0(this);saveMe('200dc');" />
+                        </label>
+                    </div> 
+                    <div class="inputGroup">
+                        <label>imageCompHeight:
+                            <input type="number" min="0" class="editInput" id="t200dc_imageCompHeight" onblur="blankTo0(this);saveMe('200dc');" />
+                        </label>
+                    </div> 
+                    <div class="inputGroup">
+                        <label>
+                            <div class="flexlabel">
+                                <div>imageCompAltText:</div> 
+                                <div>leave blank to remove</div>
+                            </div>
+                            <input class="editInput" id="t200dc_imageCompAltText" onblur="saveMe('200dc');" />
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>imageCompAltTextColor:
+                            <div class="colorboxFlex">
+                                <input class="editInput" id="t200dc_imageCompAltTextColor" onblur="saveMe('200dc');" data-savetarget="200dc" />
+                                <button type="button" id="t200dc_imageCompAltTextColorCP" class="cpTooltip" value="t200dc_imageCompAltTextColor"></button>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputGroup">
+                        <label>imageCompSpacerBottom:
+                            <input type="number" min="0" class="editInput" id="t200dc_imageCompSpacerBottom" onblur="blankTo0(this);saveMe('200dc');" />
+                        </label>
+                    </div> 
+
+                    <br><br>
+
                     <div class="inputGroup">
                         <label>h1TextColor:
                             <div class="colorboxFlex">
@@ -1947,7 +1998,7 @@
                             <input class="editInput" id="t200dc_ctaText" onblur="saveMe('200dc');" />
                         </label>
                     </div>
-                    <div class="inputGroup">
+                    <div class="inputGroup hideme">
                         <label>ctaAlignment:
                         <select class="editInput" id="t200dc_ctaAlignment" onchange="saveMe('200dc');">
                             <option value="left">left</option>
