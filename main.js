@@ -1,6 +1,6 @@
 
 // #region TEMPLATE REPEAT AREA
-const version = "2.0.9"
+const version = "2.0.10"
 let importedEmailFile = null // to set the export filename if we imported a file
 
 // used to insert current year in footer templates with dt.getFullYear()
@@ -65,13 +65,13 @@ const megaTemplateObj = {
         <!-- /c100 -->`,
         category: 'headers',
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
-            backgroundColor: '#015294',
+            backgroundColor: 'white',
             logoUrl: 'https://www.unum.com',
-            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-logo-white-pad-right.png?raw=true',
+            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-logo-pad-right.png?raw=true',
             logoAltText: '[Unum]',
-            logoAltTextColor: 'white',
+            logoAltTextColor: '#015294',
             ctaLinkCode: `<a href="birch_ctaUrl_birch" class="birch--ctaTextColor" style="Margin: 0; color: birch_ctaTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">birch_ctaText_birch</a>`,
-            ctaTextColor: 'white',
+            ctaTextColor: '#015294',
             ctaUrl: 'https://www.unum.com',
             ctaText: 'call-to-action&nbsp;&rsaquo;'
         },
@@ -108,14 +108,14 @@ const megaTemplateObj = {
         <!-- /c101 -->`,
         category: 'headers',
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
-            backgroundColor: '#015294',
+            backgroundColor: 'white',
             logoUrl: 'https://www.unum.com',
-            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-logo-white-pad-right.png?raw=true',
+            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-logo-pad-right.png?raw=true',
             logoAltText: '[Unum]',
-            logoAltTextColor: 'white',
-            headerbarColor: 'white',
+            logoAltTextColor: '#015294',
+            headerbarColor: '#015294',
             descText: 'Description text that is much longer than the other ones.',
-            descTextColor: 'white'
+            descTextColor: '#015294'
         },
         defaultColonialDataObj: { // matches templateValuesObj on the data instance obj
             backgroundColor: '#19557F',
@@ -155,16 +155,16 @@ const megaTemplateObj = {
         <!-- /c102 -->`,
         category: 'headers',
         defaultUnumDataObj: { // matches templateValuesObj on the data instance obj
-            backgroundColor: '#015294',
+            backgroundColor: 'white',
             logoUrl: 'https://www.unum.com',
-            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-logo-white-pad-right.png?raw=true',
+            logoSrc: 'https://github.com/unumux/birch-builder-2/blob/master/images/components/unum-logo-pad-right.png?raw=true',
             logoAltText: '[Unum]',
-            logoAltTextColor: 'white',
-            headerbarColor: 'white',
+            logoAltTextColor: '#015294',
+            headerbarColor: '#015294',
             descText: 'Description',
-            descTextColor: 'white',
+            descTextColor: '#015294',
             ctaLinkCode: `<a href="birch_ctaUrl_birch" class="birch--ctaTextColor" style="Margin: 0; color: birch_ctaTextColor_birch; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;">birch_ctaText_birch</a>`,
-            ctaTextColor: 'white',
+            ctaTextColor: '#015294',
             ctaUrl: 'https://www.unum.com',
             ctaText: 'call-to-action&nbsp;&rsaquo;'
         },
@@ -6640,23 +6640,23 @@ function themeChange(theme){
             mergedCode = mergeDataIntoPlaceholders(comp.baseCode, comp.defaultUnumDataObj)
             let select = document.querySelector('#t100_presetDD')
             select.options.length = 0; // clear
-            select.options[0] = new Option('unum_logo-white_bg-color', 'unum_logo-white_bg-color');
-            select.options[1] = new Option('unum_logo-color_bg-white', 'unum_logo-color_bg-white');
+            select.options[0] = new Option('unum_logo-color_bg-white', 'unum_logo-color_bg-white');
+            select.options[1] = new Option('unum_logo-white_bg-color', 'unum_logo-white_bg-color');
 
             select = document.querySelector('#t101_presetDD')
             select.options.length = 0; // clear
-            select.options[0] = new Option('unum_logo-white_bg-color', 'unum_logo-white_bg-color');
-            select.options[1] = new Option('unum_logo-color_bg-white', 'unum_logo-color_bg-white');
+            select.options[0] = new Option('unum_logo-color_bg-white', 'unum_logo-color_bg-white');
+            select.options[1] = new Option('unum_logo-white_bg-color', 'unum_logo-white_bg-color');
 
             select = document.querySelector('#t102_presetDD')
             select.options.length = 0; // clear
-            select.options[0] = new Option('unum_logo-white_bg-color', 'unum_logo-white_bg-color');
-            select.options[1] = new Option('unum_logo-color_bg-white', 'unum_logo-color_bg-white');
+            select.options[0] = new Option('unum_logo-color_bg-white', 'unum_logo-color_bg-white');
+            select.options[1] = new Option('unum_logo-white_bg-color', 'unum_logo-white_bg-color');
 
             select = document.querySelector('#t103_presetDD')
             select.options.length = 0; // clear
-            select.options[0] = new Option('unum_logo-white_bg-color', 'unum_logo-white_bg-color');
-            select.options[1] = new Option('unum_logo-color_bg-white', 'unum_logo-color_bg-white');
+            select.options[0] = new Option('unum_logo-color_bg-white', 'unum_logo-color_bg-white');
+            select.options[1] = new Option('unum_logo-white_bg-color', 'unum_logo-white_bg-color');
         }
         if (theme == 'colonial'){
 
