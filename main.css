@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -59,8 +61,8 @@ body {
   margin-right: 0; }
 
 .birch-tree-icon-image {
-  width: .625rem;
-  margin-bottom: -.2rem; }
+  width: 0.625rem;
+  margin-bottom: -0.2rem; }
 
 .navIcon {
   display: inline-block;
@@ -68,7 +70,7 @@ body {
 
 .smallerNavIcon {
   height: 1em;
-  margin-right: .3rem; }
+  margin-right: 0.3rem; }
 
 .browser-support {
   display: flex;
@@ -144,14 +146,14 @@ body {
 .intro-cta {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
-  padding: .5em 2rem;
+  padding: 0.5em 2rem;
   background-color: #015294;
   border: none;
   color: white;
   border-radius: 4px;
   width: 390px;
   cursor: pointer;
-  transition: transform .2s ease-in-out; }
+  transition: transform 0.2s ease-in-out; }
   .intro-cta:hover, .intro-cta:focus {
     transform: scale(1.05); }
   .intro-cta:active {
@@ -184,7 +186,7 @@ body {
   line-height: 0;
   cursor: pointer;
   margin-right: 2rem;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   border: 5px transparent solid;
   background-color: #242423; }
   .introTemplateImageButton:hover, .introTemplateImageButton:focus {
@@ -227,7 +229,8 @@ body {
   overflow-y: scroll;
   padding-top: 30px; }
 
-.components-panel1, .components-panel2 {
+.components-panel1,
+.components-panel2 {
   padding: 0 1rem;
   padding-top: 2rem; }
 
@@ -315,7 +318,8 @@ body {
 .emailCompListItem:hover {
   cursor: pointer; }
 
-.emailCompContents, .emailCompListItem {
+.emailCompContents,
+.emailCompListItem {
   position: relative;
   width: 600px; }
 
@@ -361,7 +365,7 @@ body {
     transform: scale(1.2); }
 
 .iconWrapper > img {
-  transition: transform .2s ease-in-out; }
+  transition: transform 0.2s ease-in-out; }
 
 .iconWrapper {
   display: flex;
@@ -371,7 +375,7 @@ body {
   height: 40px;
   background-color: #70bffb;
   border-radius: 40px;
-  transition: transform .2s ease-in-out; }
+  transition: transform 0.2s ease-in-out; }
 
 .iconWrapper--top {
   border-radius: initial;
@@ -404,7 +408,7 @@ body {
 
 .editRadio {
   display: inline-flex;
-  margin-right: .3rem; }
+  margin-right: 0.3rem; }
 
 .radioLabel {
   margin-right: 1rem; }
@@ -417,19 +421,19 @@ body {
   border-radius: 4px;
   color: #dfdfdf;
   font-size: 18px;
-  padding: .3em;
+  padding: 0.3em;
   font-family: 'Source Code Pro', monospace; }
 
 .editBtn {
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  padding: .4em;
+  padding: 0.4em;
   background-color: #015294;
   border: none;
   color: #dfdfdf;
   border-radius: 4px;
-  transition: transform .2s ease-in-out; }
+  transition: transform 0.2s ease-in-out; }
   .editBtn:hover {
     transform: scale(1.03); }
   .editBtn:active {
@@ -440,7 +444,7 @@ body {
   background-color: transparent;
   border: none;
   text-align: center;
-  font-size: .9rem;
+  font-size: 0.9rem;
   padding-right: 0;
   display: flex;
   align-items: center;
@@ -467,32 +471,37 @@ body {
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
-button, input, optgroup, select {
+button,
+input,
+optgroup,
+select {
   font-family: sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0; }
 
 /* willow forms */
-input, select {
+input,
+select {
   background-color: #fff;
   border: 2px solid #e9e9e9;
   border-radius: 4px;
-  padding: .9888rem;
+  padding: 0.9888rem;
   width: 100%;
   background-color: #252525;
   border: 1px #252525 solid;
   color: #dfdfdf;
   font-size: 18px;
-  padding: .3em; }
+  padding: 0.3em; }
 
-input[type=checkbox], input[type=radio] {
+input[type='checkbox'],
+input[type='radio'] {
   border-width: 1px;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
   width: auto; }
 
-input[type=radio] {
+input[type='radio'] {
   border-radius: 50%; }
 
 select {
@@ -528,16 +537,25 @@ select {
   background-color: #015294; }
 
 .bg-unum-slate {
-  background-color: #5A7184; }
+  background-color: #5e88a1; }
 
 .bg-unum-pool {
-  background-color: #47B4BC; }
+  background-color: #47b4bc; }
 
 .bg-unum-gold {
-  background-color: #FAC832; }
+  background-color: #fac832; }
 
 .bg-unum-lawn {
-  background-color: #8CC442; }
+  background-color: #8cc442; }
+
+.bg-unum-sky {
+  background-color: #00a6d7; }
+
+.bg-unum-yellow-green {
+  background-color: #cccc31; }
+
+.bg-unum-orange {
+  background-color: #e89528; }
 
 .bg-white {
   background-color: white; }
@@ -549,49 +567,55 @@ select {
   background-color: #f7f7f7; }
 
 .bg-neutral-dark-grey {
-  background-color: #2E2E2E; }
+  background-color: #2e2e2e; }
 
 .bg-neutral-light-grey-3 {
-  background-color: #E9E9E9; }
+  background-color: #e9e9e9; }
 
 .bg-neutral-light-grey-4 {
-  background-color: #F7F7F7; }
+  background-color: #f7f7f7; }
+
+.bg-neutral-iron-grey {
+  background-color: #2e2e2e; }
+
+.bg-neutral-mystic-grey {
+  background-color: #dfe7ec; }
 
 .bg-colonial-steel-blue {
-  background-color: #19557F; }
+  background-color: #19557f; }
 
 .bg-colonial-slate {
-  background-color: #5B7183; }
+  background-color: #5b7183; }
 
 .bg-colonial-mint {
-  background-color: #1A8573; }
+  background-color: #1a8573; }
 
 .bg-colonial-leaf {
-  background-color: #78B25D; }
+  background-color: #78b25d; }
 
 .bg-colonial-ocean {
-  background-color: #3BAECC; }
+  background-color: #3baecc; }
 
 .bg-colonial-asparagus {
-  background-color: #A4CC44; }
+  background-color: #a4cc44; }
 
 .bg-colonial-tangerine {
-  background-color: #F1C44F; }
+  background-color: #f1c44f; }
 
 .bg-colonial-pumpkin {
-  background-color: #F38130; }
+  background-color: #f38130; }
 
 .bg-colonial-dark-red {
-  background-color: #7F2725; }
+  background-color: #7f2725; }
 
 .bg-colonial-sand {
-  background-color: #E0DDCE; }
+  background-color: #e0ddce; }
 
 .bg-colonial-moss {
   background-color: #537650; }
 
 .bg-colonial-grape {
-  background-color: #5F3A6C; }
+  background-color: #5f3a6c; }
 
 .myColorPicker {
   padding-left: 5px; }
@@ -611,7 +635,7 @@ select {
   border: 1px solid;
   cursor: pointer;
   margin-right: 3px;
-  transition: all .2s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
   .myColorPicker button:hover {
     transform: scale(1.1); }
 
@@ -622,7 +646,7 @@ select {
   cursor: pointer;
   border-radius: 3px;
   margin-left: -30px;
-  border: 1px solid #2E2E2E;
+  border: 1px solid #2e2e2e;
   margin-top: 5px; }
 
 .tooltipster-sidetip .tooltipster-box {
@@ -656,7 +680,8 @@ select {
   border-bottom: 1px #343434 solid;
   box-shadow: 0 0 2px 0 #242423; }
 
-[data-control], [data-content] > * {
+[data-control],
+[data-content] > * {
   border-bottom: none; }
 
 [data-accordion] > [data-control]:after {
@@ -703,7 +728,7 @@ select {
   justify-content: space-around; }
 
 .filterRadioLabel {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   display: inline-flex; }
 
 /* When mouse is detected, ALL focused elements have outline removed. */
@@ -711,7 +736,8 @@ select {
 body.using-mouse .newFilterButton:focus {
   outline: none; }
 
-body.using-mouse .intro-cta:hover, body.using-mouse .intro-cta:focus {
+body.using-mouse .intro-cta:hover,
+body.using-mouse .intro-cta:focus {
   outline: none; }
 
 .filterFlexRow {
@@ -724,7 +750,7 @@ body.using-mouse .intro-cta:hover, body.using-mouse .intro-cta:focus {
   align-items: center; }
 
 .newFilterButtonGroupLabel {
-  margin-right: .5rem; }
+  margin-right: 0.5rem; }
 
 .newFilterButton {
   border: none;
