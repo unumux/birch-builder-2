@@ -439,6 +439,55 @@ const megaTemplateObj = {
       pTextColor: 'white',
     },
   }, // templateObj_152
+  templateObj_152b: {
+    templateDesc: '152b',
+    templateId: 'templateObj_152b',
+    baseCode: `<!-- c152b -->
+        <table align="center" class="container" style="Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">
+            <table class="wrapper birch-wrapper-padding birch--backgroundColor birch-wrapper-align-vertical-middle birch--wrapper200" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: middle;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 53px; padding-right: 53px; text-align: left; vertical-align: middle;">
+                <!-- need to manually set [vertical-align: middle; height: 200px; mso-height-rule: 200px;] to the 1st TR in the wrapper table -->
+                <table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
+                    <th class="small-12 large-12 columns first last" valign="middle" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 16px; padding-right: 16px; text-align: left; width: 584px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
+
+                        <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_spacerTop_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_spacerTop_birchpx; font-weight: normal; line-height: birch_spacerTop_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>
+                        
+                        birch_pCode_birch
+
+                        <h1 class="text-center birch-text-styles-h1 birch--h1TextColor" style="Margin: 0; Margin-bottom: 0; color: birch_h1TextColor_birch; font-family: Arial; font-size: 21px; font-style: normal; font-weight: 400; line-height: normal; margin: 0; margin-bottom: 0; padding: 0; text-align: center; word-wrap: normal;">birch_h1Text_birch</h1>
+
+                        <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="birch_spacerBottom_birchpx" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: birch_spacerBottom_birchpx; font-weight: normal; line-height: birch_spacerBottom_birchpx; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table>
+
+                    </th>
+        <th class="expander" style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;"></th></tr></table></th>
+                </tr></tbody></table>
+            </td></tr></table>
+        </td></tr></tbody></table>
+        <!-- /c152b -->`,
+    category: 'banners',
+    tags: ['1col', 'alignedCenter'],
+    defaultUnumDataObj: {
+      // matches templateValuesObj on the data instance obj
+      backgroundColor: '#015294',
+      spacerTop: '60',
+      spacerBottom: '60',
+      h1TextColor: 'white',
+      h1Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
+      pCode: `<p class="text-center birch-text-styles-p birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;">birch_pText_birch</p>`,
+      pText: 'Mauris non tempor quam, et lacinia sapien.',
+      pTextColor: 'white',
+    },
+    defaultColonialDataObj: {
+      // matches templateValuesObj on the data instance obj
+      backgroundColor: '#19557F',
+      spacerTop: '60',
+      spacerBottom: '60',
+      h1TextColor: 'white',
+      h1Text: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue.',
+      pCode: `<p class="text-center birch-text-styles-p birch--pTextColor" style="Margin: 0; Margin-bottom: 10px; color: birch_pTextColor_birch; font-family: Arial; font-size: 17px; font-style: normal; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;">birch_pText_birch</p>`,
+      pText: 'Mauris non tempor quam, et lacinia sapien.',
+      pTextColor: 'white',
+    },
+  }, // templateObj_152b
   templateObj_153: {
     templateDesc: '153',
     templateId: 'templateObj_153',
@@ -4236,6 +4285,17 @@ const main = {
       mergeCodeWithDataForEditShared();
     }
 
+    if (receivedTemplateId == 'templateObj_152b') {
+      document.querySelector('#t152b_backgroundColor').value = matchingDataComp.templateValuesObj.backgroundColor;
+      document.querySelector('#t152b_spacerTop').value = matchingDataComp.templateValuesObj.spacerTop;
+      document.querySelector('#t152b_h1TextColor').value = matchingDataComp.templateValuesObj.h1TextColor;
+      document.querySelector('#t152b_h1Text').value = matchingDataComp.templateValuesObj.h1Text;
+      document.querySelector('#t152b_pText').value = matchingDataComp.templateValuesObj.pText;
+      document.querySelector('#t152b_pTextColor').value = matchingDataComp.templateValuesObj.pTextColor;
+      document.querySelector('#t152b_spacerBottom').value = matchingDataComp.templateValuesObj.spacerBottom;
+      mergeCodeWithDataForEditShared();
+    }
+
     if (receivedTemplateId == 'templateObj_153') {
       document.querySelector('#t153_backgroundColor').value = matchingDataComp.templateValuesObj.backgroundColor;
       document.querySelector('#t153_spacerTop').value = matchingDataComp.templateValuesObj.spacerTop;
@@ -5579,6 +5639,21 @@ const handlers = {
     view.displayComponents();
   }, // 152
 
+  goSavet152b: function() {
+    // enter edit mode for a component in the email
+    //console.log('welcome to goSavet152b...')
+    let selectedComp = getSelectedComp();
+    selectedComp.templateValuesObj.backgroundColor = document.querySelector('#t152b_backgroundColor').value;
+    selectedComp.templateValuesObj.spacerTop = document.querySelector('#t152b_spacerTop').value;
+    selectedComp.templateValuesObj.h1TextColor = document.querySelector('#t152b_h1TextColor').value;
+    selectedComp.templateValuesObj.h1Text = document.querySelector('#t152b_h1Text').value;
+    selectedComp.templateValuesObj.pText = document.querySelector('#t152b_pText').value;
+    selectedComp.templateValuesObj.pTextColor = document.querySelector('#t152b_pTextColor').value;
+    selectedComp.templateValuesObj.spacerBottom = document.querySelector('#t152b_spacerBottom').value;
+    //mergeCodeWithDataForEditShared()
+    view.displayComponents();
+  }, // 152b
+
   goSavet153: function() {
     // enter edit mode for a component in the email
     //console.log('welcome to goSavet153...')
@@ -6847,6 +6922,7 @@ function themeChange(theme) {
   compArray.push(megaTemplateObj.templateObj_150b);
   compArray.push(megaTemplateObj.templateObj_151);
   compArray.push(megaTemplateObj.templateObj_152);
+  compArray.push(megaTemplateObj.templateObj_152b);
   compArray.push(megaTemplateObj.templateObj_153);
   compArray.push(megaTemplateObj.templateObj_154);
   compArray.push(megaTemplateObj.templateObj_154d);
