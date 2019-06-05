@@ -1,5 +1,5 @@
 // #region TEMPLATE REPEAT AREA
-const version = '2.0.10';
+const version = '2.0.11';
 let importedEmailFile = null; // to set the export filename if we imported a file
 
 // used to insert current year in footer templates with dt.getFullYear()
@@ -3067,6 +3067,63 @@ const megaTemplateObj = {
       ctaCode2: `<table class="button small-expanded radius birch--ctaButton2" style="Margin: 0 0 15px 0; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; text-align: left; vertical-align: top; width: auto;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 15px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; background: birch_ctaBackgroundColor2_birch; border: none; border-collapse: collapse !important; border-radius: 3px; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 15px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;"><a href="birch_ctaUrl2_birch" style="Margin: 0; border: 0px solid birch_ctaTextColor2_birch; border-radius: 3px; color: birch_ctaTextColor2_birch; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 15px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 15px 8px 15px; text-align: left; text-decoration: none;">birch_ctaText2_birch</a></td></tr></table></td></tr></table>`,
     },
   }, // templateObj_217
+  templateObj_218: {
+    templateDesc: '218',
+    templateId: 'templateObj_218',
+    baseCode: `<!-- c218 -->
+        <table align="center" class="container" style="Margin: 0 auto; background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 600px;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">
+            <table class="wrapper birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top;">
+                <table class="row" style="border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;">
+                    <th class="small-12 large-6 columns first" valign="middle" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 0 !important; padding-right: 0 !important; text-align: left; width: 284px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
+                        <table class="wrapper birch-wrapper-padding-2column-first birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 50px; padding-right: 25px; text-align: left; vertical-align: top;">
+                            <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
+                            <img class="birch-util-mobile-center birch-min-width-200 birch--imgAltTextColor" width="200" height="200" src="birch_imgUrl1_birch" alt="birch_imgAltText1_birch" style="-ms-interpolation-mode: bicubic; clear: both; color: birch_imgAltTextColor_birch; display: block; max-width: 100%; min-width: 200px; outline: none; text-decoration: none; width: auto;">
+
+
+                            <table class="spacer show-for-large" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="40px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 40px; font-weight: normal; line-height: 40px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+                        </td></tr></table>
+                    </th></tr></table></th>
+        
+                    <th class="small-12 large-6 columns last" valign="middle" style="Margin: 0 auto; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 auto; padding: 0; padding-bottom: 0 !important; padding-left: 0 !important; padding-right: 0 !important; text-align: left; width: 284px;"><table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><th style="Margin: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left;">
+                        <table class="wrapper birch-wrapper-padding-2column-second birch--backgroundColor" align="center" style="background-color: birch_backgroundColor_birch; border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tr style="padding: 0; text-align: left; vertical-align: top;"><td class="wrapper-inner" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 25px; padding-right: 50px; text-align: left; vertical-align: top;">
+                            <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="50px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 50px; font-weight: normal; line-height: 50px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+
+                            <img class="birch-util-mobile-center birch-min-width-200 birch--imgAltTextColor" width="200" height="200" src="birch_imgUrl2_birch" alt="birch_imgAltText2_birch" style="-ms-interpolation-mode: bicubic; clear: both; color: birch_imgAltTextColor_birch; display: block; max-width: 100%; min-width: 200px; outline: none; text-decoration: none; width: auto;">
+
+
+                            <table class="spacer" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;"><tbody><tr style="padding: 0; text-align: left; vertical-align: top;"><td height="40px" style="Margin: 0; border-collapse: collapse !important; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 40px; font-weight: normal; line-height: 40px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left; vertical-align: top;">&#xA0;</td></tr></tbody></table> 
+                        </td></tr></table>
+                    </th></tr></table></th>
+                </tr></tbody></table>
+            </td></tr></table>
+        </td></tr></tbody></table>
+        <!-- /c218 -->`,
+    category: 'body',
+    tags: ['2col', 'alignedLeft'],
+    defaultUnumDataObj: {
+      // matches templateValuesObj on the data instance obj
+      backgroundColor: '#f7f7f7',
+      imgUrl1:
+        'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+      imgAltText1: 'ALT tags are important',
+      imgAltTextColor: '#2E2E2E',
+      imgUrl2:
+        'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+      imgAltText2: 'ALT tags are important',
+    },
+    defaultColonialDataObj: {
+      // matches templateValuesObj on the data instance obj
+      backgroundColor: '#f7f7f7',
+      imgUrl1:
+        'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+      imgAltText1: 'ALT tags are important',
+      imgAltTextColor: '#2E2E2E',
+      imgUrl2:
+        'https://github.com/unumux/birch-builder-2/blob/master/images/components/image-placeholder-200.jpg?raw=true',
+      imgAltText2: 'ALT tags are important',
+    },
+  }, // templateObj_218
   templateObj_300: {
     templateDesc: '300',
     templateId: 'templateObj_300',
@@ -4944,6 +5001,16 @@ const main = {
       mergeCodeWithDataForEditShared();
     }
 
+    if (receivedTemplateId == 'templateObj_218') {
+      document.querySelector('#t218_backgroundColor').value = matchingDataComp.templateValuesObj.backgroundColor;
+      document.querySelector('#t218_imgUrl1').value = matchingDataComp.templateValuesObj.imgUrl1;
+      document.querySelector('#t218_imgAltText1').value = matchingDataComp.templateValuesObj.imgAltText1;
+      document.querySelector('#t218_imgAltTextColor').value = matchingDataComp.templateValuesObj.imgAltTextColor;
+      document.querySelector('#t218_imgUrl2').value = matchingDataComp.templateValuesObj.imgUrl2;
+      document.querySelector('#t218_imgAltText2').value = matchingDataComp.templateValuesObj.imgAltText2;
+      mergeCodeWithDataForEditShared();
+    }
+
     if (receivedTemplateId == 'templateObj_300') {
       document.querySelector('#t300_backgroundColor').value = matchingDataComp.templateValuesObj.backgroundColor;
       document.querySelector('#t300_pTextColor').value = matchingDataComp.templateValuesObj.pTextColor;
@@ -6462,6 +6529,21 @@ const handlers = {
     view.displayComponents();
   }, // 217
 
+  goSavet218: function() {
+    // enter edit mode for a component in the email
+    //console.log('welcome to goSavet218...')
+    let selectedComp = getSelectedComp();
+    selectedComp.templateValuesObj.backgroundColor = document.querySelector('#t218_backgroundColor').value;
+    selectedComp.templateValuesObj.imgUrl1 = document.querySelector('#t218_imgUrl1').value;
+    selectedComp.templateValuesObj.imgAltText1 = document.querySelector('#t218_imgAltText1').value;
+    selectedComp.templateValuesObj.imgAltTextColor = document.querySelector('#t218_imgAltTextColor').value;
+
+    selectedComp.templateValuesObj.imgUrl2 = document.querySelector('#t218_imgUrl2').value;
+    selectedComp.templateValuesObj.imgAltText2 = document.querySelector('#t218_imgAltText2').value;
+    
+    view.displayComponents();
+  }, // 218
+
   goSavet300: function() {
     // enter edit mode for a component in the email
     //console.log('welcome to goSavet300...')
@@ -6896,7 +6978,7 @@ function themeChange(theme) {
     // update the accord "last component" labels
     document.querySelector('#accord-headers-last-id').innerHTML = '103';
     document.querySelector('#accord-banners-last-id').innerHTML = '163';
-    document.querySelector('#accord-body-last-id').innerHTML = '217';
+    document.querySelector('#accord-body-last-id').innerHTML = '218';
     document.querySelector('#accord-footers-first-id').innerHTML = '300';
     document.querySelector('#accord-footers-last-id').innerHTML = '302s';
   }
@@ -6905,7 +6987,7 @@ function themeChange(theme) {
     // update the accord "last component" labels
     document.querySelector('#accord-headers-last-id').innerHTML = '104';
     document.querySelector('#accord-banners-last-id').innerHTML = '163';
-    document.querySelector('#accord-body-last-id').innerHTML = '217';
+    document.querySelector('#accord-body-last-id').innerHTML = '218';
     document.querySelector('#accord-footers-first-id').innerHTML = '320';
     document.querySelector('#accord-footers-last-id').innerHTML = '341';
   }
@@ -6967,6 +7049,7 @@ function themeChange(theme) {
   compArray.push(megaTemplateObj.templateObj_215);
   compArray.push(megaTemplateObj.templateObj_216);
   compArray.push(megaTemplateObj.templateObj_217);
+  compArray.push(megaTemplateObj.templateObj_218);
   if (theme == 'unum') {
     compArray.push(megaTemplateObj.templateObj_300);
     // compArray.push(megaTemplateObj.templateObj_300d)
