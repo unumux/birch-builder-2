@@ -1,5 +1,5 @@
 // #region TEMPLATE REPEAT AREA
-const version = '2.0.11';
+const version = '2.0.12';
 let importedEmailFile = null; // to set the export filename if we imported a file
 
 // used to insert current year in footer templates with dt.getFullYear()
@@ -8693,7 +8693,11 @@ const baseEmailHtmlTop = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitio
   </head>
   <body style="-moz-box-sizing: border-box; -ms-text-size-adjust: 100%; -webkit-box-sizing: border-box; -webkit-text-size-adjust: 100%; Margin: 0; background: {{emailBackGroundColor}}; background: {{emailBackGroundColor}} !important; box-sizing: border-box; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; min-width: 100%; padding: 0; text-align: left; width: 100% !important">
 
-  <span class="preheader" style="display: none; font-size: 0px; line-height: 0px; max-height: 0px; max-width: 0px; width: 0px; opacity: 0; overflow: hidden;">{{emailPreheader}}</span>
+  <!--[if !mso 9]><!-->
+  <span style="display:none !important;visibility:hidden;opacity:0;color:transparent;height:0;width:0;">
+  {{emailPreheader}}
+  </span>
+  <!--<![endif]-->
     
     <table class="body" style="Margin: 0; background: {{emailBackGroundColor}}; background: {{emailBackGroundColor}} !important; border-collapse: collapse; border-spacing: 0; color: #2E2E2E; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; height: 100%; line-height: 1.3; margin: 0; padding: 0; text-align: left; vertical-align: top; width: 100%">
       <tr style="padding: 0; text-align: left; vertical-align: top">
